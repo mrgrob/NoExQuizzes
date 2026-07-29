@@ -97,6 +97,14 @@ through one of the six categories):
 - **Cultural differences between Britain and France** — everyday customs and
   institutions, kept to factual, single-answer points (Language & everyday
   life).
+- **French traditions and odd festivals** — the rituals of the French year
+  (poisson d'avril, muguet on 1 May, la Chandeleur, la Toussaint) and the
+  gloriously strange local fêtes: herrings thrown from the balcony at the
+  Carnaval de Dunkerque, lemon sculptures at Menton, mussel-shell mountains at
+  the Braderie de Lille, water jousting at Sète, the black-pudding world
+  championship at Mortagne-au-Perche. Rich, funny and very well documented —
+  spread it across Language & everyday life, Food & drink, Culture, Geography,
+  History and even Sport (course camarguaise, gouren, joutes nautiques).
 - **UK pop & rock** — British pop and rock music. This is a recognised **extra
   category** (`"UK pop & rock"`), not one of the core six. On a music-leaning
   night, use it as one of the round's category slots (e.g. in place of Sport &
