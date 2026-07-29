@@ -44,6 +44,20 @@ You can give it options: a **theme**, a **difficulty**
 (`gentle` / `pub` / `fiendish`), or **questions per category**. It uses sensible
 defaults (pub difficulty, 5 per category → 30 questions) when you don't.
 
+### A France-focused round
+
+For a round where **every question is about France** — reaching across to the UK
+whenever there's a genuine link — ask for that instead:
+
+> "a quiz about France" · "fais un quiz sur la France" · "France quiz for tonight"
+
+or run `/create-france-quizz`. It loads
+[`.claude/skills/create-france-quizz/SKILL.md`](.claude/skills/create-france-quizz/SKILL.md),
+which follows the exact same procedure, format, and quality rules as above — only
+the subject focus changes (sides skew `france` / `both`, never a pure `britain`
+question). Both skills write into the same `rounds/` folder and play in the same
+page, and each reads the other's past rounds so they never repeat a question.
+
 ## Repository layout
 
 ```
@@ -57,6 +71,7 @@ scripts/
                       round share one (host + path). Run: python3 scripts/check.py
 .claude/skills/
   create-quizz-session/SKILL.md   The procedure Claude follows to build a round.
+  create-france-quizz/SKILL.md    Same procedure, France-focused (with UK links).
 README.md
 ```
 
