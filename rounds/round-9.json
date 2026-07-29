@@ -1,0 +1,326 @@
+{
+  "id": "round-9",
+  "number": 9,
+  "title": "Round 9 — Game Night",
+  "written": "2026-07-29",
+  "questions": [
+    {
+      "category": "Geography",
+      "side": "france",
+      "format": "closest",
+      "question": "How tall is the Millau Viaduct in southern France at its highest point, in metres?",
+      "answer": "343 m",
+      "accept": ["343", "343 metres"],
+      "note": "It culminates at 343 metres — higher than the Eiffel Tower — and its 2,460-metre deck touches the Tarn valley in only nine places.",
+      "source": "https://www.tourisme-aveyron.com/en/millau-viaduct/discover-millau-viaduct"
+    },
+    {
+      "category": "Sport & games",
+      "side": "both",
+      "format": "thisorthat",
+      "question": "Which tennis Grand Slam is older: Wimbledon or Roland-Garros?",
+      "answer": "Wimbledon",
+      "accept": [],
+      "options": ["Wimbledon", "Roland-Garros"],
+      "note": "Wimbledon, the oldest of the four majors, was founded in 1877; the French championship followed in 1891.",
+      "source": "https://www.open.edu/openlearn/health-sports-psychology/sport-fitness/tennis-grand-slams---what-are-they-and-why-are-there-only-four-them"
+    },
+    {
+      "category": "History",
+      "side": "both",
+      "format": "order",
+      "question": "Put these four battles of the Hundred Years' War in chronological order, earliest first.",
+      "items": ["Battle of Crécy (1346)", "Battle of Poitiers (1356)", "Battle of Agincourt (1415)", "Battle of Castillon (1453)"],
+      "answer": "Crécy, Poitiers, Agincourt, Castillon",
+      "accept": [],
+      "note": "England won the first three, but Castillon in July 1453 was the French victory that ended the war and left England holding only Calais.",
+      "source": "https://www.worldhistory.org/timeline/Hundred_Years'_War/"
+    },
+    {
+      "category": "Food & drink",
+      "side": "france",
+      "format": "oddoneout",
+      "question": "Four French cheeses. Which is the odd one out?",
+      "answer": "Reblochon",
+      "accept": [],
+      "options": ["Camembert", "Livarot", "Pont-l'Évêque", "Reblochon"],
+      "note": "Camembert, Livarot and Pont-l'Évêque are Normandy PDO cheeses, each named after a Normandy village. Reblochon comes from Savoie, in the Alps.",
+      "source": "https://en.normandie-tourisme.fr/lifestyle-well-being/gastronomy/normandy-cheeses/"
+    },
+    {
+      "category": "Culture & the arts",
+      "side": "france",
+      "format": "order",
+      "question": "Put these four Paris landmarks in order of when they were built, earliest first.",
+      "items": ["Notre-Dame de Paris, begun (1163)", "The Eiffel Tower completed (1889)", "The Centre Pompidou opens (1977)", "The Louvre Pyramid inaugurated (1989)"],
+      "answer": "Notre-Dame, Eiffel Tower, Centre Pompidou, Louvre Pyramid",
+      "accept": [],
+      "note": "Notre-Dame took nearly a century to build; the Eiffel Tower went up in about two years for the 1889 Exposition Universelle.",
+      "source": "https://en.wikipedia.org/wiki/Architecture_of_Paris"
+    },
+    {
+      "category": "Inventions",
+      "side": "both",
+      "format": "closest",
+      "question": "What was Concorde's maximum cruising speed, in kilometres per hour?",
+      "answer": "2,179 km/h",
+      "accept": ["2179", "2,179", "2180"],
+      "note": "That's Mach 2.04, more than twice the speed of sound, which cut London–New York to about three hours.",
+      "source": "https://www.britannica.com/technology/Concorde"
+    },
+    {
+      "category": "Geography",
+      "side": "both",
+      "format": "oddoneout",
+      "question": "Four islands. Which is the odd one out?",
+      "answer": "Isle of Man",
+      "accept": [],
+      "options": ["Jersey", "Alderney", "Sark", "Isle of Man"],
+      "note": "Jersey, Alderney and Sark are all Channel Islands off the French coast. The Isle of Man is also a Crown Dependency, but it sits in the Irish Sea.",
+      "source": "https://www.royal.uk/crown-dependencies"
+    },
+    {
+      "category": "History",
+      "side": "france",
+      "format": "order",
+      "question": "Put these four events of the French Revolution in chronological order, earliest first.",
+      "items": ["Storming of the Bastille (14 July 1789)", "Declaration of the Rights of Man (26 August 1789)", "Execution of Louis XVI (21 January 1793)", "Coup of 18 Brumaire (9 November 1799)"],
+      "answer": "Storming of the Bastille, Declaration of the Rights of Man, Execution of Louis XVI, Coup of 18 Brumaire",
+      "accept": [],
+      "note": "The whole revolutionary decade runs from the fall of the Bastille to Bonaparte's coup, barely ten years apart.",
+      "source": "https://en.wikipedia.org/wiki/Timeline_of_the_French_Revolution"
+    },
+    {
+      "category": "Sport & games",
+      "side": "both",
+      "format": "thisorthat",
+      "question": "Which national stadium holds more people: Wembley or the Stade de France?",
+      "answer": "Wembley",
+      "accept": [],
+      "options": ["Wembley", "Stade de France"],
+      "note": "Wembley seats 90,000, the largest in the UK, against roughly 80,000 at the Stade de France.",
+      "source": "https://footballgroundguide.com/ten-biggest-stadiums-in-europe"
+    },
+    {
+      "category": "Culture & the arts",
+      "side": "britain",
+      "format": "closest",
+      "question": "How many official Eon Productions James Bond films did Sean Connery star in as 007?",
+      "answer": "6",
+      "accept": ["six"],
+      "note": "Dr. No, From Russia with Love, Goldfinger, Thunderball, You Only Live Twice and Diamonds Are Forever — the later Never Say Never Again wasn't an Eon film.",
+      "source": "https://en.wikipedia.org/wiki/Sean_Connery_filmography"
+    },
+    {
+      "category": "Food & drink",
+      "side": "france",
+      "format": "oddoneout",
+      "question": "Four French spirits. Which is the odd one out?",
+      "answer": "Calvados",
+      "accept": [],
+      "options": ["Cognac", "Armagnac", "Marc de Bourgogne", "Calvados"],
+      "note": "Cognac and Armagnac are distilled from wine and marc from the pressed skins and pips — all three start with grapes. Calvados is distilled from cider.",
+      "source": "https://distiller.com/articles/brandy-types"
+    },
+    {
+      "category": "Inventions",
+      "side": "both",
+      "format": "thisorthat",
+      "question": "Which opened first: the London Underground or the Paris Métro?",
+      "answer": "The London Underground",
+      "accept": ["London Underground", "the Tube"],
+      "options": ["The London Underground", "The Paris Métro"],
+      "note": "London's Metropolitan Railway carried its first passengers in January 1863, some 37 years before the Paris Métro opened in 1900.",
+      "source": "https://www.europeana.eu/en/stories/going-underground-the-rise-of-europes-metro-railways"
+    },
+    {
+      "category": "Geography",
+      "side": "britain",
+      "format": "closest",
+      "question": "How long is the River Thames, from its source in the Cotswolds to the North Sea, in kilometres?",
+      "answer": "346 km",
+      "accept": ["346", "215 miles"],
+      "note": "At 346 km (215 miles) the Thames is the longest river entirely in England, though the Severn is longer overall.",
+      "source": "https://www.spelthorne.gov.uk/page/388/about-river-thames"
+    },
+    {
+      "category": "History",
+      "side": "both",
+      "format": "closest",
+      "question": "The Hundred Years' War ran from 1337 to 1453 — so how many years did it actually last?",
+      "answer": "116 years",
+      "accept": ["116"],
+      "note": "'The Hundred Years' War' is rather catchier than 'the 116 Years' War'.",
+      "source": "https://historyfacts.com/world-history/fact/the-hundred-years-war-was-actually-116-years-long/"
+    },
+    {
+      "category": "Sport & games",
+      "side": "both",
+      "format": "thisorthat",
+      "question": "Which horse race is older: the Epsom Derby or the Prix de l'Arc de Triomphe?",
+      "answer": "Epsom Derby",
+      "accept": ["the Derby"],
+      "options": ["Epsom Derby", "Prix de l'Arc de Triomphe"],
+      "note": "The Derby was first run at Epsom Downs in 1780, a full 140 years before the Arc was inaugurated at Longchamp in 1920.",
+      "source": "https://www.twinspires.com/edge/racing/top-10-biggest-horse-races-in-the-world/"
+    },
+    {
+      "category": "Food & drink",
+      "side": "france",
+      "format": "thisorthat",
+      "question": "The dish 'chicken Marengo' is named after a battle won by which commander?",
+      "answer": "Napoleon Bonaparte",
+      "accept": ["Napoleon", "Bonaparte"],
+      "options": ["Napoleon Bonaparte", "The Duke of Wellington"],
+      "note": "It celebrates Napoleon's victory over the Austrians at Marengo, in northern Italy, in June 1800.",
+      "source": "https://en.wikipedia.org/wiki/Chicken_Marengo"
+    },
+    {
+      "category": "Culture & the arts",
+      "side": "britain",
+      "format": "order",
+      "question": "Put these four Beatles albums in order of release, earliest first.",
+      "items": ["Please Please Me (1963)", "Rubber Soul (1965)", "Sgt. Pepper's Lonely Hearts Club Band (1967)", "Abbey Road (1969)"],
+      "answer": "Please Please Me, Rubber Soul, Sgt. Pepper's, Abbey Road",
+      "accept": [],
+      "note": "The Beatles went from their debut to Abbey Road in only six and a half years.",
+      "source": "https://en.wikipedia.org/wiki/The_Beatles_albums_discography"
+    },
+    {
+      "category": "Inventions",
+      "side": "france",
+      "format": "closest",
+      "question": "In what year did France's first TGV service, between Paris and Lyon, start carrying passengers?",
+      "answer": "1981",
+      "accept": [],
+      "note": "The first commercial services on the new LGV Sud-Est ran on 27 September 1981, launching high-speed rail in France.",
+      "source": "https://www.europebyrail.eu/forty-years-of-high-speed-rail-paris-to-lyon/"
+    },
+    {
+      "category": "Geography",
+      "side": "france",
+      "format": "oddoneout",
+      "question": "Four French place names. Which is the odd one out?",
+      "answer": "Dordogne",
+      "accept": [],
+      "options": ["Brittany", "Normandy", "Occitanie", "Dordogne"],
+      "note": "Brittany, Normandy and Occitanie are all administrative régions. The Dordogne is a département, inside the région of Nouvelle-Aquitaine.",
+      "source": "https://en.wikipedia.org/wiki/Regions_of_France"
+    },
+    {
+      "category": "Sport & games",
+      "side": "france",
+      "format": "thisorthat",
+      "question": "The suits on a British pack of cards — spades, hearts, diamonds, clubs — were adopted from which country's cards?",
+      "answer": "France",
+      "accept": [],
+      "options": ["France", "Germany"],
+      "note": "English decks took their suits from French cards standardised by the mid-15th century; the Germans settled on acorns, leaves, hearts and bells.",
+      "source": "https://www.metmuseum.org/perspectives/suits-and-decks"
+    },
+    {
+      "category": "History",
+      "side": "britain",
+      "format": "order",
+      "question": "Put these four monarchs in order of when they came to the throne, earliest first.",
+      "items": ["William the Conqueror (from 1066)", "Henry VIII (from 1509)", "Queen Anne (from 1702)", "Queen Victoria (from 1837)"],
+      "answer": "William the Conqueror, Henry VIII, Queen Anne, Queen Victoria",
+      "accept": [],
+      "note": "Anne was the first monarch of the united Kingdom of Great Britain, reigning from 1702 to 1714.",
+      "source": "https://www.royal.uk/kings-and-queens-1066"
+    },
+    {
+      "category": "Culture & the arts",
+      "side": "both",
+      "format": "thisorthat",
+      "question": "Which came first: the very first Cannes Film Festival, or the very first BAFTA film awards?",
+      "answer": "The Cannes Film Festival",
+      "accept": ["Cannes"],
+      "options": ["The Cannes Film Festival", "The BAFTA film awards"],
+      "note": "Cannes opened its first festival in September 1946; the first British Film Academy Awards were handed out in May 1949.",
+      "source": "https://en.wikipedia.org/wiki/1st_British_Academy_Film_Awards"
+    },
+    {
+      "category": "Food & drink",
+      "side": "both",
+      "question": "Which French chef, who ran the kitchens of London's Savoy Hotel, wrote the 1903 cookery classic 'Le Guide Culinaire'?",
+      "answer": "Auguste Escoffier",
+      "accept": ["Escoffier", "Georges Auguste Escoffier"],
+      "note": "Escoffier developed its 5,000-odd recipes while cooking at the Savoy, Ritz and Carlton hotels in London.",
+      "source": "https://en.wikipedia.org/wiki/Le_guide_culinaire"
+    },
+    {
+      "category": "Inventions",
+      "side": "france",
+      "question": "Which everyday medical instrument did the French doctor René Laennec invent in 1816?",
+      "answer": "The stethoscope",
+      "accept": ["stethoscope"],
+      "note": "Laennec first rolled up sheets of paper into a tube to listen to a patient's chest; the wooden cylinder he then made became the stethoscope.",
+      "source": "https://www.britannica.com/biography/Rene-Laennec"
+    },
+    {
+      "category": "Geography",
+      "side": "britain",
+      "format": "oddoneout",
+      "question": "Four protected landscapes in southern England. Which is the odd one out?",
+      "answer": "Cotswolds",
+      "accept": [],
+      "options": ["Dartmoor", "Exmoor", "New Forest", "Cotswolds"],
+      "note": "Dartmoor, Exmoor and the New Forest are National Parks. The Cotswolds is a National Landscape — what used to be called an Area of Outstanding Natural Beauty.",
+      "source": "https://nationalparks.uk/parks/"
+    },
+    {
+      "category": "History",
+      "side": "both",
+      "format": "order",
+      "question": "Put these four moments of the Napoleonic era in chronological order, earliest first.",
+      "items": ["Napoleon crowned Emperor (2 December 1804)", "Battle of Trafalgar (21 October 1805)", "Battle of Austerlitz (2 December 1805)", "Battle of Waterloo (18 June 1815)"],
+      "answer": "The coronation, Trafalgar, Austerlitz, Waterloo",
+      "accept": [],
+      "note": "Austerlitz fell exactly one year after the coronation, and just six weeks after Nelson had destroyed the Franco-Spanish fleet at Trafalgar.",
+      "source": "https://www.worldhistory.org/timeline/Napoleonic_Wars/"
+    },
+    {
+      "category": "Sport & games",
+      "side": "both",
+      "format": "thisorthat",
+      "question": "Which city hosted the modern Olympic Games first: Paris or London?",
+      "answer": "Paris",
+      "accept": [],
+      "options": ["Paris", "London"],
+      "note": "Paris staged the Games in 1900, eight years before London's first turn in 1908 — which is still the longest Olympics ever, running six months.",
+      "source": "https://www.history.com/articles/modern-olympic-games-timeline"
+    },
+    {
+      "category": "Culture & the arts",
+      "side": "france",
+      "question": "Which French director made his feature debut in 1959 with 'The 400 Blows', a cornerstone of the Nouvelle Vague?",
+      "answer": "François Truffaut",
+      "accept": ["Truffaut"],
+      "options": ["François Truffaut", "Jean-Luc Godard", "Claude Chabrol", "Alain Resnais"],
+      "note": "Truffaut's semi-autobiographical first feature introduced Antoine Doinel and won him the Best Director prize at Cannes.",
+      "source": "https://www.criterion.com/films/151-the-400-blows"
+    },
+    {
+      "category": "Food & drink",
+      "side": "britain",
+      "format": "oddoneout",
+      "question": "Three of these belong in the protected recipe for a Cornish pasty. Which is the odd one out?",
+      "answer": "Carrot",
+      "accept": [],
+      "options": ["Beef", "Swede", "Onion", "Carrot"],
+      "note": "Under its PGI, a real Cornish pasty is made in Cornwall from beef, potato, onion and swede — carrot has no place in it.",
+      "source": "https://www.gov.uk/government/news/cornish-pasties-can-t-be-pirated"
+    },
+    {
+      "category": "Inventions",
+      "side": "britain",
+      "format": "closest",
+      "question": "In what year did Stephenson's Rocket win the Rainhill Trials?",
+      "answer": "1829",
+      "accept": [],
+      "note": "Rocket was the only engine to finish the nine days of trials near Liverpool in October 1829, hitting 30 mph and taking the £500 prize.",
+      "source": "https://www.railwaymuseum.org.uk/objects-and-stories/stephensons-rocket-rainhill-and-rise-locomotive"
+    }
+  ]
+}
