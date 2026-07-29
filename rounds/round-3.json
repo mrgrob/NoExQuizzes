@@ -1,0 +1,288 @@
+{
+  "id": "round-3",
+  "number": 3,
+  "title": "Round 3 — Provence, the Pitch & the Silver Screen",
+  "written": "2026-07-29",
+  "questions": [
+    {
+      "category": "Geography",
+      "side": "france",
+      "question": "What is the name of the strong, cold, dry wind that funnels down the Rhône valley to the Mediterranean coast of Provence?",
+      "answer": "The Mistral",
+      "accept": ["Mistral", "Le Mistral"],
+      "note": "The Mistral is a cold, dry north-westerly wind funnelled down the Rhône valley toward the Gulf of Lion.",
+      "source": "https://www.britannica.com/science/mistral"
+    },
+    {
+      "category": "Sport & games",
+      "side": "both",
+      "question": "In what year did England and France meet in football for the very first time, a match England won 4–1 in Paris?",
+      "answer": "1923",
+      "accept": [],
+      "note": "England dominated the early years, winning 10 of the first 11 meetings before France grew into a football superpower.",
+      "source": "https://www.englandstats.com/matches.php?mid=134"
+    },
+    {
+      "category": "Food & drink",
+      "side": "france",
+      "question": "Socca, a thin pancake made from chickpea flour and baked in a wood-fired oven, is a famous street-food speciality of which French Riviera city?",
+      "answer": "Nice",
+      "accept": ["Nizza"],
+      "note": "Socca is a chickpea-flour pancake most closely associated with the old town of Nice.",
+      "source": "https://en.wikipedia.org/wiki/Socca_(food)"
+    },
+    {
+      "category": "Culture & the arts",
+      "side": "neutral",
+      "question": "Who directed the 1993 science-fiction film Jurassic Park?",
+      "answer": "Steven Spielberg",
+      "accept": ["Spielberg"],
+      "note": "Spielberg directed the original Jurassic Park, adapted from Michael Crichton's 1990 novel.",
+      "source": "https://en.wikipedia.org/wiki/Jurassic_Park"
+    },
+    {
+      "category": "Language & everyday life",
+      "side": "both",
+      "question": "A 'connoisseur' is an expert judge of taste. The word comes from an Old French verb meaning what?",
+      "answer": "To know",
+      "accept": ["know"],
+      "note": "English froze the 18th-century French spelling 'connoisseur' even after French itself reformed it to 'connaisseur'.",
+      "source": "https://www.etymonline.com/word/connoisseur"
+    },
+    {
+      "category": "History",
+      "side": "both",
+      "question": "The famous seafront promenade in Nice, the 'Promenade des Anglais', takes its name from wealthy winter visitors of which nationality?",
+      "answer": "English",
+      "accept": ["the English", "British"],
+      "note": "The name literally means 'Walkway of the English', after the British who wintered in Nice and helped fund the path from 1820.",
+      "source": "https://francetoday.com/travel/practical-information/read-the-signs-the-promenade-des-anglais-in-nice/"
+    },
+    {
+      "category": "Geography",
+      "side": "france",
+      "question": "The Gorges du Verdon, one of Europe's deepest canyons, reaches a maximum depth of roughly how many metres?",
+      "answer": "700 metres",
+      "accept": ["700", "700 m"],
+      "options": ["300 metres", "500 metres", "700 metres", "1,000 metres"],
+      "note": "The Verdon river has cut a limestone ravine up to about 700 metres deep between Castellane and Moustiers-Sainte-Marie.",
+      "source": "https://en.wikipedia.org/wiki/Verdon_Gorge"
+    },
+    {
+      "category": "Sport & games",
+      "side": "both",
+      "question": "Which France player scored two goals in stoppage time to beat England 2–1 in their group match at Euro 2004?",
+      "answer": "Zinedine Zidane",
+      "accept": ["Zidane"],
+      "note": "A free-kick and a penalty in added time snatched a win England had looked to have wrapped up.",
+      "source": "https://www.uefa.com/uefaeuro/history/news/025c-0f1723b8625e-3eecc479aa0c-1000--euro-classics-france-2-1-england/"
+    },
+    {
+      "category": "Food & drink",
+      "side": "france",
+      "question": "Pastis, the celebrated apéritif of Marseille, is flavoured mainly with which spice?",
+      "answer": "Aniseed",
+      "accept": ["Anise", "Star anise"],
+      "note": "Pastis is an anise-flavoured spirit traditionally served diluted with water, turning cloudy in the glass.",
+      "source": "https://www.marseille-tourisme.com/en/discover-marseille/gastronomy-in-marseille/culinary-specialities-of-marseille/pastis/"
+    },
+    {
+      "category": "Culture & the arts",
+      "side": "britain",
+      "question": "Which British actor played park founder John Hammond in the 1993 film Jurassic Park?",
+      "answer": "Richard Attenborough",
+      "accept": ["Sir Richard Attenborough", "Attenborough"],
+      "note": "Attenborough, already an Oscar-winning director for Gandhi, took the Hammond role after a long acting hiatus.",
+      "source": "https://en.wikipedia.org/wiki/John_Hammond_(Jurassic_Park)"
+    },
+    {
+      "category": "History",
+      "side": "france",
+      "question": "In 1309 the popes moved their residence from Rome to which city in the south of France, where seven popes then reigned until 1377?",
+      "answer": "Avignon",
+      "accept": [],
+      "note": "This period is known as the Avignon Papacy, and the popes' fortified Palais des Papes still dominates the city.",
+      "source": "https://www.britannica.com/event/Avignon-papacy"
+    },
+    {
+      "category": "Language & everyday life",
+      "side": "both",
+      "question": "Long before it meant an over-used phrase, a 'cliché' was originally what object in French printing?",
+      "answer": "A printing plate",
+      "accept": ["printing plate", "stereotype block"],
+      "options": ["A printing plate", "A camera shutter", "A paint brush", "A metal type case"],
+      "note": "The word is onomatopoeic, imitating the 'click' of the die striking molten metal to cast a reusable plate.",
+      "source": "https://www.etymonline.com/word/cliche"
+    },
+    {
+      "category": "Geography",
+      "side": "france",
+      "question": "The Camargue wetlands are famous for their wild white horses, sea salt, and which pink wading birds?",
+      "answer": "Flamingos",
+      "accept": ["Flamingoes", "Greater flamingos"],
+      "note": "The Camargue's saline lagoons are one of Europe's few nesting sites for the greater flamingo.",
+      "source": "https://tourduvalat.org/en/mediterranean-wetlands/zoom-sur-la-camargue/"
+    },
+    {
+      "category": "Language & everyday life",
+      "side": "both",
+      "question": "In French, 'un smoking' is a formal garment worn in the evening. What is it called in English?",
+      "answer": "A dinner jacket (tuxedo)",
+      "accept": ["dinner jacket", "tuxedo", "dinner suit"],
+      "options": ["A dinner jacket (tuxedo)", "A raincoat", "A pair of slippers", "A dressing gown"],
+      "note": "The French borrowed it from the Victorian 'smoking jacket', an indoor coat that evolved into formal evening wear.",
+      "source": "https://www.connexionfrance.com/magazine/why-do-the-french-call-tuxedos-un-smoking/129235"
+    },
+    {
+      "category": "Sport & games",
+      "side": "france",
+      "question": "In which year did the Stade de France, the French national stadium in Saint-Denis, open its doors?",
+      "answer": "1998",
+      "accept": [],
+      "note": "It was inaugurated on 28 January 1998 with a France–Spain friendly, months before France won the World Cup there.",
+      "source": "https://www.fff.fr/article/2050-28-janvier-1998-premiere-au-stade-de-france.html"
+    },
+    {
+      "category": "Food & drink",
+      "side": "france",
+      "question": "Provence is the world's leading producer of which colour of wine?",
+      "answer": "Rosé",
+      "accept": ["Rose", "Pink wine"],
+      "note": "The vast majority of Provence's wine output is rosé, making it the global leader in premium rosé.",
+      "source": "https://www.vinetur.com/en/provence-emerges-as-global-leader-in-premium-rose-wine-production-and-export.html"
+    },
+    {
+      "category": "History",
+      "side": "both",
+      "question": "Which British monarch regularly wintered on the French Riviera at Cimiez in Nice, where the Excelsior Regina Palace was built in 1897 to accommodate her?",
+      "answer": "Queen Victoria",
+      "accept": ["Victoria"],
+      "note": "Queen Victoria's stays made Nice a fashionable royal destination, and a marble statue of her still stands at Cimiez.",
+      "source": "https://www.explorenicecotedazur.com/en/culture/ancien-hotel-regina/"
+    },
+    {
+      "category": "Culture & the arts",
+      "side": "france",
+      "question": "The 2011 French film 'The Artist' won which top Academy Award, becoming the first mostly silent feature to do so since 1929?",
+      "answer": "Best Picture",
+      "accept": ["Academy Award for Best Picture", "Best Picture Oscar"],
+      "note": "'The Artist', by Michel Hazanavicius, won five Oscars including Best Picture and Best Actor for Jean Dujardin.",
+      "source": "https://www.britannica.com/topic/The-Artist"
+    },
+    {
+      "category": "Geography",
+      "side": "france",
+      "question": "The Pont Saint-Bénézet, the medieval 'Pont d'Avignon' of the famous song, was originally built with 22 arches. How many still stand today?",
+      "answer": "Four",
+      "accept": ["4"],
+      "options": ["Four", "Eight", "Twelve", "Twenty-two"],
+      "note": "Repeated Rhône floods destroyed most of the bridge, leaving just four of its original 22 arches.",
+      "source": "https://www.travelfranceonline.com/pont-saint-benezet-in-avignon/"
+    },
+    {
+      "category": "Sport & games",
+      "side": "both",
+      "question": "Bryan Robson scored against France at the start of England's 1982 World Cup opener after how many seconds — then a World Cup record?",
+      "answer": "27 seconds",
+      "accept": ["27"],
+      "options": ["11 seconds", "27 seconds", "44 seconds", "1 minute 3 seconds"],
+      "note": "England went on to win 3–1 in Bilbao, and Robson's record stood for 20 years.",
+      "source": "https://www.thefa.com/news/2015/jun/16/england-france-1982-bryan-robson-27-seconds"
+    },
+    {
+      "category": "Food & drink",
+      "side": "france",
+      "question": "The Provençal spread tapenade takes its name from 'tapenas', the local word for which ingredient?",
+      "answer": "Capers",
+      "accept": ["Caper"],
+      "options": ["Capers", "Olives", "Anchovies", "Garlic"],
+      "note": "Though olives dominate the paste, tapenade is named after the Provençal word for capers.",
+      "source": "https://en.wikipedia.org/wiki/Tapenade"
+    },
+    {
+      "category": "Culture & the arts",
+      "side": "neutral",
+      "question": "Who directed the 2015 film Jurassic World, the reboot set on Isla Nublar?",
+      "answer": "Colin Trevorrow",
+      "accept": ["Trevorrow"],
+      "options": ["Colin Trevorrow", "Steven Spielberg", "J.A. Bayona", "Joe Johnston"],
+      "note": "Trevorrow directed Jurassic World (2015), the fourth film in the franchise.",
+      "source": "https://en.wikipedia.org/wiki/Jurassic_World"
+    },
+    {
+      "category": "History",
+      "side": "france",
+      "question": "The Roman aqueduct bridge known as the Pont du Gard was built to carry water to which Provençal city, the Roman Nemausus?",
+      "answer": "Nîmes",
+      "accept": ["Nimes"],
+      "note": "The three-tiered bridge, nearly 49 metres high, crossed the river Gardon as part of a 50-kilometre aqueduct supplying Nîmes.",
+      "source": "https://en.wikipedia.org/wiki/Pont_du_Gard"
+    },
+    {
+      "category": "Language & everyday life",
+      "side": "both",
+      "question": "In France, when someone says they are going to 'faire du footing', what activity are they doing?",
+      "answer": "Jogging",
+      "accept": ["running", "going for a run"],
+      "note": "'Footing' is a French pseudo-anglicism for jogging; in English 'footing' actually means balance or a foothold.",
+      "source": "https://en.run-motion.com/jogging-running-jog-run-differences/"
+    },
+    {
+      "category": "Geography",
+      "side": "france",
+      "question": "The Calanques — a national park of narrow white limestone inlets on the Mediterranean — line the coast between Marseille and which small Provençal port town?",
+      "answer": "Cassis",
+      "accept": [],
+      "note": "The Parc National des Calanques stretches for about 20 km of limestone coast between Marseille and Cassis.",
+      "source": "https://www.marseille-tourisme.com/en/discover-marseille/nature/the-calanques-of-marseille/"
+    },
+    {
+      "category": "Sport & games",
+      "side": "both",
+      "question": "Which England forward scored both goals in the 2–0 win over France at Wembley in the 1966 World Cup group stage?",
+      "answer": "Roger Hunt",
+      "accept": ["Hunt"],
+      "options": ["Bobby Charlton", "Geoff Hurst", "Roger Hunt", "Jimmy Greaves"],
+      "note": "The victory sent hosts England through and knocked France out on their run to lifting the trophy.",
+      "source": "http://www.englandfootballonline.com/Seas1960-70/1965-66/M0406Fra1966.html"
+    },
+    {
+      "category": "Food & drink",
+      "side": "france",
+      "question": "The calisson, a diamond-shaped sweet from Aix-en-Provence, is made from ground almonds and which candied fruit?",
+      "answer": "Melon",
+      "accept": ["Candied melon"],
+      "options": ["Melon", "Cherry", "Fig", "Apricot"],
+      "note": "Candied melon makes up the bulk of the candied fruit in a genuine calisson d'Aix.",
+      "source": "https://www.provenceweb.fr/e/gastronomy/provencal-recipes/calisson-aix.htm"
+    },
+    {
+      "category": "Culture & the arts",
+      "side": "britain",
+      "question": "Released in 1962 and starring Sean Connery, what was the title of the first James Bond film?",
+      "answer": "Dr. No",
+      "accept": ["Doctor No"],
+      "note": "'Dr. No', directed by Terence Young from Ian Fleming's novel, launched the long-running British Bond series.",
+      "source": "https://en.wikipedia.org/wiki/Dr._No_(film)"
+    },
+    {
+      "category": "Language & everyday life",
+      "side": "both",
+      "question": "French children play 'le baby-foot'. What is this game called in English?",
+      "answer": "Table football",
+      "accept": ["foosball", "table soccer"],
+      "note": "A pseudo-anglicism from 'baby' plus 'foot' (football); its name is credited to French inventor Lucien Rosengart in the 1930s.",
+      "source": "https://en.wiktionary.org/wiki/baby-foot"
+    },
+    {
+      "category": "History",
+      "side": "both",
+      "question": "Which British statesman and former Lord Chancellor popularised Cannes as a resort after settling there in 1834 and building the Villa Éléonore-Louise?",
+      "answer": "Lord Brougham",
+      "accept": ["Brougham", "Henry Brougham"],
+      "options": ["Lord Brougham", "Lord Palmerston", "Lord Byron", "Lord Salisbury"],
+      "note": "Brougham's enthusiasm for the town's mild winters drew British and European aristocracy and helped turn a fishing village into a glamorous resort.",
+      "source": "https://iconicriviera.com/cannes-history-celebrity-founder"
+    }
+  ]
+}

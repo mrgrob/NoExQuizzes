@@ -80,6 +80,27 @@ the same category.
 - **A note per question**: one sentence of colour for the host to read out
   after the reveal.
 
+### Topics that play well (a growing pool)
+
+Beyond the obvious, these have landed well and are fair game (each still routed
+through one of the six categories):
+
+- **England vs France football** — the two national teams, their meetings,
+  players, stadiums and history (Sport & games).
+- **Film**, including big franchises the family enjoys such as the **Jurassic
+  Park / Jurassic World** films, plus Franco-British cinema (Culture & the
+  arts). Non-Franco-British film facts take `side: "neutral"`.
+- **French ↔ English loanwords, both directions** — French words in English and
+  English/franglais words in French (Language & everyday life).
+- **Provence** — its geography, food and drink, and history (Geography, Food &
+  drink, History).
+- **Cultural differences between Britain and France** — everyday customs and
+  institutions, kept to factual, single-answer points (Language & everyday
+  life).
+
+Add to this list as new themes prove themselves. A themed night can lean the
+whole round toward a few of these while still filling all six categories.
+
 ### 5. Don't repeat past nights
 Read **every** existing `rounds/round-*.json` first and avoid those questions
 and close variations of them.
@@ -137,9 +158,32 @@ and close variations of them.
 ```
 
 - `id` is `"round-" + number`.
-- `side` is one of `"france"`, `"britain"`, `"both"`.
+- `side` is one of `"france"`, `"britain"`, `"both"`, or `"neutral"`. Use
+  `"neutral"` only for a question that is genuinely neither French nor British
+  (e.g. a Jurassic Park film fact) — the player shows it with a centred, grey
+  marker. Prefer a real Franco-British angle whenever one honestly exists.
 - `accept` is a list (may be empty) of extra answers the host should accept.
 - `source` must be a real URL you opened, unique within the round on host+path.
+- `options` is **optional**: for a **difficult** question you may add an array of
+  **exactly 4** short answer choices, including the correct `answer` verbatim
+  (or one of its `accept` forms). The player then shows the four choices and
+  highlights the right one at the reveal. Leave it out for open-answer
+  questions. Use it for the harder facts, not the easy ones — a round of all
+  multiple-choice is too easy; a few well-placed ones make the fiendish
+  questions fair.
+
+Example with options:
+
+```json
+{
+  "category": "Geography", "side": "france",
+  "question": "The Gorges du Verdon reaches a maximum depth of roughly how many metres?",
+  "answer": "700 metres", "accept": ["700", "700 m"],
+  "options": ["300 metres", "500 metres", "700 metres", "1,000 metres"],
+  "note": "The Verdon has cut a limestone ravine up to about 700 m deep.",
+  "source": "https://en.wikipedia.org/wiki/Verdon_Gorge"
+}
+```
 
 ## If in doubt
 

@@ -29,7 +29,7 @@ CATEGORIES = {
     "Sport & games",
     "Language & everyday life",
 }
-SIDES = {"france", "britain", "both"}
+SIDES = {"france", "britain", "both", "neutral"}
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 ROUNDS_DIR = os.path.join(ROOT, "rounds")
@@ -77,6 +77,19 @@ def check_round(path, errors):
         side = q.get("side")
         if side and side not in SIDES:
             errors.append(f"{where}: side must be one of {sorted(SIDES)}, got '{side}'")
+
+        opts = q.get("options")
+        if opts is not None:
+            if not isinstance(opts, list) or len(opts) != 4:
+                errors.append(f"{where}: 'options' must be a list of exactly 4 choices")
+            elif any((not isinstance(o, str) or not o.strip()) for o in opts):
+                errors.append(f"{where}: every option must be a non-empty string")
+            else:
+                onorm = {o.strip().lower() for o in opts}
+                acc = {str(q.get("answer", "")).strip().lower()}
+                acc |= {str(a).strip().lower() for a in (q.get("accept") or [])}
+                if not (onorm & acc):
+                    errors.append(f"{where}: no option matches the answer/accept values")
 
         src = q.get("source")
         if src:

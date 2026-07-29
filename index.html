@@ -131,6 +131,16 @@
   .question.small{font-size:clamp(20px,5vw,28px);color:var(--ink-dim);line-height:1.2;margin-bottom:14px}
   .qanim{animation:qin .22s ease-out}
   @keyframes qin{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:none}}
+  .question.hasopts{font-size:clamp(26px,6vw,40px)}
+
+  /* Multiple-choice options */
+  .options{display:flex;flex-direction:column;gap:9px;margin-top:16px}
+  .opt{display:flex;align-items:center;gap:12px;padding:12px 14px;border:1.5px solid var(--line);border-radius:12px;background:var(--surface);font-size:16px;transition:border-color .2s ease,background-color .2s ease}
+  .opt .lt{flex:0 0 auto;width:26px;height:26px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-family:"JetBrains Mono",monospace;font-size:13px;font-weight:700;color:var(--ink-dim);border:1.5px solid var(--line)}
+  .opt .ot{flex:1;min-width:0}
+  .opt.correct{border-color:var(--positive);background:color-mix(in srgb,var(--positive) 12%,transparent)}
+  .opt.correct .lt{background:var(--positive);color:#fff;border-color:var(--positive)}
+  .opt.correct::after{content:"✓";color:var(--positive);font-weight:700;font-size:18px}
 
   .reveal{margin-top:8px}
   .alabel{font-family:"JetBrains Mono",monospace;font-size:10px;letter-spacing:2px;text-transform:uppercase;color:var(--ink-dim);margin-bottom:6px}
@@ -251,6 +261,7 @@
 
       <div class="qbody" id="qbody">
         <div class="question serif" id="q-text">…</div>
+        <div class="options hidden" id="q-options"></div>
         <div class="reveal hidden" id="reveal">
           <div class="alabel">Answer</div>
           <div class="answer serif" id="a-text"></div>
@@ -345,8 +356,9 @@
 <script>
 "use strict";
 (function(){
-  var SIDE_COLOR = { france:"var(--france)", britain:"var(--britain)", both:"var(--both)" };
-  var SIDE_LABEL = { france:"France", britain:"Britain", both:"France + Britain" };
+  var SIDE_COLOR = { france:"var(--france)", britain:"var(--britain)", both:"var(--both)", neutral:"var(--ink-dim)" };
+  var SIDE_LABEL = { france:"France", britain:"Britain", both:"France + Britain", neutral:"General" };
+  var VALID_SIDE = { france:1, britain:1, both:1, neutral:1 };
   var CAT_TINT = {
     "History":"var(--tint-1)", "Food & drink":"var(--tint-2)", "Geography":"var(--tint-3)",
     "Culture & the arts":"var(--tint-4)", "Sport & games":"var(--tint-5)", "Language & everyday life":"var(--tint-6)"
@@ -374,6 +386,25 @@
   function esc(s){ return String(s==null?"":s).replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;").replace(/"/g,"&quot;"); }
   function hostPath(url){ try{ var u=new URL(url); return u.host.replace(/^www\./,"")+u.pathname.replace(/\/$/,""); }catch(e){ return url; } }
   function reduceMotion(){ return window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches; }
+  function norm(s){ return String(s==null?"":s).trim().toLowerCase(); }
+
+  // Render multiple-choice options (if the question has any). Correct choice is
+  // highlighted only once the answer is visible (marking phase / after reveal).
+  function renderOptions(qq){
+    var box=document.getElementById("q-options");
+    if (!qq.options || !qq.options.length){ box.classList.add("hidden"); box.innerHTML=""; return; }
+    var accepted={}; [qq.answer].concat(qq.accept||[]).forEach(function(a){ accepted[norm(a)]=1; });
+    var showCorrect = (state.phase==="marking") && (settings.mode==="end" || state.revealed);
+    var letters="ABCDEFGH";
+    box.innerHTML="";
+    qq.options.forEach(function(opt,idx){
+      var d=document.createElement("div"); d.className="opt";
+      if (showCorrect && accepted[norm(opt)]) d.classList.add("correct");
+      d.innerHTML='<span class="lt">'+letters.charAt(idx)+'</span><span class="ot">'+esc(opt)+'</span>';
+      box.appendChild(d);
+    });
+    box.classList.remove("hidden");
+  }
 
   /* ---------------- Round list ---------------- */
   function loadList(){
@@ -446,12 +477,12 @@
 
   function renderQuestion(){
     var qq=q();
-    var side = (qq.side==="france"||qq.side==="britain")?qq.side:"both";
+    var side = VALID_SIDE[qq.side] ? qq.side : "both";
     document.documentElement.style.setProperty("--side", SIDE_COLOR[side]);
     document.documentElement.style.setProperty("--tint", CAT_TINT[qq.category]||"var(--accent)");
 
-    document.getElementById("lab-fr").classList.toggle("on", side!=="britain");
-    document.getElementById("lab-gb").classList.toggle("on", side!=="france");
+    document.getElementById("lab-fr").classList.toggle("on", side==="france"||side==="both");
+    document.getElementById("lab-gb").classList.toggle("on", side==="britain"||side==="both");
 
     document.getElementById("q-tag").textContent=qq.category||"";
     document.getElementById("q-side").textContent=SIDE_LABEL[side];
@@ -460,7 +491,9 @@
     var qtext=document.getElementById("q-text");
     qtext.textContent=qq.question||"";
     qtext.classList.toggle("small", state.phase==="marking");
+    qtext.classList.toggle("hasopts", !!(qq.options&&qq.options.length) && state.phase!=="marking");
     if (!reduceMotion()){ qtext.classList.remove("qanim"); void qtext.offsetWidth; qtext.classList.add("qanim"); }
+    renderOptions(qq);
 
     // answer block
     document.getElementById("a-text").textContent=qq.answer||"";
