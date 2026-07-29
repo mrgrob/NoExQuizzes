@@ -1,5 +1,12 @@
 [
   {
+    "id": "round-2",
+    "number": 2,
+    "title": "Round 2 — Un soir en France",
+    "written": "2026-07-29",
+    "count": 30
+  },
+  {
     "id": "round-1",
     "number": 1,
     "title": "Round 1 — Across the Channel",

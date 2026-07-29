@@ -1,0 +1,278 @@
+{
+  "id": "round-2",
+  "number": 2,
+  "title": "Round 2 — Un soir en France",
+  "written": "2026-07-29",
+  "questions": [
+    {
+      "category": "Food & drink",
+      "side": "france",
+      "question": "The soft cheese Camembert takes its name from a village in which French region?",
+      "answer": "Normandy",
+      "accept": ["Normandie", "Camembert de Normandie"],
+      "note": "Camembert is named after a hamlet in Normandy, and Camembert de Normandie has held AOC protection since 1983.",
+      "source": "https://en.normandie-tourisme.fr/hidden-gems/camembert/"
+    },
+    {
+      "category": "History",
+      "side": "both",
+      "question": "Which British commander led the allied army that defeated Napoleon at the Battle of Waterloo in 1815?",
+      "answer": "The Duke of Wellington",
+      "accept": ["Duke of Wellington", "Wellington", "Arthur Wellesley"],
+      "note": "Wellington called it 'the nearest-run thing you ever saw', rescued late in the day by Blücher's Prussians.",
+      "source": "https://www.britannica.com/event/Battle-of-Waterloo"
+    },
+    {
+      "category": "Geography",
+      "side": "france",
+      "question": "Which large Alpine lake does the River Rhône flow through before heading down into France?",
+      "answer": "Lake Geneva",
+      "accept": ["Lac Léman", "Léman", "Lake Léman"],
+      "note": "The Rhône rises in the Swiss Alps and passes through Lake Geneva before crossing into France towards Lyon.",
+      "source": "https://www.britannica.com/place/Rhone-River"
+    },
+    {
+      "category": "Sport & games",
+      "side": "both",
+      "question": "A British car marque later famed for its 'Bentley Boys' took part in the very first 24 Hours of Le Mans in 1923. Which marque?",
+      "answer": "Bentley",
+      "accept": [],
+      "note": "Bentley entered the inaugural Le Mans endurance race in 1923 and went on to win it repeatedly in the 1920s.",
+      "source": "https://en.wikipedia.org/wiki/1923_24_Hours_of_Le_Mans"
+    },
+    {
+      "category": "Culture & the arts",
+      "side": "france",
+      "question": "Which French sculptor created the celebrated bronze 'The Thinker' (Le Penseur)?",
+      "answer": "Auguste Rodin",
+      "accept": ["Rodin"],
+      "note": "Rodin conceived The Thinker around 1880 as part of his monumental 'Gates of Hell' before exhibiting it as a standalone work.",
+      "source": "https://www.nga.gov/artworks/1005-thinker-le-penseur"
+    },
+    {
+      "category": "Language & everyday life",
+      "side": "both",
+      "question": "The English word 'silhouette' comes from the name of which 18th-century French finance minister?",
+      "answer": "Étienne de Silhouette",
+      "accept": ["Silhouette", "de Silhouette", "Etienne de Silhouette"],
+      "note": "His cheap, austere policies as Louis XV's controller-general in 1759 led shadow-profile portraits to be mocked as being done 'à la Silhouette'.",
+      "source": "https://www.britannica.com/biography/Etienne-de-Silhouette"
+    },
+    {
+      "category": "Geography",
+      "side": "france",
+      "question": "In which city on the French island of Corsica was Napoleon Bonaparte born?",
+      "answer": "Ajaccio",
+      "accept": [],
+      "note": "Ajaccio, the capital of Corsica, was Napoleon's birthplace on 15 August 1769.",
+      "source": "https://www.britannica.com/place/Corsica"
+    },
+    {
+      "category": "History",
+      "side": "both",
+      "question": "The medieval 'Auld Alliance', first sealed in 1295, bound France in mutual defence against England with which other country?",
+      "answer": "Scotland",
+      "accept": ["Kingdom of Scotland"],
+      "note": "The France–Scotland pact against a common English enemy endured, on and off, for over 250 years.",
+      "source": "https://www.historic-uk.com/HistoryUK/HistoryofScotland/The-Auld-Alliance-France-Scotland/"
+    },
+    {
+      "category": "Culture & the arts",
+      "side": "france",
+      "question": "Gustave Eiffel built the Eiffel Tower as the entrance arch for which 1889 Paris event marking the centenary of the French Revolution?",
+      "answer": "The Exposition Universelle",
+      "accept": ["Exposition Universelle", "1889 World's Fair", "World's Fair", "Universal Exhibition"],
+      "note": "Completed in March 1889, the tower served as the gateway to the Exposition Universelle celebrating 100 years since the Revolution.",
+      "source": "https://www.toureiffel.paris/en/the-monument/universal-exhibition"
+    },
+    {
+      "category": "Food & drink",
+      "side": "both",
+      "question": "'Claret' is the traditional British name for red wine from which French wine region?",
+      "answer": "Bordeaux",
+      "accept": ["Bordeaux region"],
+      "note": "The British have called red Bordeaux 'claret' since medieval times, when Bordeaux belonged to the English crown through Eleanor of Aquitaine.",
+      "source": "https://www.winespectator.com/articles/why-are-bordeaux-wines-called-claret-46560"
+    },
+    {
+      "category": "Sport & games",
+      "side": "france",
+      "question": "The Roland-Garros tennis stadium in Paris is named after Roland Garros, a pioneer in what field?",
+      "answer": "Aviation",
+      "accept": ["flying", "aviator", "pilot", "flight"],
+      "note": "Roland Garros made the first flight across the Mediterranean Sea in 1913, and the Paris tennis stadium was named in his honour in 1928.",
+      "source": "https://fai.org/news/centenary-first-flight-across-mediterranean-sea-roland-garros"
+    },
+    {
+      "category": "Language & everyday life",
+      "side": "both",
+      "question": "The word 'sabotage' derives from the French 'sabot', which is what kind of footwear?",
+      "answer": "A wooden shoe",
+      "accept": ["wooden shoe", "clog", "wooden clog", "clogs"],
+      "note": "'Sabot' is a peasant's wooden clog, and 'saboter' meant to work clumsily or noisily, as if in heavy wooden shoes.",
+      "source": "https://www.etymonline.com/word/sabotage"
+    },
+    {
+      "category": "History",
+      "side": "france",
+      "question": "When a Paris crowd stormed the Bastille on 14 July 1789, how many prisoners were actually being held inside?",
+      "answer": "Seven",
+      "accept": ["7", "seven prisoners"],
+      "note": "The fortress that symbolised royal tyranny held just seven inmates that day, including four forgers and a lone aristocrat.",
+      "source": "https://www.britannica.com/event/storming-of-the-Bastille"
+    },
+    {
+      "category": "Food & drink",
+      "side": "both",
+      "question": "Which town in south-west France is traditionally regarded as the birthplace of the bean-and-meat stew cassoulet?",
+      "answer": "Castelnaudary",
+      "accept": [],
+      "note": "Legend ties the dish to Castelnaudary's defence against Edward the Black Prince during the Hundred Years' War.",
+      "source": "https://www.connexionfrance.com/article/Mag/French-Facts/Cassoulet-was-invented-to-fend-off-the-English"
+    },
+    {
+      "category": "Sport & games",
+      "side": "france",
+      "question": "France won its first football World Cup in 1998, beating which country 3–0 in the final in Paris?",
+      "answer": "Brazil",
+      "accept": [],
+      "note": "France beat defending champions Brazil 3–0 at the Stade de France on 12 July 1998, with Zinedine Zidane scoring twice.",
+      "source": "https://en.wikipedia.org/wiki/1998_FIFA_World_Cup_final"
+    },
+    {
+      "category": "Geography",
+      "side": "both",
+      "question": "Into which body of water does the River Seine flow at Le Havre?",
+      "answer": "The English Channel",
+      "accept": ["English Channel", "La Manche"],
+      "note": "The Seine empties into the English Channel (La Manche) at Le Havre, France's largest international shipping port.",
+      "source": "https://www.worldatlas.com/rivers/seine-river.html"
+    },
+    {
+      "category": "Culture & the arts",
+      "side": "france",
+      "question": "Which defiant 1960 Édith Piaf song has a title meaning 'No, I regret nothing'?",
+      "answer": "Non, je ne regrette rien",
+      "accept": ["Je ne regrette rien", "No Regrets"],
+      "note": "Composed by Charles Dumont, Piaf dedicated her recording to the French Foreign Legion.",
+      "source": "https://en.wikipedia.org/wiki/Non,_je_ne_regrette_rien"
+    },
+    {
+      "category": "Language & everyday life",
+      "side": "both",
+      "question": "The word 'chauffeur' comes from the French verb 'chauffer', which means what?",
+      "answer": "To heat",
+      "accept": ["to warm", "heat", "to warm up"],
+      "note": "Early motor-cars were steam-driven, so a 'chauffeur' was literally a 'stoker' who kept the engine hot before the word came to mean a paid driver.",
+      "source": "https://www.saturdayeveningpost.com/2019/12/in-a-word-stoked-for-a-chauffeur/"
+    },
+    {
+      "category": "History",
+      "side": "france",
+      "question": "In which year did Napoleon Bonaparte crown himself Emperor of the French at Notre-Dame?",
+      "answer": "1804",
+      "accept": ["2 December 1804", "December 1804"],
+      "note": "He famously took the crown from Pope Pius VII and placed it on his own head.",
+      "source": "https://www.history.com/this-day-in-history/december-2/napoleon-crowned-emperor"
+    },
+    {
+      "category": "Geography",
+      "side": "both",
+      "question": "The Channel Tunnel runs under La Manche from Folkestone in Kent to which French terminal near Calais?",
+      "answer": "Coquelles",
+      "accept": ["Calais"],
+      "note": "The French end of the Channel Tunnel is at Coquelles in the Pas-de-Calais, linked to Folkestone in England.",
+      "source": "https://en.wikipedia.org/wiki/Eurotunnel_Calais_Terminal"
+    },
+    {
+      "category": "Food & drink",
+      "side": "france",
+      "question": "The classic French dessert tarte Tatin is a caramelised upside-down tart made with which fruit?",
+      "answer": "Apples",
+      "accept": ["apple"],
+      "note": "The tart is said to have been created by accident by the Tatin sisters at their hotel in Lamotte-Beuvron.",
+      "source": "https://www.pbs.org/food/stories/the-history-of-tarte-tatin"
+    },
+    {
+      "category": "Culture & the arts",
+      "side": "both",
+      "question": "On which British Channel Island did Victor Hugo live in exile and finish 'Les Misérables', at his home Hauteville House?",
+      "answer": "Guernsey",
+      "accept": ["Isle of Guernsey"],
+      "note": "Hugo bought Hauteville House in St Peter Port in 1856 and completed Les Misérables there in 1862 during his exile from Napoleon III's France.",
+      "source": "https://www.maisonsvictorhugo.paris.fr/en/guernesey/house"
+    },
+    {
+      "category": "Sport & games",
+      "side": "france",
+      "question": "The first-ever Winter Olympic Games, held in 1924, took place in which French Alpine town?",
+      "answer": "Chamonix",
+      "accept": ["Chamonix-Mont-Blanc"],
+      "note": "The 1924 Chamonix Games were the first Winter Olympics, recognised as such retrospectively by the IOC.",
+      "source": "https://www.britannica.com/event/Chamonix-1924-Olympic-Winter-Games"
+    },
+    {
+      "category": "Language & everyday life",
+      "side": "both",
+      "question": "When the word 'restaurant' first appeared in 18th-century France, what restorative food did it originally refer to?",
+      "answer": "Broth",
+      "accept": ["soup", "a restorative broth", "meat broth"],
+      "note": "From the French 'restaurer' (to restore), a 'restaurant' was first a fortifying broth before the word came to mean the eating place itself.",
+      "source": "https://www.merriam-webster.com/wordplay/the-history-of-restaurant"
+    },
+    {
+      "category": "History",
+      "side": "france",
+      "question": "Which French emperor was captured by the Prussians at the Battle of Sedan in 1870?",
+      "answer": "Napoleon III",
+      "accept": ["Napoleon the Third", "Louis-Napoléon", "Louis Napoleon"],
+      "note": "His surrender toppled the Second Empire and ushered in the Third Republic two days later.",
+      "source": "https://www.britannica.com/event/Battle-of-Sedan"
+    },
+    {
+      "category": "Culture & the arts",
+      "side": "both",
+      "question": "In Jules Verne's 'Around the World in Eighty Days', at which London gentlemen's club does Phileas Fogg make his wager to circle the globe?",
+      "answer": "The Reform Club",
+      "accept": ["Reform Club"],
+      "note": "Fogg bets fellow members £20,000 that he can circumnavigate the world in eighty days, setting out with his French valet Passepartout.",
+      "source": "https://www.sparknotes.com/lit/around-the-world-in-80-days/summary/"
+    },
+    {
+      "category": "Food & drink",
+      "side": "france",
+      "question": "Cognac brandy is distilled almost entirely from which white grape variety?",
+      "answer": "Ugni Blanc",
+      "accept": ["Ugni", "Trebbiano", "Saint-Émilion"],
+      "note": "Ugni Blanc, known in Italy as Trebbiano, accounts for over 98% of the Cognac vineyard.",
+      "source": "https://www.cognac.fr/en/discover/the-cognac-region/cognac-grapes-varieties/"
+    },
+    {
+      "category": "Geography",
+      "side": "france",
+      "question": "Founded by Greek settlers around 600 BC as Massalia, which Mediterranean port is France's oldest city?",
+      "answer": "Marseille",
+      "accept": ["Marseilles"],
+      "note": "Marseille was founded by Greeks from Phocaea around 600 BC as Massalia, making it France's oldest city and its second-largest today.",
+      "source": "https://greekreporter.com/2024/09/12/greek-origins-marseille-france-oldest-city/"
+    },
+    {
+      "category": "Sport & games",
+      "side": "both",
+      "question": "The French Open is the only one of tennis's four Grand Slam tournaments played on which court surface?",
+      "answer": "Clay",
+      "accept": ["red clay"],
+      "note": "Unlike Wimbledon's grass, the French Open has been contested on outdoor clay courts since 1928, the only Grand Slam to use the surface.",
+      "source": "https://refrsports.com/blog/french-open-rules-explained"
+    },
+    {
+      "category": "Language & everyday life",
+      "side": "france",
+      "question": "In standard French, the number 80 is 'quatre-vingts', which literally means what?",
+      "answer": "Four twenties",
+      "accept": ["four twenty", "4 twenties"],
+      "note": "French kept a base-20 count of Celtic origin, so 80 is 'four twenties' rather than a distinct word like the Belgian and Swiss 'octante'.",
+      "source": "https://www.thelocal.fr/20190320/so-how-did-the-french-end-up-with-their-crazy-numbers"
+    }
+  ]
+}
