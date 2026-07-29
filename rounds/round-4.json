@@ -1,0 +1,290 @@
+{
+  "id": "round-4",
+  "number": 4,
+  "title": "Round 4 — Deep Cuts: Provence, Dinos & British Rock",
+  "written": "2026-07-29",
+  "questions": [
+    {
+      "category": "UK pop & rock",
+      "side": "britain",
+      "question": "At which London stadium did Queen play their famous 20-minute Live Aid set on 13 July 1985?",
+      "answer": "Wembley Stadium",
+      "accept": ["Wembley"],
+      "note": "Queen's Live Aid set was later voted the greatest live rock performance of all time.",
+      "source": "https://en.wikipedia.org/wiki/Queen%27s_performance_at_Live_Aid"
+    },
+    {
+      "category": "Geography",
+      "side": "france",
+      "question": "Fontaine-de-Vaucluse, the immense spring feeding the River Sorgue, gives its name to a whole type of powerful rising karst spring. What adjective describes such springs worldwide?",
+      "answer": "Vauclusian",
+      "accept": ["vauclusienne", "Vauclusian spring", "source vauclusienne"],
+      "note": "Hydrogeologists call rising karst springs 'Vauclusian' after Fontaine-de-Vaucluse, the largest karst spring in metropolitan France.",
+      "source": "https://www.showcaves.com/english/fr/springs/Vaucluse.html"
+    },
+    {
+      "category": "Culture & the arts",
+      "side": "neutral",
+      "question": "In both Crichton's novel and the 1993 Jurassic Park film, the automated park tour is voiced by a real, named stage-and-screen actor whom Hammond 'spared no expense' to hire. Who was he?",
+      "answer": "Richard Kiley",
+      "accept": [],
+      "options": ["Richard Kiley", "Charlton Heston", "Richard Harris", "José Ferrer"],
+      "note": "The novel names the genuine Richard Kiley as the tour narrator — the one expense Hammond really did splash on.",
+      "source": "https://jurassicpark.fandom.com/wiki/Richard_Kiley"
+    },
+    {
+      "category": "Food & drink",
+      "side": "france",
+      "question": "The 'Four des Navettes' (1781), Marseille's oldest bakery, stands on the old sacred way leading to which Marseille abbey?",
+      "answer": "Saint-Victor",
+      "accept": ["Abbaye Saint-Victor", "Abbey of Saint-Victor"],
+      "note": "The boat-shaped orange-blossom navettes, blessed at Candlemas, evoke the boat of the holy Marys and are tied to the Abbaye Saint-Victor.",
+      "source": "https://tourisme-marseille.com/fiche/four-des-navettes-jean-claude-et-nicolas-imbert-136-rue-sainte-13007-marseille/"
+    },
+    {
+      "category": "History",
+      "side": "both",
+      "question": "On what date in 1944 did the Allies launch Operation Dragoon, the amphibious landing on the coast of Provence known as the 'second D-Day'?",
+      "answer": "15 August 1944",
+      "accept": ["August 15, 1944", "15/08/1944"],
+      "options": ["6 June 1944", "15 August 1944", "8 September 1943", "25 August 1944"],
+      "note": "Dragoon landed American, French and Allied forces between Le Lavandou and Saint-Raphaël to open a second front in southern France.",
+      "source": "https://www.nationalww2museum.org/war/articles/operation-dragoon-invasion-southern-france"
+    },
+    {
+      "category": "Language & everyday life",
+      "side": "both",
+      "question": "English speakers say 'walkie-talkie'; in French the same handheld two-way radio is known by what name, with the two halves swapped round?",
+      "answer": "talkie-walkie",
+      "accept": ["un talkie-walkie"],
+      "note": "French simply reverses the order of the English original.",
+      "source": "https://www.collinsdictionary.com/dictionary/french-english/talkie-walkie"
+    },
+    {
+      "category": "Geography",
+      "side": "france",
+      "question": "Thanks largely to the Camargue within its territory, Arles is mainland France's largest commune by area. Roughly how large is it?",
+      "answer": "759 km²",
+      "accept": ["759", "about 760 km²", "758.93 km²"],
+      "options": ["759 km²", "260 km²", "1,180 km²", "480 km²"],
+      "note": "Arles covers roughly 759 km² — by far the largest commune in metropolitan France, despite only about 50,000 residents.",
+      "source": "https://en.wikipedia.org/wiki/Arles"
+    },
+    {
+      "category": "UK pop & rock",
+      "side": "both",
+      "question": "Which British-born actress and singer recorded the 1969 duet 'Je t'aime... moi non plus' with Serge Gainsbourg?",
+      "answer": "Jane Birkin",
+      "accept": [],
+      "note": "London-born Jane Birkin's duet topped the UK chart — the first foreign-language song to do so — despite being banned in several countries.",
+      "source": "https://en.wikipedia.org/wiki/Je_t%27aime..._moi_non_plus"
+    },
+    {
+      "category": "Food & drink",
+      "side": "france",
+      "question": "The AOP black olives of Nyons — France's first olive appellation (1994) — are made exclusively from which single olive variety?",
+      "answer": "Tanche",
+      "accept": ["La Tanche"],
+      "options": ["Tanche", "Picholine", "Lucques", "Aglandau"],
+      "note": "Nyons olives and oil use only the wrinkled, cocoa-and-truffle-scented Tanche, grown in the Baronnies of northern Provence.",
+      "source": "https://www.nyons-aoc.com/variete-emblematique-baronnies-provencales-olive-noire/"
+    },
+    {
+      "category": "Culture & the arts",
+      "side": "britain",
+      "question": "In The Lost World: Jurassic Park (1997), which British actor played the big-game hunter Roland Tembo, who comes to Isla Sorna hoping to bag a male Tyrannosaurus?",
+      "answer": "Pete Postlethwaite",
+      "accept": ["Peter Postlethwaite", "Postlethwaite"],
+      "note": "Spielberg cast the Lancashire-born Postlethwaite to embody the 'Great White Hunter' archetype in the sequel.",
+      "source": "https://jurassicpark.fandom.com/wiki/Roland_Tembo"
+    },
+    {
+      "category": "History",
+      "side": "france",
+      "question": "In which year did the Provençal poet Frédéric Mistral win the Nobel Prize in Literature for reviving the Provençal language?",
+      "answer": "1904",
+      "accept": [],
+      "note": "Mistral shared the 1904 Nobel and founded the Félibrige society to preserve Provençal language and culture.",
+      "source": "https://www.nobelprize.org/prizes/literature/1904/summary/"
+    },
+    {
+      "category": "Language & everyday life",
+      "side": "france",
+      "question": "On a French restaurant menu, which course is 'une entrée'?",
+      "answer": "The starter",
+      "accept": ["starter", "first course", "appetizer"],
+      "note": "In France 'entrée' means the first course, unlike in the United States where it means the main course.",
+      "source": "https://en.wikipedia.org/wiki/Entr%C3%A9e"
+    },
+    {
+      "category": "UK pop & rock",
+      "side": "britain",
+      "question": "At which London studios did Pink Floyd record their 1973 album 'The Dark Side of the Moon'?",
+      "answer": "Abbey Road Studios",
+      "accept": ["Abbey Road", "EMI Studios"],
+      "note": "The album was recorded in 1972–73 at EMI Studios, now world-famous as Abbey Road Studios.",
+      "source": "https://en.wikipedia.org/wiki/The_Dark_Side_of_the_Moon"
+    },
+    {
+      "category": "Geography",
+      "side": "france",
+      "question": "Cézanne painted the Montagne Sainte-Victoire endlessly, but its true summit is not the conspicuous Croix de Provence. What is the ridge's actual highest peak called?",
+      "answer": "Pic des Mouches",
+      "accept": ["Le Pic des Mouches"],
+      "note": "The Pic des Mouches, at 1,011 m, is the real high point, well east of the more visible Croix de Provence.",
+      "source": "https://en.wikipedia.org/wiki/Montagne_Sainte-Victoire"
+    },
+    {
+      "category": "Culture & the arts",
+      "side": "neutral",
+      "question": "The Indominus rex in Jurassic World can camouflage its skin. Which animal's DNA, spliced in by Dr Henry Wu, gave it the colour-changing chromatophore cells?",
+      "answer": "Cuttlefish",
+      "accept": [],
+      "options": ["Cuttlefish", "Chameleon", "Octopus", "Squid"],
+      "note": "Cuttlefish genes, added to help it withstand rapid growth, also let the hybrid change skin colour and blend in.",
+      "source": "https://jurassicpark.fandom.com/wiki/Cuttlefish"
+    },
+    {
+      "category": "Food & drink",
+      "side": "france",
+      "question": "A red Bandol AOC wine must contain at least what minimum proportion of the Mourvèdre grape?",
+      "answer": "50%",
+      "accept": ["50", "fifty percent"],
+      "options": ["20%", "50%", "80%", "95%"],
+      "note": "Bandol is Mourvèdre's great French stronghold, requiring at least 50% in reds and rosés, with top estates going far higher.",
+      "source": "https://www.vinadomus.fr/aoc-bandol"
+    },
+    {
+      "category": "History",
+      "side": "both",
+      "question": "In 1793 a young Napoleon Bonaparte first made his name by driving a British-led fleet out of which fortified French Mediterranean naval port?",
+      "answer": "Toulon",
+      "accept": [],
+      "note": "French royalists had handed Toulon to a British fleet under Admiral Samuel Hood; Bonaparte's artillery forced its withdrawal in December 1793.",
+      "source": "https://www.britannica.com/event/Siege-of-Toulon"
+    },
+    {
+      "category": "Language & everyday life",
+      "side": "both",
+      "question": "In a French hair salon, if you ask for 'un brushing', what are you getting?",
+      "answer": "A blow-dry",
+      "accept": ["blow-dry", "blow dry", "blow-drying"],
+      "note": "'Brushing' is a French anglicism for drying and styling the hair with a round brush and a hairdryer.",
+      "source": "https://www.larousse.fr/dictionnaires/francais/Brushing/11527"
+    },
+    {
+      "category": "Geography",
+      "side": "france",
+      "question": "The Étang de Berre, the great brackish lagoon west of Marseille, meets the Mediterranean through a single narrow shipping channel at Martigues. What is that channel called?",
+      "answer": "Canal de Caronte",
+      "accept": ["Caronte", "Chenal de Caronte"],
+      "note": "The 6.5 km Canal de Caronte at Martigues is the lagoon's only natural outlet to the sea.",
+      "source": "https://fr.wikipedia.org/wiki/Canal_de_Caronte"
+    },
+    {
+      "category": "Food & drink",
+      "side": "france",
+      "question": "Among the Provençal 'treize desserts', the 'quatre mendiants' (four beggars) are which four dried fruits and nuts?",
+      "answer": "Figs, almonds, walnuts (or hazelnuts) and raisins",
+      "accept": ["figs almonds walnuts raisins", "figs, almonds, hazelnuts and raisins", "figues amandes noix raisins"],
+      "note": "Their colours recall the habits of the four mendicant orders — Franciscans, Dominicans, Carmelites and Augustinians.",
+      "source": "https://fr.wikipedia.org/wiki/Quatre_mendiants"
+    },
+    {
+      "category": "UK pop & rock",
+      "side": "britain",
+      "question": "Who was the guitarist in David Bowie's backing band the Spiders from Mars on the 1972 album 'Ziggy Stardust'?",
+      "answer": "Mick Ronson",
+      "accept": [],
+      "options": ["Mick Ronson", "Mick Taylor", "Mick Ralphs", "Steve Jones"],
+      "note": "Mick Ronson played guitar, with Trevor Bolder on bass and Mick Woodmansey on drums, as Bowie's Spiders from Mars.",
+      "source": "https://en.wikipedia.org/wiki/The_Rise_and_Fall_of_Ziggy_Stardust_and_the_Spiders_from_Mars"
+    },
+    {
+      "category": "History",
+      "side": "france",
+      "question": "On which island off Cannes was the mysterious 'Man in the Iron Mask' held prisoner during the reign of Louis XIV?",
+      "answer": "Île Sainte-Marguerite",
+      "accept": ["Sainte-Marguerite", "Ile Sainte-Marguerite"],
+      "options": ["Île Sainte-Marguerite", "Château d'If", "Île de Porquerolles", "Île du Levant"],
+      "note": "The masked prisoner was held in the Fort Royal on Île Sainte-Marguerite, largest of the Lérins islands, before being moved to the Bastille.",
+      "source": "https://en.cannes-france.com/discover-visit/lerins-islands/sainte-marguerite-island/man-in-the-iron-mask/"
+    },
+    {
+      "category": "Language & everyday life",
+      "side": "france",
+      "question": "In France, a pharmacy is signalled to the street by an illuminated sign in the shape of a cross of what colour?",
+      "answer": "Green",
+      "accept": ["a green cross", "green cross"],
+      "note": "French pharmacies use a green cross, adopted after a 1913 law barred them from the red cross of the Red Cross.",
+      "source": "https://www.connexionfrance.com/magazine/why-french-pharmacy-crosses-are-always-green/443575"
+    },
+    {
+      "category": "Culture & the arts",
+      "side": "neutral",
+      "question": "The original Jurassic Park won three Academy Awards, all technical: Best Visual Effects, Best Sound, and which third?",
+      "answer": "Best Sound Effects Editing",
+      "accept": ["Sound Effects Editing"],
+      "note": "Its three 1994 Oscars were Visual Effects, Sound, and Sound Effects Editing, with Gary Rydstrom winning two of them.",
+      "source": "https://www.imdb.com/title/tt0107290/awards/"
+    },
+    {
+      "category": "Geography",
+      "side": "france",
+      "question": "Cap Canaille, rising above the sea between Cassis and La Ciotat, is among the highest sea cliffs in France. Roughly how high is it?",
+      "answer": "394 m",
+      "accept": ["394 metres", "about 390 m"],
+      "options": ["394 m", "220 m", "560 m", "300 m"],
+      "note": "Cap Canaille climbs about 394 m straight from the Mediterranean, ranking among the tallest maritime cliffs in the country.",
+      "source": "https://en.wikipedia.org/wiki/Cap_Canaille"
+    },
+    {
+      "category": "UK pop & rock",
+      "side": "britain",
+      "question": "In the August 1995 'Battle of Britpop', which Blur single beat Oasis's 'Roll With It' to the UK number-one spot?",
+      "answer": "Country House",
+      "accept": [],
+      "options": ["Country House", "Parklife", "Girls & Boys", "Wonderwall"],
+      "note": "Both singles came out on 14 August 1995; Blur's 'Country House' outsold Oasis to take number one.",
+      "source": "https://www.officialcharts.com/chart-news/official-chart-flashback-1995-its-oasis-v-blue-for-the-uks-number-1-single-in-the-battle-of-britpop__37265/"
+    },
+    {
+      "category": "Food & drink",
+      "side": "france",
+      "question": "The dish name 'brandade' comes from the Occitan verb 'brandar'. What does that verb mean?",
+      "answer": "To stir",
+      "accept": ["to shake", "stir", "shake", "remuer"],
+      "note": "The salt-cod-and-olive-oil emulsion of Nîmes is named for the vigorous stirring that binds it.",
+      "source": "https://www.etymologie-occitane.fr/2011/07/brandar-brandado/"
+    },
+    {
+      "category": "Culture & the arts",
+      "side": "neutral",
+      "question": "In Jurassic Park, which rival BioSyn scientist pays Dennis Nedry to steal the dinosaur embryos, handing him the disguised Barbasol can in San José?",
+      "answer": "Lewis Dodgson",
+      "accept": ["Dodgson"],
+      "options": ["Lewis Dodgson", "Henry Wu", "Gerry Harding", "Donald Gennaro"],
+      "note": "Dodgson — of the 'Dodgson, we've got Dodgson here!' scene — offers Nedry $1.5 million for fifteen embryos hidden in the shaving-cream can.",
+      "source": "https://jurassicpark.fandom.com/wiki/Barbasol_can"
+    },
+    {
+      "category": "History",
+      "side": "france",
+      "question": "In which Provençal town was the astrologer and seer Nostradamus born in 1503?",
+      "answer": "Saint-Rémy-de-Provence",
+      "accept": ["Saint-Remy-de-Provence", "Saint-Rémy"],
+      "note": "Michel de Nostredame was born in Saint-Rémy-de-Provence in 1503 and later settled in nearby Salon-de-Provence, where he died.",
+      "source": "https://en.wikipedia.org/wiki/Nostradamus"
+    },
+    {
+      "category": "Language & everyday life",
+      "side": "france",
+      "question": "France set its statutory working week — the threshold beyond which hours count as overtime — at how many hours?",
+      "answer": "35",
+      "accept": ["35 hours", "thirty-five"],
+      "options": ["32", "35", "37", "40"],
+      "note": "The 'Aubry' laws fixed France's legal working week at 35 hours, in force from 2000.",
+      "source": "https://www.eurofound.europa.eu/en/publications/all/law-35-hour-week-force"
+    }
+  ]
+}
