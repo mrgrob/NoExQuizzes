@@ -1,0 +1,295 @@
+{
+  "id": "round-8",
+  "number": 8,
+  "title": "Round 8 — Lights, Camera, Action",
+  "written": "2026-07-29",
+  "questions": [
+    {
+      "category": "Food & drink",
+      "side": "france",
+      "question": "The French apéritif Kir is chilled white wine mixed with crème de cassis, a liqueur made from which fruit?",
+      "answer": "Blackcurrant",
+      "accept": ["blackcurrant", "cassis", "blackcurrants"],
+      "note": "It was popularised by Canon Félix Kir, Resistance hero and long-serving mayor of Dijon, to promote local produce.",
+      "source": "https://www.diffordsguide.com/encyclopedia/460/cocktails/kir-and-kir-royale-cocktail"
+    },
+    {
+      "category": "History",
+      "side": "both",
+      "question": "The Rosetta Stone was uncovered by French soldiers in Egypt in 1799 but is displayed today in which London museum?",
+      "answer": "The British Museum",
+      "accept": ["British Museum"],
+      "note": "French troops found the stone near Rosetta in 1799, but it passed to Britain in 1801 and has been in the British Museum since 1802.",
+      "source": "https://www.britishmuseum.org/blog/everything-you-ever-wanted-know-about-rosetta-stone"
+    },
+    {
+      "category": "Culture & the arts",
+      "side": "france",
+      "question": "These are the red-carpet steps of the world's most famous film festival, held each May on the French Riviera. What is the top prize awarded there called?",
+      "answer": "The Palme d'Or",
+      "accept": ["Palme d'Or", "Golden Palm"],
+      "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Palais%20des%20Festivals%20Cannes%20red%20carpet%20stairs%202026.JPG?width=1200",
+      "imageAlt": "A red carpet running up a broad flight of steps to a large festival hall",
+      "imageCredit": "Palais des Festivals, Cannes · Wikimedia Commons, CC BY-SA (credit at source)",
+      "note": "The Palme d'Or has been the Cannes Film Festival's highest award since 1955.",
+      "source": "https://en.wikipedia.org/wiki/Palme_d%27Or"
+    },
+    {
+      "category": "Geography",
+      "side": "britain",
+      "question": "What is the largest lake by surface area in Great Britain?",
+      "answer": "Loch Lomond",
+      "accept": [],
+      "note": "Loch Lomond in Scotland, at roughly 71 km², is the largest lake by surface area in Great Britain (Loch Ness holds more water by volume).",
+      "source": "https://www.worldatlas.com/articles/which-are-the-biggest-and-deepest-water-bodies-in-the-united-kingdom.html"
+    },
+    {
+      "category": "Sport & games",
+      "side": "both",
+      "question": "The word 'tennis' is generally thought to come from an Old French word called out by the server. Which word?",
+      "answer": "Tenez",
+      "accept": ["tenez!"],
+      "note": "'Tenez' is the imperative of 'tenir' (to hold/take), reportedly shouted by the server in the medieval French game of jeu de paume.",
+      "source": "https://wordhistories.net/2016/07/17/tennis/"
+    },
+    {
+      "category": "Language & everyday life",
+      "side": "both",
+      "question": "The English word 'avant-garde' was borrowed from French, where it literally meant which military formation?",
+      "answer": "The advance guard (vanguard)",
+      "accept": ["advance guard", "vanguard"],
+      "note": "In medieval French an avant-garde was the body of soldiers sent ahead of the main army.",
+      "source": "https://www.merriam-webster.com/dictionary/avant-garde"
+    },
+    {
+      "category": "Geography",
+      "side": "france",
+      "question": "In the French département numbering system, which two-digit number belongs to Paris?",
+      "answer": "75",
+      "accept": [],
+      "options": ["75", "13", "69", "92"],
+      "note": "Paris carries the code 75, a survivor of the former Seine département, sitting oddly between Haute-Savoie (74) and Seine-Maritime (76).",
+      "source": "https://en.wikipedia.org/wiki/Departments_of_France"
+    },
+    {
+      "category": "History",
+      "side": "both",
+      "question": "In the 1956 Suez Crisis, Britain and France sent forces to seize the Suez Canal after which Egyptian president nationalised it?",
+      "answer": "Gamal Abdel Nasser",
+      "accept": ["Nasser", "Abdel Nasser"],
+      "note": "Nasser nationalised the canal in July 1956, prompting a joint British-French-Israeli intervention that autumn.",
+      "source": "https://www.history.com/articles/suez-crisis"
+    },
+    {
+      "category": "Sport & games",
+      "side": "france",
+      "question": "The Vendée Globe, the solo non-stop round-the-world yacht race, starts and finishes in which French Atlantic port town?",
+      "answer": "Les Sables-d'Olonne",
+      "accept": ["Sables-d'Olonne"],
+      "options": ["Les Sables-d'Olonne", "La Rochelle", "Brest", "Lorient"],
+      "note": "First run in 1989, the race has always started and finished at Les Sables-d'Olonne in the Vendée.",
+      "source": "https://www.vendeeglobe.org/en/what-vendee-globe"
+    },
+    {
+      "category": "Food & drink",
+      "side": "britain",
+      "question": "Which duchess is traditionally credited with introducing the English custom of afternoon tea in the 1840s?",
+      "answer": "The Duchess of Bedford",
+      "accept": ["Duchess of Bedford", "Anna, Duchess of Bedford", "Bedford"],
+      "options": ["The Duchess of Bedford", "The Duchess of Devonshire", "The Duchess of Cornwall", "The Duchess of Kent"],
+      "note": "Anna, 7th Duchess of Bedford and a friend of Queen Victoria, took tea and cake to bridge the long gap before a fashionably late dinner.",
+      "source": "https://www.historic-uk.com/CultureUK/Afternoon-Tea/"
+    },
+    {
+      "category": "Language & everyday life",
+      "side": "france",
+      "question": "On French railways, what three words does the abbreviation TGV stand for?",
+      "answer": "Train à grande vitesse",
+      "accept": ["train a grande vitesse", "high-speed train"],
+      "note": "The TGV is France's high-speed train, in service since 1981.",
+      "source": "https://www.britannica.com/technology/Train-a-Grande-Vitesse"
+    },
+    {
+      "category": "Culture & the arts",
+      "side": "britain",
+      "question": "Which British director made the 1962 desert epic 'Lawrence of Arabia' and the 1957 film 'The Bridge on the River Kwai'?",
+      "answer": "David Lean",
+      "accept": ["Lean"],
+      "options": ["David Lean", "Alfred Hitchcock", "Carol Reed", "Michael Powell"],
+      "note": "Lean directed 'The Bridge on the River Kwai' first, then reunited with producer Sam Spiegel for 'Lawrence of Arabia'.",
+      "source": "https://en.wikipedia.org/wiki/Lawrence_of_Arabia_(film)"
+    },
+    {
+      "category": "History",
+      "side": "britain",
+      "question": "At which Thames-side meadow did King John put his seal to Magna Carta in 1215?",
+      "answer": "Runnymede",
+      "accept": ["Runnymede meadow"],
+      "options": ["Runnymede", "Windsor", "Staines", "Ankerwycke"],
+      "note": "John met the rebel barons and sealed the charter at Runnymede, a meadow on the Thames between Windsor and Staines.",
+      "source": "https://www.britannica.com/topic/Magna-Carta"
+    },
+    {
+      "category": "Food & drink",
+      "side": "france",
+      "question": "In Proust's 'In Search of Lost Time', the taste of which small shell-shaped sponge cake dipped in tea unlocks a flood of childhood memory?",
+      "answer": "Madeleine",
+      "accept": ["a madeleine", "la madeleine de Proust"],
+      "note": "The scene from 'Swann's Way' (1913) gave rise to the phrase 'une madeleine de Proust' for a trigger of involuntary memory.",
+      "source": "https://publish.illinois.edu/litlanglibrary/2020/08/10/marcel-proust-his-madeleines/"
+    },
+    {
+      "category": "Culture & the arts",
+      "side": "britain",
+      "question": "In the 2010 film 'The King's Speech', which British monarch does Colin Firth play as he tries to overcome a stammer?",
+      "answer": "King George VI",
+      "accept": ["George VI", "George the Sixth", "Bertie"],
+      "note": "George VI, known in his family as 'Bertie', worked with Australian speech therapist Lionel Logue, played by Geoffrey Rush.",
+      "source": "https://en.wikipedia.org/wiki/The_King%27s_Speech"
+    },
+    {
+      "category": "Geography",
+      "side": "both",
+      "question": "Which country has the larger total land area: France or the United Kingdom?",
+      "answer": "France",
+      "accept": [],
+      "note": "France, at about 551,700 km², is more than twice the size of the United Kingdom's roughly 244,000 km².",
+      "source": "https://georank.org/size/france/united-kingdom"
+    },
+    {
+      "category": "Sport & games",
+      "side": "britain",
+      "question": "In which sport do England and Scotland compete each year for the Calcutta Cup, a trophy forged from melted-down Indian silver rupees?",
+      "answer": "Rugby union",
+      "accept": ["rugby"],
+      "note": "The cup was made from the silver of the disbanded Calcutta Rugby Football Club and first contested in 1879.",
+      "source": "https://scottishrugby.org/news-and-features/the-history-of-the-calcutta-cup-2/"
+    },
+    {
+      "category": "Language & everyday life",
+      "side": "france",
+      "question": "In France, if you drop your clothes off at 'un pressing', what service are you using?",
+      "answer": "A dry-cleaner's",
+      "accept": ["dry cleaner", "dry-cleaning", "dry cleaners"],
+      "options": ["A dry-cleaner's", "A gym", "A newspaper kiosk", "A pharmacy"],
+      "note": "'Pressing' is a false friend: it looks English, but the English word for the shop is 'dry-cleaner's'.",
+      "source": "https://www.collinsdictionary.com/dictionary/french-english/pressing"
+    },
+    {
+      "category": "Food & drink",
+      "side": "britain",
+      "question": "The sandwich takes its name from John Montagu, an 18th-century holder of which aristocratic title?",
+      "answer": "Earl of Sandwich",
+      "accept": ["the Earl of Sandwich", "4th Earl of Sandwich"],
+      "note": "A keen gambler, he is said to have called for beef between two slices of bread so he could keep playing at the gaming table.",
+      "source": "https://www.historyhit.com/did-the-4th-earl-of-sandwich-really-invent-the-sandwich/"
+    },
+    {
+      "category": "History",
+      "side": "france",
+      "question": "This monument, France's gift to the United States, was designed by which French sculptor?",
+      "answer": "Frédéric Auguste Bartholdi",
+      "accept": ["Bartholdi"],
+      "options": ["Frédéric Auguste Bartholdi", "Gustave Eiffel", "Auguste Rodin", "Édouard de Laboulaye"],
+      "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Statue%20of%20Liberty%2C%20NY.jpg?width=1000",
+      "imageAlt": "A giant green copper statue of a robed woman holding a torch aloft",
+      "imageCredit": "Statue of Liberty · Wikimedia Commons, CC BY-SA (credit at source)",
+      "note": "Bartholdi designed the Statue of Liberty, while Gustave Eiffel engineered its internal iron framework.",
+      "source": "https://www.britannica.com/biography/Frederic-Auguste-Bartholdi"
+    },
+    {
+      "category": "Geography",
+      "side": "britain",
+      "question": "Snowdonia National Park in north Wales is now officially known by which Welsh name?",
+      "answer": "Eryri",
+      "accept": [],
+      "note": "Since 2022 the park has officially been called Eryri, its long-standing Welsh name, thought to mean 'highlands'.",
+      "source": "https://www.visitwales.com/things-do/nature-and-landscapes/national-parks/eryri-snowdonia-national-park-what-see-and-do"
+    },
+    {
+      "category": "Language & everyday life",
+      "side": "both",
+      "question": "An 'apéritif' is an alcoholic drink traditionally served at which point of a meal?",
+      "answer": "Before the meal",
+      "accept": ["before eating", "before dinner", "at the start"],
+      "note": "The word derives from Latin 'aperire', to open — the drink is meant to open the appetite.",
+      "source": "https://dictionary.cambridge.org/dictionary/english/aperitif"
+    },
+    {
+      "category": "Sport & games",
+      "side": "britain",
+      "question": "The trophy known as the Claret Jug is awarded to the winner of which golf championship?",
+      "answer": "The Open Championship",
+      "accept": ["the Open", "British Open"],
+      "note": "First awarded in 1872, the Claret Jug (officially the Golf Champion Trophy) is golf's oldest major prize.",
+      "source": "https://www.theopen.com/latest/claret-jug-all-you-need-to-know"
+    },
+    {
+      "category": "Culture & the arts",
+      "side": "france",
+      "question": "Which French director made the 1997 sci-fi film 'The Fifth Element' and the 1994 thriller 'Léon: The Professional'?",
+      "answer": "Luc Besson",
+      "accept": ["Besson"],
+      "options": ["Luc Besson", "Jean-Pierre Jeunet", "Mathieu Kassovitz", "Michel Gondry"],
+      "note": "Besson, associated with the 'Cinéma du look' movement, also directed 'Nikita' (1990) and 'The Big Blue' (1988).",
+      "source": "https://en.wikipedia.org/wiki/The_Fifth_Element"
+    },
+    {
+      "category": "History",
+      "side": "france",
+      "question": "Which French king was executed by guillotine in Paris in January 1793 during the French Revolution?",
+      "answer": "Louis XVI",
+      "accept": ["Louis the Sixteenth", "Louis 16"],
+      "note": "Louis XVI was guillotined on 21 January 1793 in the Place de la Révolution, now the Place de la Concorde.",
+      "source": "https://www.history.com/this-day-in-history/january-21/king-louis-xvi-executed"
+    },
+    {
+      "category": "Food & drink",
+      "side": "both",
+      "question": "The cooking term 'sauté', used in both French and English kitchens, comes from a French verb meaning what?",
+      "answer": "To jump",
+      "accept": ["jump", "to leap"],
+      "options": ["To jump", "To fry", "To stir", "To brown"],
+      "note": "It reflects the way small pieces of food are tossed so they 'jump' in the hot pan.",
+      "source": "https://www.etymonline.com/word/saute"
+    },
+    {
+      "category": "Sport & games",
+      "side": "france",
+      "question": "France's only Formula One world champion, nicknamed 'the Professor', won how many drivers' titles?",
+      "answer": "Four",
+      "accept": ["4", "four titles"],
+      "options": ["Two", "Three", "Four", "Five"],
+      "note": "Alain Prost took the championship in 1985, 1986, 1989 and 1993.",
+      "source": "https://en.wikipedia.org/wiki/Alain_Prost"
+    },
+    {
+      "category": "Geography",
+      "side": "britain",
+      "question": "The Isles of Scilly, an archipelago in the Atlantic off Land's End, form part of which English county?",
+      "answer": "Cornwall",
+      "accept": [],
+      "note": "The Isles of Scilly lie about 40 km southwest of Land's End and are administered as part of Cornwall.",
+      "source": "https://en.wikipedia.org/wiki/Isles_of_Scilly"
+    },
+    {
+      "category": "Culture & the arts",
+      "side": "both",
+      "question": "Which English actress has lived in Paris since her teens and built a major second career in French-language cinema, in films such as 'Tell No One' and 'I've Loved You So Long'?",
+      "answer": "Kristin Scott Thomas",
+      "accept": ["Scott Thomas"],
+      "note": "The British star was made a Chevalier of France's Légion d'honneur in 2005 for her contribution to French culture.",
+      "source": "https://en.wikipedia.org/wiki/Kristin_Scott_Thomas"
+    },
+    {
+      "category": "Language & everyday life",
+      "side": "france",
+      "question": "What is the single Europe-wide emergency telephone number that also works throughout France?",
+      "answer": "112",
+      "accept": ["one one two"],
+      "options": ["112", "911", "999", "100"],
+      "note": "112 reaches the emergency services free of charge across the EU, including France.",
+      "source": "https://en.selectra.info/moving-to-france/phone-numbers/emergency-numbers"
+    }
+  ]
+}
