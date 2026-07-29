@@ -1,0 +1,278 @@
+{
+  "id": "round-1",
+  "number": 1,
+  "title": "Round 1 — Across the Channel",
+  "written": "2026-07-29",
+  "questions": [
+    {
+      "category": "History",
+      "side": "britain",
+      "question": "In what year was the Battle of Hastings, at which William of Normandy defeated King Harold, fought?",
+      "answer": "1066",
+      "accept": [],
+      "note": "Fought on 14 October 1066, it ended with Harold's death and William being crowned King of England in Westminster Abbey that Christmas Day.",
+      "source": "https://www.english-heritage.org.uk/visit/places/1066-battle-of-hastings-abbey-and-battlefield/history-and-stories/what-happened-battle-hastings/"
+    },
+    {
+      "category": "Food & drink",
+      "side": "france",
+      "question": "From which animal's milk is Roquefort cheese traditionally made?",
+      "answer": "Sheep",
+      "accept": ["ewe", "ewe's milk", "sheep's milk", "Lacaune sheep"],
+      "note": "Roquefort was granted France's very first AOC in 1925 and is ripened in the natural Combalou caves at Roquefort-sur-Soulzon.",
+      "source": "https://en.wikipedia.org/wiki/Roquefort"
+    },
+    {
+      "category": "Geography",
+      "side": "both",
+      "question": "What is the name of the strait at the narrowest point of the English Channel, between England and France?",
+      "answer": "Strait of Dover",
+      "accept": ["Dover Strait", "Pas de Calais"],
+      "note": "The crossing here is just about 33 km (21 miles) wide, from the South Foreland near Dover to Cap Gris-Nez near Calais.",
+      "source": "https://en.wikipedia.org/wiki/Strait_of_Dover"
+    },
+    {
+      "category": "Culture & the arts",
+      "side": "britain",
+      "question": "In which Warwickshire market town was William Shakespeare born in 1564?",
+      "answer": "Stratford-upon-Avon",
+      "accept": ["Stratford upon Avon", "Stratford"],
+      "note": "His half-timbered birthplace on Henley Street still stands and is open to visitors today.",
+      "source": "https://www.shakespeare.org.uk/explore-shakespeare/shakespedia/william-shakespeare/william-shakespeare-biography/"
+    },
+    {
+      "category": "Sport & games",
+      "side": "france",
+      "question": "In what year was the first Tour de France held?",
+      "answer": "1903",
+      "accept": [],
+      "note": "The race was dreamed up by the newspaper L'Auto to boost its sales, and the first winner was Maurice Garin.",
+      "source": "https://en.wikipedia.org/wiki/1903_Tour_de_France"
+    },
+    {
+      "category": "Language & everyday life",
+      "side": "both",
+      "question": "The fabric name \"denim\" comes from \"serge de ___\", after a city in southern France. Which city?",
+      "answer": "Nîmes",
+      "accept": ["Nimes"],
+      "note": "The sturdy twill was 'serge de Nîmes'; the silent final 's' helped it slur into plain 'denim' in English by the mid-1800s.",
+      "source": "https://www.etymonline.com/word/denim"
+    },
+    {
+      "category": "History",
+      "side": "france",
+      "question": "In which Normandy city was Joan of Arc burned at the stake in 1431?",
+      "answer": "Rouen",
+      "accept": [],
+      "note": "She was burned in the Place du Vieux-Marché on 30 May 1431 and her ashes thrown into the Seine; she was declared a saint nearly five centuries later.",
+      "source": "https://en.visiterouen.com/heritages/history/on-the-steps-of-joan-of-arc/"
+    },
+    {
+      "category": "Food & drink",
+      "side": "britain",
+      "question": "Under its protected status, which is the only meat allowed in a traditional Cornish pasty?",
+      "answer": "Beef",
+      "accept": ["diced beef", "minced beef"],
+      "note": "Since gaining protected status in 2011, a genuine Cornish pasty may contain only beef, potato, swede and onion, and must be crimped on the side, never the top.",
+      "source": "https://cornishpastyassociation.co.uk/2011/02/cornwall-celebrates-protection-for-its-famous-pasties/"
+    },
+    {
+      "category": "Geography",
+      "side": "france",
+      "question": "What is the longest river in France?",
+      "answer": "Loire",
+      "accept": ["The Loire", "River Loire"],
+      "note": "The Loire runs about 1,020 km and is famed both for its string of Renaissance chateaux and for being called the last wild river in Europe.",
+      "source": "https://smartwatermagazine.com/q-a/what-longest-river-france"
+    },
+    {
+      "category": "Culture & the arts",
+      "side": "both",
+      "question": "Which Charles Dickens novel, set in London and Paris during the French Revolution, opens with the line 'It was the best of times, it was the worst of times'?",
+      "answer": "A Tale of Two Cities",
+      "accept": [],
+      "note": "It ends with the lawyer Sydney Carton going to the guillotine in another man's place, declaring 'it is a far, far better thing that I do, than I have ever done.'",
+      "source": "https://study.com/learn/lesson/a-tale-of-two-cities-summary-setting-context-history.html"
+    },
+    {
+      "category": "Sport & games",
+      "side": "britain",
+      "question": "In what year was the first Wimbledon Championship held?",
+      "answer": "1877",
+      "accept": [],
+      "note": "The very first tournament was staged partly to pay for repairs to the club's broken pony-drawn lawn roller.",
+      "source": "https://www.history.com/this-day-in-history/july-9/wimbledon-tournament-begins"
+    },
+    {
+      "category": "Language & everyday life",
+      "side": "france",
+      "question": "In which year did euro banknotes and coins first enter circulation, replacing the franc as everyday cash in France?",
+      "answer": "2002",
+      "accept": ["1 January 2002"],
+      "note": "The euro existed as an 'invisible' accounting currency from 1999, but the physical cash changeover on 1 January 2002 was the biggest in history.",
+      "source": "https://european-union.europa.eu/institutions-law-budget/euro/history-and-purpose_en"
+    },
+    {
+      "category": "History",
+      "side": "both",
+      "question": "The Entente Cordiale, the set of agreements that ended centuries of on-off hostility between Britain and France, was signed in which year?",
+      "answer": "1904",
+      "accept": ["8 April 1904", "April 1904"],
+      "note": "Signed on 8 April 1904 by Lord Lansdowne and ambassador Paul Cambon, it paved the way for the two nations to fight side by side in the First World War.",
+      "source": "https://www.ebsco.com/research-starters/history/entente-cordiale"
+    },
+    {
+      "category": "Food & drink",
+      "side": "france",
+      "question": "Gamay is the principal red grape variety of which French wine region?",
+      "answer": "Beaujolais",
+      "accept": [],
+      "note": "Duke Philip the Bold banned Gamay from Burgundy in the 1300s for being inferior to Pinot Noir, which pushed it south to Beaujolais.",
+      "source": "https://www.wine-searcher.com/grape-182-gamay"
+    },
+    {
+      "category": "Geography",
+      "side": "britain",
+      "question": "What is the highest mountain in the United Kingdom?",
+      "answer": "Ben Nevis",
+      "accept": ["Ben Nevis, Scotland"],
+      "note": "At 1,345 m near Fort William, 'the Ben' once had a Victorian weather observatory manned year-round on its summit.",
+      "source": "https://www.threepeakschallenge.uk/national-three-peaks-challenge/ben-nevis"
+    },
+    {
+      "category": "Culture & the arts",
+      "side": "france",
+      "question": "Claude Monet's 1872 painting of a hazy harbour at dawn, whose title inspired the name of a whole art movement, is called what?",
+      "answer": "Impression, Sunrise",
+      "accept": ["Impression, Soleil Levant", "Impression Sunrise", "Impression, soleil levant"],
+      "note": "The harbour is Le Havre, Monet's hometown, and critic Louis Leroy seized on the title to mock the group as 'Impressionists' — the insult stuck as the movement's name.",
+      "source": "https://en.normandie-tourisme.fr/discover/culture/impressionism/history-of-impression-sunrise/"
+    },
+    {
+      "category": "Sport & games",
+      "side": "both",
+      "question": "Which country joined rugby's Five Nations in 2000 to create the Six Nations Championship?",
+      "answer": "Italy",
+      "accept": [],
+      "note": "Italy marked their arrival by beating Scotland 34-20 in their very first Six Nations match.",
+      "source": "https://www.britannica.com/sports/Six-Nations-Championship"
+    },
+    {
+      "category": "Language & everyday life",
+      "side": "britain",
+      "question": "The spoken distress call \"mayday\" is a phonetic spelling of which French phrase meaning \"help me\"?",
+      "answer": "m'aider",
+      "accept": ["venez m'aider", "m'aidez", "come help me", "help me"],
+      "note": "A radio officer at Croydon Airport coined it in 1923 so pilots crossing the Channel to Le Bourget could be understood by both sides.",
+      "source": "https://www.merriam-webster.com/wordplay/mayday-meaning-origin"
+    },
+    {
+      "category": "History",
+      "side": "britain",
+      "question": "Which English king led his heavily outnumbered army to victory over the French at the Battle of Agincourt in 1415?",
+      "answer": "Henry V",
+      "accept": ["King Henry V", "Henry the Fifth"],
+      "note": "English longbowmen cut down the French knights floundering in the mud; Shakespeare later immortalised the king's 'band of brothers' speech.",
+      "source": "https://www.worldhistory.org/Battle_of_Agincourt/"
+    },
+    {
+      "category": "Food & drink",
+      "side": "both",
+      "question": "The French kitchen phrase 'mise en place' translates literally as what?",
+      "answer": "Everything in its place",
+      "accept": ["putting in place", "putting into place", "put in place", "setting in place"],
+      "note": "The great French chef Auguste Escoffier is often credited with formalising the practice in professional kitchens.",
+      "source": "https://guide.michelin.com/us/en/article/features/mise-en-place-cooking"
+    },
+    {
+      "category": "Geography",
+      "side": "france",
+      "question": "What is the highest mountain in the Alps and in western Europe?",
+      "answer": "Mont Blanc",
+      "accept": ["Monte Bianco"],
+      "note": "At 4,808 m it straddles the France-Italy border, its summit a permanent dome of snow and ice.",
+      "source": "https://www.worldatlas.com/mountains/mont-blanc.html"
+    },
+    {
+      "category": "Culture & the arts",
+      "side": "britain",
+      "question": "Which British painter created The Fighting Temeraire, showing an old warship towed away to be scrapped, exhibited in 1839?",
+      "answer": "J. M. W. Turner",
+      "accept": ["Turner", "Joseph Mallord William Turner"],
+      "note": "The veteran ship had fought at Trafalgar in 1805, and Turner sets her last journey against a blazing sunset as the age of sail gives way to steam.",
+      "source": "https://www.nationalgallery.org.uk/paintings/joseph-mallord-william-turner-the-fighting-temeraire"
+    },
+    {
+      "category": "Sport & games",
+      "side": "france",
+      "question": "In which French coastal town was the game of pétanque invented around 1910?",
+      "answer": "La Ciotat",
+      "accept": [],
+      "note": "It was devised so a rheumatic player could throw with 'pieds tanqués' — feet planted — instead of taking the traditional run-up.",
+      "source": "https://www.petanque.org/the-beginnings-of-petanque/"
+    },
+    {
+      "category": "Language & everyday life",
+      "side": "france",
+      "question": "What is the French custom of greeting someone with a light kiss on each cheek called?",
+      "answer": "la bise",
+      "accept": ["bise", "faire la bise"],
+      "note": "The number varies wildly by region — usually two, but three in parts of the south and even four in some départements.",
+      "source": "https://www.connexionfrance.com/practical/is-it-really-necessary-to-kiss-people-as-a-greeting-in-france/766501"
+    },
+    {
+      "category": "History",
+      "side": "both",
+      "question": "What was the code name for the overall Allied invasion of Normandy that began on D-Day, 6 June 1944?",
+      "answer": "Operation Overlord",
+      "accept": ["Overlord"],
+      "note": "Troops landed across five beaches code-named Utah, Omaha, Gold, Juno and Sword, with the seaborne assault phase itself code-named Neptune.",
+      "source": "https://www.nationalww2museum.org/war/topics/d-day-and-normandy-campaign"
+    },
+    {
+      "category": "Food & drink",
+      "side": "britain",
+      "question": "The village of Cheddar, which gave its name to the cheese, lies in which English county?",
+      "answer": "Somerset",
+      "accept": [],
+      "note": "Cheesemakers once aged their cheddar in the cool, damp caves of Cheddar Gorge, which acted as natural refrigerators.",
+      "source": "https://www.cheddargorgecheese.com/the-history-of-cheddar-cheese/"
+    },
+    {
+      "category": "Geography",
+      "side": "both",
+      "question": "Which is the largest of the Channel Islands?",
+      "answer": "Jersey",
+      "accept": [],
+      "note": "Lying only about 14 miles off the Normandy coast, Jersey is the biggest Channel Island at roughly 45 square miles.",
+      "source": "http://www.ukotcf.org/territories/jersey.cfm"
+    },
+    {
+      "category": "Culture & the arts",
+      "side": "france",
+      "question": "Under what real name was the playwright Molière born?",
+      "answer": "Jean-Baptiste Poquelin",
+      "accept": ["Jean Baptiste Poquelin", "Poquelin"],
+      "note": "He adopted the stage name Molière as a young actor and, fittingly for a man of the theatre, was taken fatally ill on stage while performing in his own play The Imaginary Invalid.",
+      "source": "https://www.encyclopedia.com/people/literature-and-arts/french-literature-biographies/jean-baptiste-poquelin-moliere"
+    },
+    {
+      "category": "Sport & games",
+      "side": "britain",
+      "question": "In cricket, the Ashes is a Test series contested between England and which other country?",
+      "answer": "Australia",
+      "accept": [],
+      "note": "The name comes from an 1882 mock obituary in the Sporting Times mourning English cricket, whose 'body will be cremated and the ashes taken to Australia'.",
+      "source": "https://www.espncricinfo.com/story/a-short-history-of-the-ashes-259985"
+    },
+    {
+      "category": "Language & everyday life",
+      "side": "britain",
+      "question": "A dead-end residential street is often called a \"cul-de-sac\" — French that literally means the bottom of a ___?",
+      "answer": "sack",
+      "accept": ["bag", "bottom of a sack", "bottom of the bag"],
+      "note": "Estate agents love the term, but in French 'cul' is a decidedly cheeky word for 'bottom'.",
+      "source": "https://dictionary.cambridge.org/dictionary/english/cul-de-sac"
+    }
+  ]
+}
