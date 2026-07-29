@@ -1,0 +1,290 @@
+{
+  "id": "round-6",
+  "number": 6,
+  "title": "Round 6 — Both Sides of the Channel",
+  "written": "2026-07-29",
+  "questions": [
+    {
+      "category": "Food & drink",
+      "side": "france",
+      "question": "About 90% of the mustard seeds used to make traditional Dijon mustard are imported from which country?",
+      "answer": "Canada",
+      "accept": [],
+      "options": ["Canada", "France", "India", "Ukraine"],
+      "note": "Local Burgundy farmers largely switched to subsidised rapeseed, so most seed for Dijon mustard now comes from the Canadian prairies.",
+      "source": "https://www.offbeatfrance.com/what-is-dijon-mustard.html"
+    },
+    {
+      "category": "History",
+      "side": "both",
+      "question": "In what year did Henry VIII of England and François I of France meet in extravagant splendour near Calais, at the summit known as the Field of the Cloth of Gold?",
+      "answer": "1520",
+      "accept": [],
+      "options": ["1415", "1520", "1588", "1610"],
+      "note": "The lavish 18-day meeting near Calais began on 7 June 1520, each king trying to out-dazzle the other.",
+      "source": "https://www.hrp.org.uk/hampton-court-palace/history-and-stories/the-field-of-cloth-of-gold/"
+    },
+    {
+      "category": "Culture & the arts",
+      "side": "france",
+      "question": "In which Paris museum is Leonardo da Vinci's Mona Lisa displayed?",
+      "answer": "The Louvre",
+      "accept": ["Louvre", "Musée du Louvre"],
+      "note": "Leonardo brought the painting to France in 1516, and it has hung in the Louvre since the late 1790s.",
+      "source": "https://en.wikipedia.org/wiki/Mona_Lisa"
+    },
+    {
+      "category": "Geography",
+      "side": "britain",
+      "question": "What is the highest mountain in England, rising to 978 metres in the Lake District?",
+      "answer": "Scafell Pike",
+      "accept": [],
+      "note": "Scafell Pike in Cumbria is England's highest peak at 978 m (3,209 ft).",
+      "source": "https://en.wikipedia.org/wiki/Scafell_Pike"
+    },
+    {
+      "category": "Sport & games",
+      "side": "both",
+      "question": "The modern Olympic Games were revived by which Frenchman, who founded the International Olympic Committee at the Sorbonne in Paris in 1894?",
+      "answer": "Pierre de Coubertin",
+      "accept": ["Coubertin", "Baron Pierre de Coubertin"],
+      "note": "Coubertin convened delegates from nine nations at the Sorbonne on 23 June 1894 to create the IOC and revive the Games.",
+      "source": "https://www.olympics.com/ioc/pierre-de-coubertin"
+    },
+    {
+      "category": "Language & everyday life",
+      "side": "both",
+      "question": "English borrowed 'nonchalant' from French. What does it describe about a person's manner?",
+      "answer": "An air of casual unconcern",
+      "accept": ["relaxed indifference", "calm and unbothered"],
+      "options": ["An air of casual unconcern", "A fiery, quick temper", "Extreme shyness", "Great physical strength"],
+      "note": "'Nonchalant' comes from Old French 'non' (not) plus a verb meaning 'to care' — literally someone who does not care.",
+      "source": "https://www.etymonline.com/word/nonchalant"
+    },
+    {
+      "category": "Food & drink",
+      "side": "france",
+      "question": "In the traditional method used to make Champagne, where does the second fermentation that creates the bubbles take place?",
+      "answer": "In the bottle",
+      "accept": ["the bottle", "in bottle"],
+      "options": ["In the bottle", "In the barrel", "In steel tanks", "In the vineyard"],
+      "note": "The méthode champenoise triggers a second fermentation inside each sealed bottle, trapping the CO₂ that gives Champagne its fizz.",
+      "source": "https://www.decanterchina.com/en/knowledge/keywords/what-is-the-traditional-method-of-making-champagne"
+    },
+    {
+      "category": "History",
+      "side": "both",
+      "question": "Eleanor of Aquitaine was queen consort of which two neighbouring kingdoms, first by marriage to Louis VII and then to Henry II?",
+      "answer": "France and England",
+      "accept": ["England and France"],
+      "note": "She was Queen of France until her 1152 annulment, then Queen of England from 1154 — and mother of Richard the Lionheart.",
+      "source": "https://www.english-heritage.org.uk/learn/histories/women-in-history/eleanor-aquitaine/"
+    },
+    {
+      "category": "Culture & the arts",
+      "side": "france",
+      "question": "Which French composer wrote the 1928 orchestral work Boléro, famous for its single long crescendo?",
+      "answer": "Maurice Ravel",
+      "accept": ["Ravel"],
+      "options": ["Maurice Ravel", "Claude Debussy", "Camille Saint-Saëns", "Gabriel Fauré"],
+      "note": "Boléro was commissioned as a ballet by the dancer Ida Rubinstein and premiered at the Paris Opéra in November 1928.",
+      "source": "https://en.wikipedia.org/wiki/Bol%C3%A9ro"
+    },
+    {
+      "category": "Geography",
+      "side": "britain",
+      "question": "What is the highest mountain in Wales, known in Welsh as Yr Wyddfa?",
+      "answer": "Snowdon",
+      "accept": ["Yr Wyddfa"],
+      "note": "Snowdon (Yr Wyddfa) reaches 1,085 m, the highest point in Britain south of the Scottish Highlands.",
+      "source": "https://en.wikipedia.org/wiki/List_of_highest_mountains_in_Wales"
+    },
+    {
+      "category": "Language & everyday life",
+      "side": "france",
+      "question": "In French, the English-derived word 'un lifting' refers to which cosmetic procedure?",
+      "answer": "A facelift",
+      "accept": ["facelift", "face-lift"],
+      "note": "French took English 'lifting' to mean a facelift — one of many '-ing' words the language borrowed and repurposed.",
+      "source": "https://dictionary.reverso.net/french-english/lifting"
+    },
+    {
+      "category": "Sport & games",
+      "side": "britain",
+      "question": "According to sporting legend, at which English school did William Webb Ellis first pick up the ball and run with it in 1823, giving his name to rugby?",
+      "answer": "Rugby School",
+      "accept": ["Rugby", "Rugby School in Warwickshire"],
+      "note": "The tale is folklore rather than proven fact, but the Rugby World Cup trophy is still the Webb Ellis Cup in his honour.",
+      "source": "https://en.wikipedia.org/wiki/William_Webb_Ellis"
+    },
+    {
+      "category": "History",
+      "side": "britain",
+      "question": "In what year did the English longbow win the Battle of Crécy against the French during the Hundred Years' War?",
+      "answer": "1346",
+      "accept": [],
+      "options": ["1314", "1346", "1356", "1415"],
+      "note": "Edward III's archers routed a much larger French army on 26 August 1346.",
+      "source": "https://www.history.com/articles/battle-of-crecy"
+    },
+    {
+      "category": "Geography",
+      "side": "france",
+      "question": "What is the largest natural lake lying entirely within France, near Aix-les-Bains in Savoie?",
+      "answer": "Lac du Bourget",
+      "accept": ["Lake Bourget"],
+      "options": ["Lac du Bourget", "Lac d'Annecy", "Lac de Serre-Ponçon", "Étang de Thau"],
+      "note": "Lac du Bourget in Savoie is the largest natural lake wholly inside France, about 18 km long — and inspired a famous poem by Lamartine.",
+      "source": "https://en.wikipedia.org/wiki/Lac_du_Bourget"
+    },
+    {
+      "category": "Food & drink",
+      "side": "britain",
+      "question": "Blue Stilton cheese has a Protected Designation of Origin restricting it to three English counties: Leicestershire, Nottinghamshire and which other?",
+      "answer": "Derbyshire",
+      "accept": [],
+      "note": "Only these three counties may make Stilton — which means the Cambridgeshire village of Stilton itself isn't allowed to produce it.",
+      "source": "https://academyofcheese.org/blue-stilton-pdo/"
+    },
+    {
+      "category": "Language & everyday life",
+      "side": "france",
+      "question": "In standard French the number 70 is 'soixante-dix'. What do those two words mean, added together, literally?",
+      "answer": "Sixty-ten",
+      "accept": ["sixty ten", "60 and 10"],
+      "note": "French keeps a leftover of an old base-20 count, so 70 is spoken as 'sixty-ten' (Belgium and Switzerland instead say 'septante').",
+      "source": "https://www.lawlessfrench.com/vocabulary/numbers-and-counting-2/"
+    },
+    {
+      "category": "Culture & the arts",
+      "side": "britain",
+      "question": "Which British author created the Belgian detective Hercule Poirot?",
+      "answer": "Agatha Christie",
+      "accept": ["Christie", "Dame Agatha Christie"],
+      "note": "Poirot first appeared in Christie's 1920 debut novel, The Mysterious Affair at Styles.",
+      "source": "https://www.britannica.com/topic/Hercule-Poirot"
+    },
+    {
+      "category": "Sport & games",
+      "side": "britain",
+      "question": "In a standard frame of snooker, what is the highest possible break a player can make without the opponent committing a foul?",
+      "answer": "147",
+      "accept": ["147 points", "a maximum break of 147"],
+      "options": ["147", "155", "140", "167"],
+      "note": "It comes from potting all 15 reds each with a black, then the six colours in sequence.",
+      "source": "https://en.wikipedia.org/wiki/Maximum_break"
+    },
+    {
+      "category": "History",
+      "side": "france",
+      "question": "Mary, Queen of Scots was raised in France and briefly became queen consort of France by marrying which king, the Dauphin she wed in 1558?",
+      "answer": "Francis II",
+      "accept": ["François II", "Francis, Dauphin of France"],
+      "note": "Their 1558 marriage made her Queen of France when Francis became king in 1559 — though he died barely a year later.",
+      "source": "https://www.unofficialroyalty.com/wedding-of-mary-queen-of-scots-and-francois-ii-king-of-france/"
+    },
+    {
+      "category": "Food & drink",
+      "side": "britain",
+      "question": "In the traditional Cornish way of preparing a cream-tea scone, which is spread on first: the jam or the clotted cream?",
+      "answer": "Jam",
+      "accept": ["jam first"],
+      "note": "The Cornish spread jam first, then top it with clotted cream — the reverse of the Devon method.",
+      "source": "https://www.cornwall.co.uk/cornwall-insights/cornish-cream-tea-debate-settled-jam-first-or-cream-first/"
+    },
+    {
+      "category": "Geography",
+      "side": "france",
+      "question": "Which strait separates the French island of Corsica from the Italian island of Sardinia?",
+      "answer": "Strait of Bonifacio",
+      "accept": ["Bouches de Bonifacio"],
+      "options": ["Strait of Bonifacio", "Strait of Messina", "Strait of Otranto", "Strait of Gibraltar"],
+      "note": "The Strait of Bonifacio is the roughly 11 km channel between Corsica to the north and Sardinia to the south.",
+      "source": "https://en.wikipedia.org/wiki/Strait_of_Bonifacio"
+    },
+    {
+      "category": "Culture & the arts",
+      "side": "britain",
+      "question": "Which English animator created Wallace & Gromit at Bristol's Aardman studio?",
+      "answer": "Nick Park",
+      "accept": ["Nicholas Park"],
+      "note": "Park has won multiple Oscars for the clay-animated pair, beginning with A Grand Day Out in 1989.",
+      "source": "https://www.aardman.com/about/people/nick-park-biography/"
+    },
+    {
+      "category": "Sport & games",
+      "side": "france",
+      "question": "The original FIFA World Cup trophy, used from 1930 to 1970, was named after which Frenchman, the FIFA president who launched the tournament?",
+      "answer": "Jules Rimet",
+      "accept": ["Rimet"],
+      "options": ["Jules Rimet", "Robert Guérin", "Henri Delaunay", "Pierre de Coubertin"],
+      "note": "Rimet, FIFA president from 1921 to 1954, drove the creation of the first World Cup, held in Uruguay in 1930.",
+      "source": "https://en.wikipedia.org/wiki/Jules_Rimet"
+    },
+    {
+      "category": "Language & everyday life",
+      "side": "france",
+      "question": "In the French 'galette des rois' eaten around Epiphany, what is the little charm hidden inside called?",
+      "answer": "A fève",
+      "accept": ["fève", "a bean", "la fève"],
+      "note": "'Fève' means broad bean — the original token, now usually a porcelain figurine; whoever finds it is crowned king or queen for the day.",
+      "source": "https://www.parisperfect.com/blog/2015/01/galette-des-rois-france/"
+    },
+    {
+      "category": "History",
+      "side": "britain",
+      "question": "Which British monarch officially opened the Channel Tunnel in 1994, alongside French President François Mitterrand?",
+      "answer": "Queen Elizabeth II",
+      "accept": ["Elizabeth II"],
+      "note": "The Queen and Mitterrand inaugurated the rail tunnel on 6 May 1994, meeting in the middle beneath the sea.",
+      "source": "https://www.history.com/this-day-in-history/may-6/english-channel-tunnel-opens"
+    },
+    {
+      "category": "Geography",
+      "side": "france",
+      "question": "In the Chaîne des Puys of the Massif Central, which lava-dome volcano gives its name to the surrounding French département?",
+      "answer": "Puy de Dôme",
+      "accept": ["Puy de Dome"],
+      "note": "The Puy de Dôme (1,465 m) is the tallest volcano of the Chaîne des Puys, near Clermont-Ferrand.",
+      "source": "https://en.wikipedia.org/wiki/Puy_de_D%C3%B4me"
+    },
+    {
+      "category": "Food & drink",
+      "side": "britain",
+      "question": "The classic British summer drink Pimm's No. 1 Cup is based on which spirit?",
+      "answer": "Gin",
+      "accept": [],
+      "note": "Pimm's No. 1, first produced by James Pimm in 1823, is a gin-based fruit cup usually served with lemonade and chopped fruit.",
+      "source": "https://en.wikipedia.org/wiki/Pimm%27s"
+    },
+    {
+      "category": "Culture & the arts",
+      "side": "both",
+      "question": "Which French Impressionist painted views of Upper Norwood and Sydenham while sheltering in south London during the Franco-Prussian War of 1870–71?",
+      "answer": "Camille Pissarro",
+      "accept": ["Pissarro"],
+      "options": ["Camille Pissarro", "Alfred Sisley", "Auguste Renoir", "Edgar Degas"],
+      "note": "About a dozen of his London-exile pictures survive, including Fox Hill, Upper Norwood, now in the National Gallery.",
+      "source": "https://www.nationalgallery.org.uk/paintings/camille-pissarro-fox-hill-upper-norwood"
+    },
+    {
+      "category": "Sport & games",
+      "side": "france",
+      "question": "Football's world governing body FIFA was founded in 1904 in which European capital city?",
+      "answer": "Paris",
+      "accept": ["Paris, France"],
+      "note": "FIFA was founded on 21 May 1904 in Paris, with the Frenchman Robert Guérin as its first president.",
+      "source": "https://inside.fifa.com/media-releases/fifa-celebrates-120th-anniversary-of-foundation-in-paris"
+    },
+    {
+      "category": "Language & everyday life",
+      "side": "both",
+      "question": "In England, town names ending in '-by' (Whitby, Grimsby, Derby) come from the language of which settlers?",
+      "answer": "The Vikings (Norse)",
+      "accept": ["Vikings", "Norse", "Danes", "Old Norse"],
+      "options": ["The Vikings (Norse)", "The Romans", "The Normans", "The Ancient Greeks"],
+      "note": "'-by' is an Old Norse word for a farmstead or village, left across the Danelaw by Viking settlers.",
+      "source": "https://www.jorvikvikingcentre.co.uk/the-vikings/viking-place-names/"
+    }
+  ]
+}

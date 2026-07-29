@@ -1,10 +1,17 @@
 [
   {
+    "id": "round-6",
+    "number": 6,
+    "title": "Round 6 — Both Sides of the Channel",
+    "written": "2026-07-29",
+    "count": 30
+  },
+  {
     "id": "round-5",
     "number": 5,
-    "title": "Round 5 — Sights & Sounds (media special)",
+    "title": "Round 5 — Which Région? (a photo tour of all 13)",
     "written": "2026-07-29",
-    "count": 8
+    "count": 13
   },
   {
     "id": "round-4",
