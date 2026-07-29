@@ -1,0 +1,298 @@
+{
+  "id": "round-7",
+  "number": 7,
+  "title": "Round 7 — Bright Ideas",
+  "written": "2026-07-29",
+  "questions": [
+    {
+      "category": "Inventions",
+      "side": "france",
+      "question": "In 1783, which two French brothers launched the first practical hot-air balloon?",
+      "answer": "The Montgolfier brothers",
+      "accept": ["Montgolfier", "the Montgolfiers", "Joseph and Étienne Montgolfier"],
+      "note": "Joseph-Michel and Jacques-Étienne Montgolfier flew their first public balloon at Annonay in June 1783.",
+      "source": "https://www.britannica.com/biography/Montgolfier-brothers"
+    },
+    {
+      "category": "History",
+      "side": "both",
+      "question": "Deposed after France's defeat in the Franco-Prussian War, the last French emperor, Napoleon III, died in exile in 1873 in which Kent town?",
+      "answer": "Chislehurst",
+      "accept": ["Chislehurst, Kent"],
+      "options": ["Chislehurst", "Canterbury", "Dover", "Tunbridge Wells"],
+      "note": "Napoleon III lived and died at Camden Place in Chislehurst before his remains were later moved to Farnborough.",
+      "source": "https://www.napoleon.org/en/history-of-the-two-empires/articles/camden-place-chislehurst-uk-the-last-home-of-napoleon-iii/"
+    },
+    {
+      "category": "Food & drink",
+      "side": "britain",
+      "question": "The savoury, umami flavour of Lea & Perrins Worcestershire sauce comes largely from which small fermented fish?",
+      "answer": "Anchovies",
+      "accept": ["Anchovy"],
+      "note": "Invented in Worcester in the 1830s, the sauce ferments anchovies for months to build its taste.",
+      "source": "https://en.wikipedia.org/wiki/Worcestershire_sauce"
+    },
+    {
+      "category": "Geography",
+      "side": "france",
+      "question": "How many overseas régions (the DROM) does France have?",
+      "answer": "Five",
+      "accept": ["5"],
+      "options": ["Three", "Four", "Five", "Six"],
+      "note": "France's five overseas régions are Guadeloupe, Martinique, French Guiana, Réunion and Mayotte.",
+      "source": "https://en.wikipedia.org/wiki/Overseas_France"
+    },
+    {
+      "category": "Culture & the arts",
+      "side": "britain",
+      "question": "Which English author created the character Peter Rabbit?",
+      "answer": "Beatrix Potter",
+      "accept": ["Potter"],
+      "note": "The Tale of Peter Rabbit was published by Frederick Warne & Co. in 1902.",
+      "source": "https://en.wikipedia.org/wiki/The_Tale_of_Peter_Rabbit"
+    },
+    {
+      "category": "Language & everyday life",
+      "side": "both",
+      "question": "In French, the everyday word 'un slip' refers to which item of clothing?",
+      "answer": "Underpants (briefs)",
+      "accept": ["underpants", "briefs", "pants"],
+      "note": "A classic false friend: French 'un slip' means underpants or briefs.",
+      "source": "https://www.collinsdictionary.com/dictionary/french-english/slip"
+    },
+    {
+      "category": "Inventions",
+      "side": "britain",
+      "question": "The world's first ATM (cash machine) opened in 1967 at a Barclays branch in which north London suburb?",
+      "answer": "Enfield",
+      "accept": [],
+      "options": ["Enfield", "Croydon", "Ealing", "Barnet"],
+      "note": "The machine, devised by John Shepherd-Barron, was unveiled at Barclays Enfield on 27 June 1967.",
+      "source": "https://home.barclays/news/2017/06/from-the-archives-the-atm-is-50/"
+    },
+    {
+      "category": "History",
+      "side": "both",
+      "question": "After Louis XIV revoked the Edict of Nantes in 1685, French Protestant Huguenots fled to England; which East London district did they make the heart of the silk-weaving trade?",
+      "answer": "Spitalfields",
+      "accept": ["Spitalfields, London"],
+      "options": ["Spitalfields", "Chelsea", "Greenwich", "Camden"],
+      "note": "Huguenot refugees brought advanced silk-weaving skills to Spitalfields, turning it into the centre of Britain's luxury silk trade.",
+      "source": "https://www.londonmuseum.org.uk/collections/london-stories/the-huguenots-london/"
+    },
+    {
+      "category": "Food & drink",
+      "side": "france",
+      "question": "Beef bourguignon, a classic French stew of beef braised in red wine, traditionally comes from which region of France?",
+      "answer": "Burgundy",
+      "accept": ["Bourgogne"],
+      "note": "The dish and its wine both take their name from the Burgundy (Bourgogne) region.",
+      "source": "https://en.wikipedia.org/wiki/Beef_bourguignon"
+    },
+    {
+      "category": "Geography",
+      "side": "britain",
+      "question": "The Giant's Causeway, shown here with its famous basalt columns, lies in which part of the United Kingdom?",
+      "answer": "Northern Ireland",
+      "accept": ["County Antrim", "Antrim"],
+      "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Giant%27s%20Causeway%202006%2008.jpg?width=1200",
+      "imageAlt": "Interlocking hexagonal basalt columns forming a rocky coastal pavement by the sea",
+      "imageCredit": "Giant's Causeway · Wikimedia Commons, CC BY-SA (credit at source)",
+      "note": "On the County Antrim coast, its 40,000 columns became Northern Ireland's first UNESCO World Heritage Site in 1986.",
+      "source": "https://en.wikipedia.org/wiki/Giant%27s_Causeway"
+    },
+    {
+      "category": "Culture & the arts",
+      "side": "france",
+      "question": "Which French composer wrote the opera Carmen?",
+      "answer": "Georges Bizet",
+      "accept": ["Bizet"],
+      "note": "Bizet's Carmen premiered at the Opéra-Comique in Paris in March 1875 — he died just months later, before its huge success.",
+      "source": "https://en.wikipedia.org/wiki/Carmen"
+    },
+    {
+      "category": "Language & everyday life",
+      "side": "both",
+      "question": "In English, the word 'gaffe' (borrowed from French) means what?",
+      "answer": "An embarrassing blunder or social mistake",
+      "accept": ["a blunder", "a mistake", "a faux pas", "a social blunder"],
+      "note": "English took 'gaffe' from French to mean a foolish, embarrassing error made in public.",
+      "source": "https://www.merriam-webster.com/dictionary/gaffe"
+    },
+    {
+      "category": "Inventions",
+      "side": "britain",
+      "question": "Which British scientist invented the World Wide Web in 1989 while working at CERN?",
+      "answer": "Tim Berners-Lee",
+      "accept": ["Sir Tim Berners-Lee", "Berners-Lee"],
+      "note": "He wrote his proposal for the Web at CERN in 1989 and built the first browser and server soon after.",
+      "source": "https://home.cern/science/computing/the-birth-of-the-web/"
+    },
+    {
+      "category": "Food & drink",
+      "side": "france",
+      "question": "Green Chartreuse, the French herbal liqueur, is famously distilled by monks of which Catholic religious order?",
+      "answer": "Carthusian",
+      "accept": ["Carthusians"],
+      "options": ["Benedictine", "Carthusian", "Trappist", "Cistercian"],
+      "note": "Carthusian monks have made the secret 130-plant liqueur since the 18th century.",
+      "source": "https://en.wikipedia.org/wiki/Chartreuse_(liqueur)"
+    },
+    {
+      "category": "History",
+      "side": "both",
+      "question": "What was the code name of the 1940 operation that evacuated over 338,000 British and French troops from the beaches of Dunkirk?",
+      "answer": "Operation Dynamo",
+      "accept": ["Dynamo"],
+      "note": "Operation Dynamo ran from 26 May to 4 June 1940, aided by a flotilla of civilian 'little ships'.",
+      "source": "https://www.iwm.org.uk/history/second-world-war/dunkirk/what-you-need-to-know-about-the-dunkirk-evacuations"
+    },
+    {
+      "category": "Culture & the arts",
+      "side": "france",
+      "question": "The 2001 film Amélie is set in which hilltop district of Paris?",
+      "answer": "Montmartre",
+      "accept": [],
+      "options": ["Montmartre", "Le Marais", "Montparnasse", "Belleville"],
+      "note": "Jean-Pierre Jeunet's film, starring Audrey Tautou, is a love letter to the Montmartre neighbourhood.",
+      "source": "https://en.wikipedia.org/wiki/Am%C3%A9lie"
+    },
+    {
+      "category": "Geography",
+      "side": "britain",
+      "question": "What is the largest island of Scotland's Inner Hebrides?",
+      "answer": "Skye",
+      "accept": ["Isle of Skye"],
+      "note": "Skye is the largest and best known of the Inner Hebrides, linked to the mainland by the Skye Bridge.",
+      "source": "https://www.britannica.com/place/Skye"
+    },
+    {
+      "category": "Language & everyday life",
+      "side": "france",
+      "question": "In French, 'un flipper' is which piece of amusement-arcade equipment?",
+      "answer": "A pinball machine",
+      "accept": ["pinball machine", "pinball"],
+      "options": ["a swimming flipper", "a pinball machine", "a fruit machine", "a dodgem car"],
+      "note": "A pseudo-anglicism: in France 'un flipper' is a pinball machine, named after its flippers.",
+      "source": "https://dictionary.cambridge.org/dictionary/french-english/flipper"
+    },
+    {
+      "category": "History",
+      "side": "britain",
+      "question": "What is the name of the great survey of English landholdings commissioned by William the Conqueror and completed in 1086?",
+      "answer": "Domesday Book",
+      "accept": ["Domesday"],
+      "note": "The Norman survey recorded the value and resources of estates across England and is now held at the National Archives.",
+      "source": "https://www.britannica.com/topic/Domesday-Book"
+    },
+    {
+      "category": "Inventions",
+      "side": "both",
+      "question": "Concorde, the Franco-British supersonic airliner shown here, made its first prototype flight in 1969 from which French city?",
+      "answer": "Toulouse",
+      "accept": [],
+      "options": ["Toulouse", "Paris", "Bristol", "Marseille"],
+      "image": "https://commons.wikimedia.org/wiki/Special:FilePath/British%20Airways%20Concorde%20G-BOAC%2003.jpg?width=1200",
+      "imageAlt": "A slender white supersonic airliner with a long drooping needle nose",
+      "imageCredit": "British Airways Concorde G-BOAC · Wikimedia Commons, CC BY-SA (credit at source)",
+      "note": "Concorde 001 first flew from Toulouse on 2 March 1969, a joint project of France's Aérospatiale and Britain's BAC.",
+      "source": "https://en.wikipedia.org/wiki/Concorde"
+    },
+    {
+      "category": "Food & drink",
+      "side": "britain",
+      "question": "Traditional Melton Mowbray pork pies are baked free-standing, without a tin, using which type of pastry?",
+      "answer": "Hot water crust",
+      "accept": ["Hot water crust pastry", "Hot-water crust"],
+      "options": ["Shortcrust", "Puff pastry", "Hot water crust", "Filo"],
+      "note": "The lard-and-boiling-water dough sets firm enough to hold the pie's bow-shaped sides without a tin.",
+      "source": "https://en.wikipedia.org/wiki/Pork_pie"
+    },
+    {
+      "category": "Geography",
+      "side": "france",
+      "question": "What is the highest summit of the French Pyrenees — the highest Pyrenean peak lying partly on French soil?",
+      "answer": "Vignemale",
+      "accept": ["Grand Vignemale", "Pique-Longue"],
+      "options": ["Aneto", "Vignemale", "Pic du Midi d'Ossau", "Monte Perdido"],
+      "note": "At 3,298 m the Vignemale is the highest French Pyrenean summit, though the range's overall highest peak, Aneto, lies entirely in Spain.",
+      "source": "https://en.wikipedia.org/wiki/Vignemale"
+    },
+    {
+      "category": "Culture & the arts",
+      "side": "britain",
+      "question": "Which sculptor created the Angel of the North, the giant steel figure near Gateshead shown here?",
+      "answer": "Antony Gormley",
+      "accept": ["Gormley"],
+      "options": ["Antony Gormley", "Anish Kapoor", "Henry Moore", "Barbara Hepworth"],
+      "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Angel%20of%20the%20North%202016%20006.jpg?width=1200",
+      "imageAlt": "A giant rust-coloured steel human figure with huge straight aeroplane-like wings",
+      "imageCredit": "Angel of the North · Wikimedia Commons, CC BY-SA (credit at source)",
+      "note": "Gormley's 20-metre steel sculpture, with a 54-metre wingspan, was installed beside the A1 in 1998.",
+      "source": "https://www.britannica.com/topic/Angel-of-the-North"
+    },
+    {
+      "category": "Language & everyday life",
+      "side": "france",
+      "question": "In the south-west of France (around Toulouse and Bordeaux), what word do locals use instead of 'pain au chocolat'?",
+      "answer": "Chocolatine",
+      "accept": ["une chocolatine"],
+      "note": "The south-west says 'chocolatine' — a regional split so fierce it has even been raised in the French parliament.",
+      "source": "https://www.thelocal.fr/20170119/pastry-wars-is-it-a-pain-au-chocolat-or-a-chocolatine"
+    },
+    {
+      "category": "Inventions",
+      "side": "both",
+      "question": "The SEPECAT Jaguar strike aircraft, first flown in 1968, was jointly developed by France and which other country?",
+      "answer": "Britain",
+      "accept": ["the United Kingdom", "the UK", "Great Britain"],
+      "note": "SEPECAT was a joint venture between France's Breguet and Britain's BAC — one of several Franco-British aviation projects of the era.",
+      "source": "https://en.wikipedia.org/wiki/SEPECAT_Jaguar"
+    },
+    {
+      "category": "History",
+      "side": "britain",
+      "question": "In the 1605 Gunpowder Plot, Guy Fawkes and his fellow conspirators planned to blow up the House of Lords and kill which king of England?",
+      "answer": "James I",
+      "accept": ["King James I", "James VI and I"],
+      "note": "The failed Catholic plot against the Protestant king is still marked each 5 November as Bonfire Night.",
+      "source": "https://www.worldhistory.org/Gunpowder_Plot/"
+    },
+    {
+      "category": "Food & drink",
+      "side": "both",
+      "question": "English keeps Anglo-Saxon names for the live animals (cow, pig, sheep) but uses words from which language for their meat (beef, pork, mutton)?",
+      "answer": "French",
+      "accept": ["Norman French", "Norman"],
+      "note": "The split dates from 1066: Norman-French rulers named the meat at the table while English farmers kept the animals' names.",
+      "source": "https://www.dictionary.com/e/animal-names-change-become-food/"
+    },
+    {
+      "category": "Language & everyday life",
+      "side": "france",
+      "question": "France's national motto 'Liberté, Égalité, Fraternité' translates into English as which three words?",
+      "answer": "Liberty, Equality, Fraternity",
+      "accept": ["Liberty, Equality, Brotherhood", "freedom, equality, brotherhood"],
+      "note": "The motto dates from the French Revolution and is carved on public buildings across France.",
+      "source": "https://www.lawlessfrench.com/expressions/liberte-egalite-fraternite/"
+    },
+    {
+      "category": "Geography",
+      "side": "both",
+      "question": "After leaving England, the Greenwich (Prime) Meridian next reaches the continental European coast at Villers-sur-Mer, in which French région?",
+      "answer": "Normandy",
+      "accept": ["Normandie", "Basse-Normandie"],
+      "note": "Villers-sur-Mer in Calvados is the only French seaside resort sitting on the Greenwich Meridian.",
+      "source": "https://en.normandie-tourisme.fr/museums-and-heritage-sites/meridien-de-greenwich/"
+    },
+    {
+      "category": "Culture & the arts",
+      "side": "both",
+      "question": "Baroness Orczy's novel The Scarlet Pimpernel, in which an Englishman rescues aristocrats from the guillotine, is set during the revolution in which country?",
+      "answer": "France",
+      "accept": ["the French Revolution"],
+      "note": "The 1905 British novel, set during the Reign of Terror, more or less invented the 'secret-identity hero' template.",
+      "source": "https://en.wikipedia.org/wiki/The_Scarlet_Pimpernel"
+    }
+  ]
+}

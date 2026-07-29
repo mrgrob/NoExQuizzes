@@ -102,6 +102,16 @@ through one of the six categories):
   night, use it as one of the round's category slots (e.g. in place of Sport &
   games), still five questions with all the usual rules. The player gives it
   its own colour and `scripts/check.py` accepts it.
+- **Inventions** — French and British inventions and discoveries, old or recent,
+  including things built jointly (Concorde, the Channel Tunnel). Another
+  recognised **extra category** (`"Inventions"`) with its own colour; use it as
+  a category slot when the night calls for it. Lean into "both" for joint
+  Franco-British engineering.
+
+**Include a photo or two.** Most rounds play better with a couple of `image`
+questions mixed in (a landmark → "which région?", a painting → "who painted
+it / which museum?"). The image is the star; make sure the answer isn't given
+away by the picture or its (reveal-only) caption.
 
 **Difficulty per theme.** Tailor to what the family knows. They are devoted
 Jurassic Park fans and have lived in Provence for 40 years — so pitch **Jurassic

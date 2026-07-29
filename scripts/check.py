@@ -29,6 +29,7 @@ CATEGORIES = {
     "Sport & games",
     "Language & everyday life",
     "UK pop & rock",
+    "Inventions",
 }
 SIDES = {"france", "britain", "both", "neutral"}
 

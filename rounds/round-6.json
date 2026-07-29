@@ -21,15 +21,21 @@
       "answer": "1520",
       "accept": [],
       "options": ["1415", "1520", "1588", "1610"],
+      "image": "https://commons.wikimedia.org/wiki/Special:FilePath/British%20-%20Field%20of%20the%20Cloth%20of%20Gold%20-%20Google%20Art%20Project.jpg?width=1200",
+      "imageAlt": "A crowded 16th-century painting of a royal summit with tents, a golden castle and processions",
+      "imageCredit": "The Field of the Cloth of Gold, c.1545, Royal Collection · Wikimedia Commons (public domain)",
       "note": "The lavish 18-day meeting near Calais began on 7 June 1520, each king trying to out-dazzle the other.",
       "source": "https://www.hrp.org.uk/hampton-court-palace/history-and-stories/the-field-of-cloth-of-gold/"
     },
     {
       "category": "Culture & the arts",
       "side": "france",
-      "question": "In which Paris museum is Leonardo da Vinci's Mona Lisa displayed?",
+      "question": "In which Paris museum is this painting — Leonardo da Vinci's Mona Lisa — displayed?",
       "answer": "The Louvre",
       "accept": ["Louvre", "Musée du Louvre"],
+      "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Mona%20Lisa.jpg?width=800",
+      "imageAlt": "A famous Renaissance portrait of a woman with an enigmatic smile",
+      "imageCredit": "Mona Lisa, Leonardo da Vinci · Wikimedia Commons (public domain)",
       "note": "Leonardo brought the painting to France in 1516, and it has hung in the Louvre since the late 1790s.",
       "source": "https://en.wikipedia.org/wiki/Mona_Lisa"
     },
@@ -264,7 +270,10 @@
       "answer": "Camille Pissarro",
       "accept": ["Pissarro"],
       "options": ["Camille Pissarro", "Alfred Sisley", "Auguste Renoir", "Edgar Degas"],
-      "note": "About a dozen of his London-exile pictures survive, including Fox Hill, Upper Norwood, now in the National Gallery.",
+      "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Camille%20Pissarro%20-%20Fox%20Hill%2C%20Upper%20Norwood%20(1870).jpg?width=1100",
+      "imageAlt": "An Impressionist painting of a snowy suburban lane with a few small figures",
+      "imageCredit": "Fox Hill, Upper Norwood (1870), Camille Pissarro · Wikimedia Commons (public domain)",
+      "note": "This is the very picture — about a dozen of his London-exile paintings survive, and Fox Hill, Upper Norwood now hangs in the National Gallery.",
       "source": "https://www.nationalgallery.org.uk/paintings/camille-pissarro-fox-hill-upper-norwood"
     },
     {
