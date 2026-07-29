@@ -1,0 +1,22 @@
+# This is a static site — there is no build, no tooling, and no secrets.
+# Keep it that way. Nothing generated at runtime should ever be committed.
+
+# OS / editor cruft
+.DS_Store
+Thumbs.db
+*.swp
+*~
+.idea/
+.vscode/
+
+# Never commit anything that looks like a key or an env file — there is no
+# API key in this project by design.
+.env
+.env.*
+*.pem
+*.key
+secrets.*
+
+# Python bytecode from scripts/check.py
+__pycache__/
+*.pyc

@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+<meta name="theme-color" content="#080f26" />
+<title>NoExQuizzes — the Franco-British family quiz</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter+Tight:wght@400;500;600&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet" />
+<style>
+  :root{
+    --navy:#080f26;
+    --navy-card:#0d1836;
+    --navy-line:#1b2a4e;
+    --paper:#f0ede6;
+    --paper-dim:#9aa3b8;
+    --france:#4b7bff;
+    --britain:#f0505c;
+    --both:#f0ede6;
+    --accent:#4b7bff;
+    --side:var(--both);       /* recoloured per question */
+    --tap:56px;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html,body{height:100%}
+  body{
+    background:var(--navy);
+    color:var(--paper);
+    font-family:"Inter Tight",system-ui,sans-serif;
+    -webkit-font-smoothing:antialiased;
+    line-height:1.45;
+    padding:env(safe-area-inset-top) env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left);
+    overflow-x:hidden;
+  }
+  .wrap{max-width:720px;margin:0 auto;padding:22px 20px 40px;min-height:100%;display:flex;flex-direction:column}
+  .mono{font-family:"JetBrains Mono",ui-monospace,monospace}
+  .serif{font-family:"Instrument Serif",Georgia,serif}
+  a{color:var(--france)}
+  button{font-family:inherit;cursor:pointer;border:none;background:none;color:inherit}
+  .hidden{display:none !important}
+
+  /* ---------- Masthead ---------- */
+  .mast{display:flex;align-items:baseline;justify-content:space-between;gap:12px;margin-bottom:8px}
+  .mast h1{font-family:"Instrument Serif",serif;font-weight:400;font-size:30px;letter-spacing:.3px;line-height:1}
+  .mast .flagdots{display:inline-flex;gap:5px;vertical-align:middle;margin-left:2px}
+  .flagdots i{width:9px;height:9px;border-radius:50%;display:inline-block}
+  .fd-b{background:var(--france)} .fd-w{background:var(--paper)} .fd-r{background:var(--britain)}
+  .mast .sub{font-size:11px;letter-spacing:2px;text-transform:uppercase;color:var(--paper-dim)}
+
+  /* ---------- Round list ---------- */
+  .lead{color:var(--paper-dim);font-size:15px;margin:4px 0 22px;max-width:52ch}
+  .rounds{list-style:none;display:flex;flex-direction:column;gap:12px}
+  .round-card{
+    width:100%;text-align:left;background:var(--navy-card);
+    border:1px solid var(--navy-line);border-radius:16px;
+    padding:18px 18px;display:flex;align-items:center;gap:16px;
+    transition:border-color .18s ease, transform .12s ease;
+    min-height:var(--tap);
+  }
+  .round-card:hover,.round-card:focus-visible{border-color:var(--france);outline:none}
+  .round-card:active{transform:scale(.99)}
+  .round-num{
+    font-family:"Instrument Serif",serif;font-size:34px;line-height:1;
+    min-width:52px;text-align:center;color:var(--paper);
+    border-right:1px solid var(--navy-line);padding-right:16px;
+  }
+  .round-meta{flex:1;min-width:0}
+  .round-title{font-size:18px;font-weight:500}
+  .round-sub{font-size:12px;color:var(--paper-dim);margin-top:3px;letter-spacing:.4px}
+  .round-go{color:var(--paper-dim);font-size:22px}
+
+  .notice{
+    background:var(--navy-card);border:1px dashed var(--navy-line);
+    border-radius:16px;padding:26px 22px;text-align:center;color:var(--paper-dim);
+  }
+  .notice .big{font-family:"Instrument Serif",serif;font-size:24px;color:var(--paper);margin-bottom:8px}
+
+  /* ---------- Channel strip ---------- */
+  .channel{margin:2px 0 22px}
+  .channel-labels{display:flex;justify-content:space-between;font-size:10px;letter-spacing:2px;text-transform:uppercase;color:var(--paper-dim);margin-bottom:9px}
+  .channel-labels .active{color:var(--paper)}
+  .channel-line{
+    position:relative;height:2px;border-radius:2px;
+    background:linear-gradient(90deg,var(--france) 0%,var(--paper) 50%,var(--britain) 100%);
+    opacity:.55;
+  }
+  .marker{
+    position:absolute;top:50%;left:50%;
+    width:15px;height:15px;border-radius:50%;
+    background:var(--side);
+    transform:translate(-50%,-50%);
+    box-shadow:0 0 0 4px var(--navy), 0 0 14px 2px color-mix(in srgb, var(--side) 55%, transparent);
+    transition:left .7s cubic-bezier(.65,0,.35,1), background-color .5s ease;
+  }
+  .marker[data-side="france"]{left:6px}
+  .marker[data-side="britain"]{left:calc(100% - 6px)}
+  .marker[data-side="both"]{left:50%}
+  .marker.pulse{animation:pulse 1s ease-out}
+  @keyframes pulse{
+    0%{box-shadow:0 0 0 4px var(--navy), 0 0 0 0 color-mix(in srgb,var(--accent) 70%,transparent)}
+    45%{box-shadow:0 0 0 4px var(--navy), 0 0 0 16px color-mix(in srgb,var(--accent) 0%,transparent)}
+    100%{box-shadow:0 0 0 4px var(--navy), 0 0 14px 2px color-mix(in srgb,var(--side) 55%,transparent)}
+  }
+
+  /* ---------- Play card ---------- */
+  .topbar{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:14px}
+  .link-btn{color:var(--paper-dim);font-size:12px;letter-spacing:1.4px;text-transform:uppercase;padding:8px 4px;min-height:44px;display:inline-flex;align-items:center}
+  .link-btn:hover{color:var(--paper)}
+  .score{font-size:12px;letter-spacing:1.4px;text-transform:uppercase;color:var(--paper-dim);white-space:nowrap}
+  .score b{color:var(--paper);font-size:15px}
+  .score .num{display:inline-block}
+  .score .num.pulse{animation:scorepop .55s ease-out;color:var(--accent)}
+  @keyframes scorepop{0%{transform:scale(1)}40%{transform:scale(1.5)}100%{transform:scale(1)}}
+
+  .card{
+    background:var(--navy-card);border:1px solid var(--navy-line);
+    border-top:3px solid var(--side);
+    border-radius:20px;padding:22px 20px 24px;
+    display:flex;flex-direction:column;flex:1;
+    transition:border-top-color .5s ease;
+  }
+  .qhead{display:flex;align-items:center;gap:10px;margin-bottom:16px;flex-wrap:wrap}
+  .tag{
+    font-family:"JetBrains Mono",monospace;font-size:11px;letter-spacing:1px;
+    text-transform:uppercase;padding:4px 9px;border-radius:999px;
+    border:1px solid var(--side);color:var(--side);
+  }
+  .qcount{font-family:"JetBrains Mono",monospace;font-size:12px;color:var(--paper-dim);margin-left:auto}
+  .qside{font-family:"JetBrains Mono",monospace;font-size:11px;color:var(--paper-dim);letter-spacing:1px}
+
+  .question{
+    font-family:"Instrument Serif",serif;font-weight:400;
+    font-size:clamp(30px,7.4vw,46px);line-height:1.12;letter-spacing:.2px;
+    margin:6px 0 18px;
+  }
+
+  .reveal{border-top:1px solid var(--navy-line);padding-top:18px;margin-top:auto}
+  .reveal .alabel{font-family:"JetBrains Mono",monospace;font-size:10px;letter-spacing:2px;text-transform:uppercase;color:var(--paper-dim);margin-bottom:6px}
+  .answer{font-family:"Instrument Serif",serif;font-size:clamp(26px,6vw,38px);line-height:1.15;color:var(--side)}
+  .accept{font-size:13px;color:var(--paper-dim);margin-top:8px}
+  .accept b{color:var(--paper);font-weight:500}
+  .note{font-size:15px;color:var(--paper);margin-top:14px;font-style:italic;opacity:.92}
+  .source{margin-top:12px;font-family:"JetBrains Mono",monospace;font-size:12px;word-break:break-all}
+  .source a{color:var(--france)}
+  .source .slabel{color:var(--paper-dim);letter-spacing:1px;text-transform:uppercase;margin-right:6px}
+
+  /* ---------- Controls ---------- */
+  .controls{display:flex;gap:12px;margin-top:20px}
+  .btn{
+    flex:1;min-height:var(--tap);border-radius:14px;font-weight:600;font-size:16px;
+    display:flex;align-items:center;justify-content:center;gap:8px;
+    border:1px solid var(--navy-line);background:var(--navy-card);color:var(--paper);
+    transition:transform .1s ease, background-color .15s ease, border-color .15s ease;
+  }
+  .btn:active{transform:scale(.98)}
+  .btn.primary{background:var(--paper);color:var(--navy);border-color:var(--paper)}
+  .btn.right{border-color:var(--france);color:var(--france)}
+  .btn.right:hover{background:color-mix(in srgb,var(--france) 16%,transparent)}
+  .btn.missed{border-color:var(--britain);color:var(--britain)}
+  .btn.missed:hover{background:color-mix(in srgb,var(--britain) 16%,transparent)}
+  .btn.back{flex:0 0 auto;min-width:64px;color:var(--paper-dim);font-size:20px}
+  .khint{text-align:center;font-family:"JetBrains Mono",monospace;font-size:10px;color:var(--paper-dim);letter-spacing:1px;margin-top:12px;opacity:.7}
+
+  /* ---------- End screen ---------- */
+  .endhead{text-align:center;padding:12px 0 4px}
+  .endhead .lbl{font-family:"JetBrains Mono",monospace;font-size:11px;letter-spacing:3px;text-transform:uppercase;color:var(--paper-dim)}
+  .bigscore{font-family:"Instrument Serif",serif;font-size:clamp(60px,20vw,120px);line-height:1;margin:6px 0}
+  .bigscore .of{color:var(--paper-dim)}
+  .endsub{color:var(--paper-dim);font-size:15px;margin-bottom:24px;text-align:center}
+  .sheet{display:flex;flex-direction:column;gap:0;border-top:1px solid var(--navy-line)}
+  .sheet-row{padding:14px 2px;border-bottom:1px solid var(--navy-line);display:flex;gap:12px}
+  .sheet-n{font-family:"JetBrains Mono",monospace;color:var(--paper-dim);font-size:13px;min-width:26px;padding-top:3px}
+  .sheet-body{flex:1;min-width:0}
+  .sheet-q{font-family:"Instrument Serif",serif;font-size:20px;line-height:1.2}
+  .sheet-cat{font-family:"JetBrains Mono",monospace;font-size:10px;letter-spacing:1px;text-transform:uppercase;color:var(--paper-dim)}
+  .sheet-a{margin-top:4px;font-size:15px}
+  .sheet-a b{color:var(--paper)}
+  .sheet-src{margin-top:5px;font-family:"JetBrains Mono",monospace;font-size:11px;word-break:break-all}
+  .sheet-mark{font-family:"JetBrains Mono",monospace;font-size:16px;padding-top:2px}
+  .mk-right{color:var(--france)} .mk-missed{color:var(--britain)}
+
+  .endbtns{display:flex;gap:12px;margin:26px 0 10px}
+
+  /* ---------- Print ---------- */
+  @media print{
+    :root{--navy:#fff;--paper:#111}
+    body{background:#fff;color:#111}
+    .noprint{display:none !important}
+    .card,.round-card,.notice{border-color:#ccc}
+    .sheet-row{border-color:#ddd}
+    .answer,.sheet-q,.bigscore{color:#111 !important}
+    a{color:#0a3;}
+    .wrap{max-width:none}
+  }
+
+  @media (prefers-reduced-motion:reduce){
+    *{transition:none !important;animation:none !important}
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <!-- ============ ROUND LIST ============ -->
+  <section id="screen-list">
+    <div class="mast">
+      <h1>NoExQuizzes<span class="flagdots"><i class="fd-b"></i><i class="fd-w"></i><i class="fd-r"></i></span></h1>
+      <span class="sub">La Manche · The Channel</span>
+    </div>
+    <p class="lead">The Franco-British family quiz. Pick a round — one person reads it aloud, everyone else answers on paper.</p>
+    <div id="list-body"><p class="mono" style="color:var(--paper-dim)">Loading rounds…</p></div>
+  </section>
+
+  <!-- ============ PLAY ============ -->
+  <section id="screen-play" class="hidden">
+    <div class="topbar noprint">
+      <button class="link-btn" id="to-list">‹ Rounds</button>
+      <div class="score">Score <b><span class="num" id="score-num">0</span> / <span id="score-den">0</span></b></div>
+    </div>
+
+    <div class="channel">
+      <div class="channel-labels">
+        <span id="lab-fr">France</span>
+        <span id="lab-gb">Britain</span>
+      </div>
+      <div class="channel-line"><span class="marker" id="marker" data-side="both"></span></div>
+    </div>
+
+    <div class="card">
+      <div class="qhead">
+        <span class="tag" id="q-tag">Category</span>
+        <span class="qside" id="q-side"></span>
+        <span class="qcount" id="q-count">1 / 30</span>
+      </div>
+      <div class="question serif" id="q-text">…</div>
+
+      <div class="reveal hidden" id="reveal">
+        <div class="alabel">Answer</div>
+        <div class="answer serif" id="a-text"></div>
+        <div class="accept hidden" id="a-accept"></div>
+        <div class="note" id="a-note"></div>
+        <div class="source" id="a-source"></div>
+      </div>
+    </div>
+
+    <div class="controls noprint" id="controls-hidden">
+      <button class="btn back" id="btn-back" title="Previous question">‹</button>
+      <button class="btn primary" id="btn-reveal">Reveal answer</button>
+    </div>
+
+    <div class="controls noprint hidden" id="controls-mark">
+      <button class="btn back" id="btn-back2" title="Previous question">‹</button>
+      <button class="btn missed" id="btn-missed">Missed it</button>
+      <button class="btn right" id="btn-right">Right ✓</button>
+    </div>
+
+    <div class="khint noprint">space reveal · then Right / Missed · ← → move</div>
+  </section>
+
+  <!-- ============ END ============ -->
+  <section id="screen-end" class="hidden">
+    <div class="endhead">
+      <div class="lbl" id="end-title">Round complete</div>
+      <div class="bigscore serif"><span id="end-score">0</span><span class="of"> / <span id="end-den">0</span></span></div>
+    </div>
+    <p class="endsub" id="end-sub"></p>
+    <div class="endbtns noprint">
+      <button class="btn" id="end-to-list">‹ All rounds</button>
+      <button class="btn primary" id="btn-print">Print answer sheet</button>
+    </div>
+    <div class="lbl mono" style="color:var(--paper-dim);letter-spacing:2px;text-transform:uppercase;font-size:11px;margin:6px 0 4px">Answer sheet</div>
+    <div class="sheet" id="sheet"></div>
+    <div class="endbtns noprint">
+      <button class="btn" id="end-to-list2">‹ All rounds</button>
+    </div>
+  </section>
+</div>
+
+<script>
+"use strict";
+(function(){
+  var SIDE_COLOR = { france:"var(--france)", britain:"var(--britain)", both:"var(--both)" };
+  var SIDE_LABEL = { france:"France", britain:"Britain", both:"France + Britain" };
+
+  var listEl   = document.getElementById("list-body");
+  var scr = {
+    list: document.getElementById("screen-list"),
+    play: document.getElementById("screen-play"),
+    end:  document.getElementById("screen-end")
+  };
+
+  var state = { round:null, i:0, revealed:false, marks:[], score:0 };
+
+  function show(name){
+    for (var k in scr) scr[k].classList.toggle("hidden", k !== name);
+    window.scrollTo(0,0);
+  }
+
+  function esc(s){
+    return String(s == null ? "" : s)
+      .replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;")
+      .replace(/"/g,"&quot;");
+  }
+  function hostPath(url){
+    try{ var u = new URL(url); return u.host.replace(/^www\./,"") + u.pathname.replace(/\/$/,""); }
+    catch(e){ return url; }
+  }
+
+  /* ---------------- Round list ---------------- */
+  function loadList(){
+    fetch("rounds/index.json", {cache:"no-cache"})
+      .then(function(r){ if(!r.ok) throw new Error(r.status); return r.json(); })
+      .then(renderList)
+      .catch(function(){
+        // No index yet, or unreadable — treat as empty rather than broken.
+        renderList([]);
+      });
+  }
+
+  function renderList(rounds){
+    if (!Array.isArray(rounds) || rounds.length === 0){
+      listEl.innerHTML =
+        '<div class="notice"><div class="big serif">No rounds yet</div>' +
+        'The first quiz evening hasn’t been written. Ask Claude for one — ' +
+        '“new quiz round” or “fais la session de ce soir” — and it will appear here.</div>';
+      return;
+    }
+    rounds.sort(function(a,b){ return (b.number||0) - (a.number||0); });
+    var ul = document.createElement("ul");
+    ul.className = "rounds";
+    rounds.forEach(function(r){
+      var li = document.createElement("li");
+      var b = document.createElement("button");
+      b.className = "round-card";
+      var count = r.count != null ? r.count : "?";
+      b.innerHTML =
+        '<span class="round-num serif">' + esc(r.number) + '</span>' +
+        '<span class="round-meta"><span class="round-title">' + esc(r.title || ("Round " + r.number)) + '</span>' +
+        '<span class="round-sub mono">' + esc(count) + ' questions' +
+        (r.written ? ' · ' + esc(r.written) : '') + '</span></span>' +
+        '<span class="round-go">›</span>';
+      b.addEventListener("click", function(){ openRound(r.id); });
+      li.appendChild(b);
+      ul.appendChild(li);
+    });
+    listEl.innerHTML = "";
+    listEl.appendChild(ul);
+  }
+
+  /* ---------------- Load a round ---------------- */
+  function openRound(id){
+    listEl.querySelectorAll(".round-card").forEach(function(b){ b.disabled = true; });
+    fetch("rounds/" + id + ".json", {cache:"no-cache"})
+      .then(function(r){ if(!r.ok) throw new Error(r.status); return r.json(); })
+      .then(function(data){
+        state.round = data;
+        state.i = 0;
+        state.revealed = false;
+        state.marks = new Array((data.questions||[]).length).fill(null);
+        state.score = 0;
+        document.getElementById("score-den").textContent = state.marks.length;
+        show("play");
+        renderQuestion();
+      })
+      .catch(function(){
+        listEl.querySelectorAll(".round-card").forEach(function(b){ b.disabled = false; });
+        alert("Sorry — that round couldn’t be loaded.");
+      });
+  }
+
+  /* ---------------- Render one question ---------------- */
+  function renderQuestion(){
+    var q = state.round.questions[state.i];
+    var side = (q.side === "france" || q.side === "britain") ? q.side : "both";
+
+    document.documentElement.style.setProperty("--side", SIDE_COLOR[side]);
+
+    var marker = document.getElementById("marker");
+    marker.setAttribute("data-side", side);
+    document.getElementById("lab-fr").classList.toggle("active", side !== "britain");
+    document.getElementById("lab-gb").classList.toggle("active", side !== "france");
+
+    document.getElementById("q-tag").textContent = q.category || "";
+    document.getElementById("q-side").textContent = SIDE_LABEL[side];
+    document.getElementById("q-count").textContent = (state.i + 1) + " / " + state.round.questions.length;
+    document.getElementById("q-text").textContent = q.question || "";
+
+    // Answer block
+    document.getElementById("a-text").textContent = q.answer || "";
+    var acc = document.getElementById("a-accept");
+    if (q.accept && q.accept.length){
+      acc.innerHTML = "Also accept: <b>" + q.accept.map(esc).join("</b>, <b>") + "</b>";
+      acc.classList.remove("hidden");
+    } else {
+      acc.classList.add("hidden");
+    }
+    document.getElementById("a-note").textContent = q.note || "";
+    var src = document.getElementById("a-source");
+    if (q.source){
+      src.innerHTML = '<span class="slabel">Source</span>' +
+        '<a href="' + esc(q.source) + '" target="_blank" rel="noopener">' + esc(hostPath(q.source)) + '</a>';
+    } else { src.innerHTML = ""; }
+
+    setRevealed(state.revealed, true);
+    document.getElementById("score-num").textContent = state.score;
+  }
+
+  function setRevealed(on, immediate){
+    state.revealed = on;
+    document.getElementById("reveal").classList.toggle("hidden", !on);
+    document.getElementById("controls-hidden").classList.toggle("hidden", on);
+    document.getElementById("controls-mark").classList.toggle("hidden", !on);
+    if (!immediate) window.scrollTo({top:0, behavior:"smooth"});
+  }
+
+  function reveal(){ if(!state.revealed) setRevealed(true, false); }
+
+  function mark(correct){
+    if (!state.revealed) { reveal(); return; }
+    var prev = state.marks[state.i];
+    if (prev === "right") state.score--;   // allow re-marking if going back
+    state.marks[state.i] = correct ? "right" : "missed";
+    if (correct){
+      state.score++;
+      pulseCorrect();
+    }
+    document.getElementById("score-num").textContent = state.score;
+    // brief pause so the pulse is seen, then advance
+    setTimeout(next, correct ? 260 : 120);
+  }
+
+  function pulseCorrect(){
+    var m = document.getElementById("marker");
+    var n = document.getElementById("score-num");
+    m.classList.remove("pulse"); n.classList.remove("pulse");
+    // reflow to restart animation
+    void m.offsetWidth; void n.offsetWidth;
+    m.classList.add("pulse"); n.classList.add("pulse");
+  }
+
+  function next(){
+    if (state.i < state.round.questions.length - 1){
+      state.i++;
+      state.revealed = false;
+      renderQuestion();
+    } else {
+      finish();
+    }
+  }
+  function prev(){
+    if (state.i > 0){
+      state.i--;
+      state.revealed = false;   // re-read: show the question again
+      renderQuestion();
+    }
+  }
+
+  /* ---------------- End screen ---------------- */
+  function finish(){
+    var qs = state.round.questions;
+    document.getElementById("end-title").textContent = state.round.title || ("Round " + state.round.number);
+    document.getElementById("end-score").textContent = state.score;
+    document.getElementById("end-den").textContent = qs.length;
+    var pct = Math.round((state.score / qs.length) * 100);
+    document.getElementById("end-sub").textContent =
+      state.score + " right out of " + qs.length + " · " + pct + "%. Print the sheet below for marking.";
+
+    var sheet = document.getElementById("sheet");
+    sheet.innerHTML = "";
+    qs.forEach(function(q, idx){
+      var mk = state.marks[idx];
+      var mkHtml = mk === "right" ? '<span class="sheet-mark mk-right">✓</span>'
+                 : mk === "missed" ? '<span class="sheet-mark mk-missed">✗</span>'
+                 : '<span class="sheet-mark">·</span>';
+      var acc = (q.accept && q.accept.length) ? ' <span style="color:var(--paper-dim)">(also: ' + q.accept.map(esc).join(", ") + ')</span>' : '';
+      var row = document.createElement("div");
+      row.className = "sheet-row";
+      row.innerHTML =
+        '<span class="sheet-n">' + (idx+1) + '</span>' +
+        '<div class="sheet-body">' +
+          '<div class="sheet-cat">' + esc(q.category || "") + '</div>' +
+          '<div class="sheet-q">' + esc(q.question || "") + '</div>' +
+          '<div class="sheet-a"><b>' + esc(q.answer || "") + '</b>' + acc + '</div>' +
+          (q.note ? '<div class="sheet-a" style="color:var(--paper-dim);font-style:italic">' + esc(q.note) + '</div>' : '') +
+          (q.source ? '<div class="sheet-src"><a href="' + esc(q.source) + '" target="_blank" rel="noopener">' + esc(q.source) + '</a></div>' : '') +
+        '</div>' + mkHtml;
+      sheet.appendChild(row);
+    });
+    show("end");
+  }
+
+  /* ---------------- Wiring ---------------- */
+  document.getElementById("btn-reveal").addEventListener("click", reveal);
+  document.getElementById("btn-right").addEventListener("click", function(){ mark(true); });
+  document.getElementById("btn-missed").addEventListener("click", function(){ mark(false); });
+  document.getElementById("btn-back").addEventListener("click", prev);
+  document.getElementById("btn-back2").addEventListener("click", prev);
+  document.getElementById("to-list").addEventListener("click", function(){ show("list"); loadList(); });
+  document.getElementById("end-to-list").addEventListener("click", function(){ show("list"); loadList(); });
+  document.getElementById("end-to-list2").addEventListener("click", function(){ show("list"); loadList(); });
+  document.getElementById("btn-print").addEventListener("click", function(){ window.print(); });
+
+  document.addEventListener("keydown", function(e){
+    if (!scr.play.classList.contains("hidden")){
+      if (e.key === " " || e.key === "Enter"){
+        e.preventDefault();
+        if (!state.revealed) reveal(); else next();   // space: reveal, then advance
+      } else if (e.key === "ArrowRight"){
+        e.preventDefault(); next();
+      } else if (e.key === "ArrowLeft"){
+        e.preventDefault(); prev();
+      } else if (e.key === "r" || e.key === "R"){
+        e.preventDefault(); mark(true);
+      } else if (e.key === "m" || e.key === "M"){
+        e.preventDefault(); mark(false);
+      } else if (e.key === "Escape"){
+        show("list"); loadList();
+      }
+    } else if (!scr.end.classList.contains("hidden")){
+      if (e.key === "Escape"){ show("list"); loadList(); }
+    }
+  });
+
+  loadList();
+})();
+</script>
+</body>
+</html>
