@@ -32,6 +32,7 @@ CATEGORIES = {
     "Inventions",
 }
 SIDES = {"france", "britain", "both", "neutral"}
+FORMATS = {"closest", "order", "oddoneout", "thisorthat"}
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 ROUNDS_DIR = os.path.join(ROOT, "rounds")
@@ -80,10 +81,29 @@ def check_round(path, errors):
         if side and side not in SIDES:
             errors.append(f"{where}: side must be one of {sorted(SIDES)}, got '{side}'")
 
+        fmt = q.get("format")
+        if fmt is not None and fmt not in FORMATS:
+            errors.append(f"{where}: unknown format '{fmt}' (expected one of {sorted(FORMATS)})")
+
+        items = q.get("items")
+        if fmt == "order":
+            if not isinstance(items, list) or len(items) < 3:
+                errors.append(f"{where}: format 'order' needs an 'items' list of at least 3 entries")
+            elif any((not isinstance(i, str) or not i.strip()) for i in items):
+                errors.append(f"{where}: every 'items' entry must be a non-empty string")
+        elif items is not None:
+            errors.append(f"{where}: 'items' is only for format 'order'")
+
         opts = q.get("options")
+        n_expected = 2 if fmt == "thisorthat" else 4
+        if fmt in ("oddoneout", "thisorthat") and opts is None:
+            errors.append(f"{where}: format '{fmt}' requires 'options'")
         if opts is not None:
-            if not isinstance(opts, list) or len(opts) != 4:
-                errors.append(f"{where}: 'options' must be a list of exactly 4 choices")
+            if not isinstance(opts, list) or len(opts) != n_expected:
+                errors.append(
+                    f"{where}: 'options' must be a list of exactly {n_expected} choices"
+                    + (" for this format" if fmt else "")
+                )
             elif any((not isinstance(o, str) or not o.strip()) for o in opts):
                 errors.append(f"{where}: every option must be a non-empty string")
             else:

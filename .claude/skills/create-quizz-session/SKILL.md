@@ -211,6 +211,22 @@ Example with options:
 }
 ```
 
+### Question formats (mix them up — this is where the fun is)
+
+Most questions are plain open-answer. Add a `format` field to vary the night.
+**Aim for a handful per round** (say 4–8 across the 30), spread over categories:
+
+| `format` | Extra fields | How it plays |
+|---|---|---|
+| *(omit)* | `options` (4, optional) | Standard open answer, or multiple choice. |
+| `"closest"` | none (no `options`) | A number — everyone writes a guess, **nearest wins**. `answer` must be a single figure with its unit (`"343 m"`, `"1981"`). Use timeless figures: heights, lengths, dates, counts — never populations or records. |
+| `"order"` | `items`: 3–6 strings **in the correct order** | Put-in-order. The player shuffles them deterministically for display and snaps them back, numbered, at the reveal. Put the year in each item where it helps. |
+| `"oddoneout"` | `options`: exactly 4 | Three share something, one doesn't. `answer` must match the odd option exactly. **The `note` must explain the link** the other three share. |
+| `"thisorthat"` | `options`: exactly 2 | A head-to-head: which is older / longer / first. `answer` matches one option. Great for France-vs-Britain. Put both figures in the `note`. |
+
+The player shows a format chip and a one-line hint ("Everyone writes a number —
+nearest wins the point."), so the host doesn't have to explain the rules.
+
 ### Optional media: images and a music blind test
 
 Questions may carry media, all **key-free** (loaded in the viewer's browser; the

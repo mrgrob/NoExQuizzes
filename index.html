@@ -158,6 +158,32 @@
   .yt-cover .stop{font-family:"JetBrains Mono",monospace;font-size:10px;font-weight:400;letter-spacing:1px;text-transform:uppercase;color:var(--ink-dim)}
   .media-hint{font-family:"JetBrains Mono",monospace;font-size:10px;color:var(--ink-dim);letter-spacing:.5px;margin-top:6px;text-align:center}
 
+  /* Format chip (Closest wins / In order / Odd one out / This or that) */
+  .fmt{font-family:"JetBrains Mono",monospace;font-size:10px;letter-spacing:1.2px;text-transform:uppercase;padding:4px 9px;border-radius:6px;background:color-mix(in srgb,var(--accent) 16%,transparent);color:var(--accent);font-weight:700}
+
+  .fmt-hint{font-size:12px;letter-spacing:.4px;color:var(--ink-dim);margin-top:12px}
+
+  /* Put-in-order list */
+  .order-list{display:flex;flex-direction:column;gap:8px;margin-top:16px}
+  .oitem{display:flex;align-items:center;gap:12px;padding:11px 14px;border:1.5px solid var(--line);border-radius:12px;background:var(--surface);font-size:16px}
+  .oitem .obadge{flex:0 0 auto;width:26px;height:26px;border-radius:8px;display:flex;align-items:center;justify-content:center;font-family:"JetBrains Mono",monospace;font-size:12px;font-weight:700;color:var(--ink-dim);border:1.5px solid var(--line)}
+  .order-list.solved .oitem{border-color:var(--positive);background:color-mix(in srgb,var(--positive) 10%,transparent)}
+  .order-list.solved .oitem .obadge{background:var(--positive);color:#fff;border-color:var(--positive)}
+
+  /* Round intro card */
+  .intro-card{justify-content:center;text-align:center;gap:4px;padding:34px 22px}
+  .intro-kicker{font-size:11px;letter-spacing:3px;text-transform:uppercase;color:var(--ink-dim)}
+  .intro-title{font-size:clamp(32px,8.5vw,52px);line-height:1.08;margin:6px 0 10px}
+  .intro-line{color:var(--ink-dim);font-size:15px;max-width:44ch;margin:0 auto 18px}
+  .intro-cats{display:flex;flex-wrap:wrap;gap:7px;justify-content:center}
+  .intro-cats .ic{font-family:"JetBrains Mono",monospace;font-size:11px;letter-spacing:.8px;text-transform:uppercase;padding:5px 10px;border-radius:999px;border:1px solid var(--line);color:var(--ink-dim)}
+  .intro-prev{margin-top:20px;font-size:12px;letter-spacing:.5px;color:var(--ink-dim);border-top:1px solid var(--line);padding-top:14px}
+  .intro-prev b{color:var(--accent)}
+
+  /* Played badge on round cards */
+  .played{display:inline-flex;align-items:center;gap:5px;font-family:"JetBrains Mono",monospace;font-size:11px;letter-spacing:.5px;color:var(--positive);margin-top:5px}
+  .played .again{color:var(--ink-dim)}
+
   .reveal{margin-top:8px}
   .alabel{font-family:"JetBrains Mono",monospace;font-size:10px;letter-spacing:2px;text-transform:uppercase;color:var(--ink-dim);margin-bottom:6px}
   .answer{font-family:"Instrument Serif",serif;font-size:clamp(30px,7vw,46px);line-height:1.12;color:var(--ink)}
@@ -256,6 +282,25 @@
     <div id="list-body"><p class="mono" style="color:var(--ink-dim)">Loading rounds…</p></div>
   </section>
 
+  <!-- ============ ROUND INTRO ============ -->
+  <section id="screen-intro" class="hidden">
+    <div class="topbar noprint">
+      <button class="link-btn" id="intro-to-list">‹ Rounds</button>
+      <span class="qcount mono" id="intro-count"></span>
+    </div>
+    <div class="card intro-card">
+      <div class="intro-kicker mono" id="intro-kicker">Round</div>
+      <div class="intro-title serif" id="intro-title">…</div>
+      <div class="intro-line" id="intro-line"></div>
+      <div class="intro-cats" id="intro-cats"></div>
+      <div class="intro-prev hidden mono" id="intro-prev"></div>
+    </div>
+    <div class="controls noprint">
+      <button class="btn primary" id="btn-begin">Begin the round ›</button>
+    </div>
+    <div class="khint noprint">space to begin</div>
+  </section>
+
   <!-- ============ PLAY ============ -->
   <section id="screen-play" class="hidden">
     <div class="topbar noprint">
@@ -271,13 +316,16 @@
     <div class="card">
       <div class="qhead">
         <span class="tag" id="q-tag">Category</span>
+        <span class="fmt hidden" id="q-fmt"></span>
         <span class="qside" id="q-side"></span>
         <span class="qcount" id="q-count">1 / 30</span>
       </div>
 
       <div class="qbody" id="qbody">
         <div class="question serif" id="q-text">…</div>
+        <div class="fmt-hint hidden mono" id="q-fmthint"></div>
         <div class="q-media hidden" id="q-media"></div>
+        <div class="order-list hidden" id="q-items"></div>
         <div class="options hidden" id="q-options"></div>
         <div class="reveal hidden" id="reveal">
           <div class="alabel">Answer</div>
@@ -383,11 +431,38 @@
     "Inventions":"var(--tint-8)"
   };
 
-  var scr = {
-    list: document.getElementById("screen-list"),
-    play: document.getElementById("screen-play"),
-    end:  document.getElementById("screen-end")
+  var FMT_LABEL = {
+    closest:"Closest wins", order:"Put in order",
+    oddoneout:"Odd one out", thisorthat:"This or that"
   };
+  var FMT_HINT = {
+    closest:"Everyone writes a number — nearest wins the point.",
+    order:"Write the four in the right order.",
+    oddoneout:"Three belong together. Which doesn't?",
+    thisorthat:"One or the other — take your pick."
+  };
+
+  var scr = {
+    list:  document.getElementById("screen-list"),
+    intro: document.getElementById("screen-intro"),
+    play:  document.getElementById("screen-play"),
+    end:   document.getElementById("screen-end")
+  };
+
+  /* Past results — remembered per device so you know what you've played. */
+  function loadResults(){
+    try { return JSON.parse(localStorage.getItem("nxq.results") || "{}") || {}; }
+    catch(e){ return {}; }
+  }
+  function saveResult(id, score, of){
+    var all = loadResults();
+    var prev = all[id] || {plays:0, best:-1};
+    all[id] = {
+      last: score, of: of, best: Math.max(prev.best === undefined ? -1 : prev.best, score),
+      plays: (prev.plays || 0) + 1, when: new Date().toISOString().slice(0,10)
+    };
+    try { localStorage.setItem("nxq.results", JSON.stringify(all)); } catch(e){}
+  }
   var listEl = document.getElementById("list-body");
 
   // Persisted settings
@@ -406,6 +481,27 @@
   function hostPath(url){ try{ var u=new URL(url); return u.host.replace(/^www\./,"")+u.pathname.replace(/\/$/,""); }catch(e){ return url; } }
   function reduceMotion(){ return window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches; }
   function norm(s){ return String(s==null?"":s).trim().toLowerCase(); }
+
+  // Put-in-order questions: `items` are stored in the CORRECT order, so shuffle
+  // them for display with a stable string hash (never Math.random — the order
+  // must not change when the question re-renders). At the reveal they snap back
+  // into the right sequence, numbered.
+  function strHash(s){ var h=0; for (var i=0;i<s.length;i++){ h=(h*31 + s.charCodeAt(i))|0; } return h; }
+  function renderOrder(qq){
+    var box=document.getElementById("q-items");
+    if (qq.format!=="order" || !qq.items || !qq.items.length){ box.classList.add("hidden"); box.innerHTML=""; return; }
+    var solved = (state.phase==="marking") && (settings.mode==="end" || state.revealed);
+    var list = solved ? qq.items.slice()
+                      : qq.items.slice().sort(function(a,b){ return strHash(a)-strHash(b); });
+    box.innerHTML="";
+    box.classList.toggle("solved", solved);
+    list.forEach(function(it,idx){
+      var d=document.createElement("div"); d.className="oitem";
+      d.innerHTML='<span class="obadge">'+(solved?(idx+1):"?")+'</span><span class="ot">'+esc(it)+'</span>';
+      box.appendChild(d);
+    });
+    box.classList.remove("hidden");
+  }
 
   // Render multiple-choice options (if the question has any). Correct choice is
   // highlighted only once the answer is visible (marking phase / after reveal).
@@ -492,14 +588,19 @@
       return;
     }
     rounds.sort(function(a,b){ return (b.number||0)-(a.number||0); });
+    var results = loadResults();
     var ul = document.createElement("ul"); ul.className="rounds";
     rounds.forEach(function(r){
       var li=document.createElement("li");
       var b=document.createElement("button"); b.className="round-card";
       var count = r.count!=null?r.count:"?";
+      var res = results[r.id];
+      var badge = res ? '<span class="played">✓ Played · best '+esc(res.best)+' / '+esc(res.of)+
+        '<span class="again"> · tap to play again</span></span>' : '';
       b.innerHTML = '<span class="round-num serif">'+esc(r.number)+'</span>'+
         '<span class="round-meta"><span class="round-title">'+esc(r.title||("Round "+r.number))+'</span>'+
-        '<span class="round-sub mono">'+esc(count)+' questions · 6 categories'+(r.written?' · '+esc(r.written):'')+'</span></span>'+
+        '<span class="round-sub mono">'+esc(count)+' questions'+(r.written?' · '+esc(r.written):'')+'</span>'+
+        badge+'</span>'+
         '<span class="round-go">›</span>';
       b.addEventListener("click", function(){ openRound(r.id); });
       li.appendChild(b); ul.appendChild(li);
@@ -518,13 +619,52 @@
         state.phase = (settings.mode==="asyougo") ? "marking" : "reading";
         document.getElementById("score-den").textContent=state.marks.length;
         buildRail(document.getElementById("rail-track"), state.marks.length);
-        show("play"); renderQuestion();
+        showIntro();
       })
       .catch(function(){
         listEl.querySelectorAll(".round-card").forEach(function(b){ b.disabled=false; });
         alert("Sorry — that round couldn’t be loaded.");
       });
   }
+
+  /* ---------------- Round intro ---------------- */
+  function showIntro(){
+    var r = state.round, qs = r.questions || [];
+    document.documentElement.style.setProperty("--side", "var(--accent)");
+    document.getElementById("intro-kicker").textContent = "Round " + r.number;
+    document.getElementById("intro-title").textContent = (r.title||"").replace(/^Round\s*\d+\s*[—-]\s*/,"") || ("Round "+r.number);
+    document.getElementById("intro-count").textContent = qs.length + " questions";
+
+    var fmts = {};
+    qs.forEach(function(q){ if (q.format && FMT_LABEL[q.format]) fmts[FMT_LABEL[q.format]] = 1; });
+    var pics = qs.filter(function(q){ return q.image; }).length;
+    var bits = [qs.length + " questions"];
+    if (pics) bits.push(pics + (pics===1?" picture":" pictures"));
+    var fkeys = Object.keys(fmts);
+    if (fkeys.length) bits.push(fkeys.join(", ").toLowerCase());
+    document.getElementById("intro-line").textContent =
+      bits.join(" · ") + ". " + (settings.mode==="asyougo"
+        ? "Answers revealed as you go."
+        : "Read them all, then mark together at the end.");
+
+    var cats = [], seen = {};
+    qs.forEach(function(q){ if (q.category && !seen[q.category]){ seen[q.category]=1; cats.push(q.category); } });
+    var box = document.getElementById("intro-cats"); box.innerHTML = "";
+    cats.forEach(function(c){
+      var s = document.createElement("span"); s.className = "ic"; s.textContent = c; box.appendChild(s);
+    });
+
+    var prev = loadResults()[r.id];
+    var pv = document.getElementById("intro-prev");
+    if (prev){
+      pv.innerHTML = "You've played this one " + prev.plays + (prev.plays===1?" time":" times") +
+        " · best <b>" + esc(prev.best) + " / " + esc(prev.of) + "</b> · last played " + esc(prev.when);
+      pv.classList.remove("hidden");
+    } else pv.classList.add("hidden");
+
+    show("intro");
+  }
+  function beginRound(){ show("play"); renderQuestion(); }
 
   /* ---------------- Rail ---------------- */
   function buildRail(track, n){
@@ -558,6 +698,9 @@
     document.getElementById("lab-gb").classList.toggle("on", side==="britain"||side==="both");
 
     document.getElementById("q-tag").textContent=qq.category||"";
+    var fmtEl=document.getElementById("q-fmt");
+    if (qq.format && FMT_LABEL[qq.format]){ fmtEl.textContent=FMT_LABEL[qq.format]; fmtEl.classList.remove("hidden"); }
+    else fmtEl.classList.add("hidden");
     document.getElementById("q-side").textContent=SIDE_LABEL[side];
     document.getElementById("q-count").textContent=(state.i+1)+" / "+state.round.questions.length;
 
@@ -566,7 +709,13 @@
     qtext.classList.toggle("small", state.phase==="marking");
     qtext.classList.toggle("hasopts", !!(qq.options&&qq.options.length) && state.phase!=="marking");
     if (!reduceMotion()){ qtext.classList.remove("qanim"); void qtext.offsetWidth; qtext.classList.add("qanim"); }
+    var hint=document.getElementById("q-fmthint");
+    if (qq.format && FMT_HINT[qq.format] && state.phase!=="marking"){
+      hint.textContent=FMT_HINT[qq.format]; hint.classList.remove("hidden");
+    } else hint.classList.add("hidden");
+
     renderMedia(qq);
+    renderOrder(qq);
     renderOptions(qq);
 
     // answer block
@@ -667,6 +816,7 @@
   /* ---------------- End screen ---------------- */
   function finish(){
     var qs=state.round.questions;
+    saveResult(state.round.id, state.score, qs.length);
     document.getElementById("end-title").textContent=state.round.title||("Round "+state.round.number);
     document.getElementById("end-den").textContent=qs.length;
     var pct=Math.round((state.score/qs.length)*100);
@@ -728,6 +878,8 @@
   });
 
   /* ---------------- Wiring ---------------- */
+  document.getElementById("btn-begin").addEventListener("click", beginRound);
+  document.getElementById("intro-to-list").addEventListener("click", function(){ show("list"); loadList(); });
   document.getElementById("btn-next").addEventListener("click", next);
   document.getElementById("btn-reveal").addEventListener("click", reveal);
   document.getElementById("btn-right").addEventListener("click", function(){ mark(true); });
@@ -745,6 +897,11 @@
 
   document.addEventListener("keydown", function(e){
     if (!document.getElementById("settings").classList.contains("hidden")){ if(e.key==="Escape") closeSettings(); return; }
+    if (!scr.intro.classList.contains("hidden")){
+      if (e.key===" "||e.key==="Enter"){ e.preventDefault(); beginRound(); }
+      else if (e.key==="Escape"){ show("list"); loadList(); }
+      return;
+    }
     if (!scr.play.classList.contains("hidden")){
       if (state.phase==="inter"){
         if (e.key===" "||e.key==="Enter"){ e.preventDefault(); beginMarkingPass(); }
