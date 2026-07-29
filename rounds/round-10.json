@@ -1,0 +1,318 @@
+{
+  "id": "round-10",
+  "number": 10,
+  "title": "Round 10 — Traditions & Fêtes Insolites",
+  "written": "2026-07-29",
+  "questions": [
+    {
+      "category": "Language & everyday life",
+      "side": "both",
+      "format": "thisorthat",
+      "question": "On 1 April in France, children secretly stick a paper cut-out of one creature onto people's backs before shouting 'Poisson d'avril!' — is it a fish or a frog?",
+      "answer": "A fish",
+      "accept": ["fish", "poisson"],
+      "options": ["A fish", "A frog"],
+      "note": "Where Britain simply plays April Fools' pranks, France adds the paper fish taped to an unsuspecting back.",
+      "source": "https://frenchmoments.eu/april-fools-day-traditions-in-france-le-1er-avril/"
+    },
+    {
+      "category": "Culture & the arts",
+      "side": "france",
+      "format": "closest",
+      "question": "In which year was the Fête de la Musique — the free, play-anywhere street music day held every 21 June — first launched in France?",
+      "answer": "1982",
+      "accept": [],
+      "note": "Culture minister Jack Lang launched it on the solstice after a survey found five million French people played an instrument but had nowhere to perform.",
+      "source": "https://fetedelamusique.culture.gouv.fr/actualites/historique-de-la-fete-de-la-musique"
+    },
+    {
+      "category": "Geography",
+      "side": "france",
+      "question": "Which Côte d'Azur town, right next to the Italian border, builds these giant sculptures from tonnes of lemons and oranges every February?",
+      "answer": "Menton",
+      "accept": [],
+      "options": ["Menton", "Nice", "Antibes", "Grasse"],
+      "image": "https://commons.wikimedia.org/wiki/Special:FilePath/F%C3%AAte%20du%20Citron%C2%AE%20Menton.jpg?width=1100",
+      "imageAlt": "A huge sculpture built entirely from lemons and oranges wired onto a frame",
+      "imageCredit": "Fête du Citron, Menton · Wikimedia Commons, CC BY-SA (credit at source)",
+      "note": "Menton has staged the Fête du Citron since 1934, with the citrus displays filling the Jardins Biovès.",
+      "source": "https://www.france.fr/en/event/citrus-festival-menton-france/"
+    },
+    {
+      "category": "Sport & games",
+      "side": "france",
+      "question": "In the course camarguaise, the white-clad raseteur runs at the bull and uses a small hooked comb to snatch a prize from between its horns. What is that prize?",
+      "answer": "A rosette (the cocarde)",
+      "accept": ["rosette", "cocarde", "cockade"],
+      "options": ["A rosette (the cocarde)", "A silver bell", "A small red flag", "A crown of flowers"],
+      "note": "Unlike the Spanish corrida, no blood is spilled in the Camargue version: the bull keeps its life and the star raseteurs become local celebrities.",
+      "source": "https://www.avignon-et-provence.com/en/traditions/course-camarguaise-camargue-bullfighting"
+    },
+    {
+      "category": "Food & drink",
+      "side": "both",
+      "question": "Beaujolais Nouveau is released each year, amid cries of 'Le Beaujolais nouveau est arrivé !', on which day?",
+      "answer": "The third Thursday of November",
+      "accept": ["third Thursday of November", "3rd Thursday in November"],
+      "options": ["The third Thursday of November", "The first Friday of October", "The second Monday of December", "The last Saturday of November"],
+      "note": "The date was fixed in 1985, bottles are legally uncorkable from 12.01am, and it's marked as 'Beaujolais Day' in Britain too.",
+      "source": "https://www.decanter.com/learn/international-beaujolais-nouveau-day-468715/"
+    },
+    {
+      "category": "History",
+      "side": "france",
+      "format": "closest",
+      "question": "The 14th of July became France's official national holiday by a law passed in which year?",
+      "answer": "1880",
+      "accept": [],
+      "note": "The wording was left deliberately vague so the day could honour both the storming of the Bastille in 1789 and the peaceful Fête de la Fédération of 1790.",
+      "source": "https://en.wikipedia.org/wiki/Bastille_Day"
+    },
+    {
+      "category": "Language & everyday life",
+      "side": "france",
+      "question": "Which flower does everyone in France give as a good-luck token on 1 May, a custom said to date from Charles IX receiving a sprig in 1561?",
+      "answer": "Lily of the valley",
+      "accept": ["muguet", "le muguet"],
+      "note": "Sold on street corners on 1 May, the muguet is offered to family and friends to bring luck for the year ahead.",
+      "source": "https://www.frenchentree.com/blog/muguet-a-mayday-tradition-dating-back-to-1561/"
+    },
+    {
+      "category": "Geography",
+      "side": "france",
+      "format": "oddoneout",
+      "question": "Three of these four French cities sit on the Mediterranean. Which is the odd one out?",
+      "answer": "Dunkerque",
+      "accept": ["Dunkirk"],
+      "options": ["Nice", "Cannes", "Marseille", "Dunkerque"],
+      "note": "Dunkerque lies on the North Sea coast in Hauts-de-France, about as far from the Med as you can get in France.",
+      "source": "https://www.hautsdefrancetourism.com/destinations/explore-hauts-de-frances-best-loved-towns/dunkirk/"
+    },
+    {
+      "category": "Culture & the arts",
+      "side": "france",
+      "question": "At the Carnaval de Dunkerque, the mayor climbs onto the town hall balcony and hurls what into the roaring crowd below?",
+      "answer": "Smoked herrings",
+      "accept": ["herrings", "herring", "fish", "kippers"],
+      "options": ["Smoked herrings", "Wheels of cheese", "Baguettes", "Bags of chips"],
+      "note": "Around 500 kg of cellophane-wrapped herring rains down on the Sunday before Mardi Gras, and catching one is said to bring good fortune.",
+      "source": "https://www.leshuttle.com/uk-en/discover/traveller-guides/dunkirk-carnival"
+    },
+    {
+      "category": "Food & drink",
+      "side": "france",
+      "format": "closest",
+      "question": "At the Braderie de Lille, Europe's largest flea market, roughly how many tonnes of mussels are eaten over the weekend?",
+      "answer": "500 tonnes",
+      "accept": ["500", "nearly 500"],
+      "note": "Moules-frites is the traditional Braderie dish, and restaurants compete to build the highest mound of empty shells outside their doors.",
+      "source": "https://en.wikipedia.org/wiki/Braderie_de_Lille"
+    },
+    {
+      "category": "History",
+      "side": "france",
+      "question": "In which French city did Rouget de Lisle write the song we now call La Marseillaise, in 1792?",
+      "answer": "Strasbourg",
+      "accept": [],
+      "options": ["Strasbourg", "Marseille", "Paris", "Lyon"],
+      "note": "He wrote it overnight as a war song for the Army of the Rhine; it only took the name Marseillaise after volunteers from Marseille sang it into Paris.",
+      "source": "https://www.elysee.fr/en/french-presidency/la-marseillaise-by-rouget-de-lisle"
+    },
+    {
+      "category": "Sport & games",
+      "side": "france",
+      "format": "thisorthat",
+      "question": "In the course landaise of the Landes and Gascony, where leapers vault clean over the charging animal, which animal usually charges?",
+      "answer": "Cows",
+      "accept": ["cows", "a cow", "vaches"],
+      "options": ["Bulls", "Cows"],
+      "note": "It's bull-leaping performed with aggressive cows — and tradition even has some leapers jump with their feet tied together or stuffed into a beret.",
+      "source": "https://en.wikipedia.org/wiki/Course_landaise"
+    },
+    {
+      "category": "Language & everyday life",
+      "side": "france",
+      "question": "On la Chandeleur (2 February), tradition says you should flip your crêpe with one hand while holding what in the other, to bring prosperity?",
+      "answer": "A coin",
+      "accept": ["coin", "a gold coin", "money"],
+      "note": "Flip it successfully with a coin in your other hand and the household's year is supposed to be a prosperous one.",
+      "source": "https://www.tastefrance.com/magazine/trends/la-chandeleur-frances-festive-day-crepes-and-fortune"
+    },
+    {
+      "category": "Geography",
+      "side": "france",
+      "question": "Which Hérault port stages the centuries-old joutes nautiques, where jousters on high platforms above two rowing boats try to knock each other into the canal?",
+      "answer": "Sète",
+      "accept": ["Sete"],
+      "options": ["Sète", "Perpignan", "Narbonne", "Montpellier"],
+      "note": "Sète's water jousting peaks during the Fête de la Saint-Louis in late August, with rival teams from Agde, Mèze and Palavas.",
+      "source": "https://www.franceinfo.fr/france/occitanie/herault/sete/sete-les-joutes-nautiques-un-immense-succes-d-une-tradition-vieille-de-plusieurs-siecles_7455928.html"
+    },
+    {
+      "category": "Culture & the arts",
+      "side": "france",
+      "question": "Which Provençal city, its papal palace courtyard turned into a stage, hosts the theatre festival founded in 1947 by Jean Vilar and held every July?",
+      "answer": "Avignon",
+      "accept": ["Festival d'Avignon"],
+      "options": ["Avignon", "Arles", "Aix-en-Provence", "Nîmes"],
+      "note": "Vilar first thought the Cour d'honneur of the Palais des Papes far too vast to act in, then opened the festival there with Shakespeare's Richard II.",
+      "source": "https://festival-avignon.com/en/festival-609"
+    },
+    {
+      "category": "Sport & games",
+      "side": "france",
+      "format": "closest",
+      "question": "Sète's first water-jousting tournament was held to celebrate the inauguration of its new port. In which year?",
+      "answer": "1666",
+      "accept": [],
+      "note": "Louis XIV's new Mediterranean port was inaugurated in 1666 and the celebrations included a joust — a tradition unbroken ever since.",
+      "source": "https://en.wikipedia.org/wiki/Water_jousting"
+    },
+    {
+      "category": "Food & drink",
+      "side": "both",
+      "question": "The Normandy town of Mortagne-au-Perche holds an annual three-day fair and world championship devoted to which food?",
+      "answer": "Black pudding",
+      "accept": ["boudin noir", "blood sausage"],
+      "options": ["Black pudding", "Andouille sausage", "Tripe", "Pig's trotters"],
+      "note": "The Foire au Boudin is run by the Chevaliers du Goûte-Boudin in red velvet robes, and its top prize draws makers from around the world.",
+      "source": "https://theculturetrip.com/europe/france/articles/the-essential-guide-to-normandys-black-pudding-festival"
+    },
+    {
+      "category": "History",
+      "side": "france",
+      "format": "order",
+      "question": "Put these four months of the French Revolutionary calendar in the order they came in the year, starting with the first.",
+      "items": ["Vendémiaire", "Brumaire", "Germinal", "Thermidor"],
+      "answer": "Vendémiaire, Brumaire, Germinal, Thermidor",
+      "accept": [],
+      "note": "The Republican year opened in autumn with Vendémiaire (vintage), then Brumaire (mist), Germinal (seedtime) and Thermidor (heat) — each split into three ten-day weeks.",
+      "source": "https://www.britannica.com/science/French-republican-calendar"
+    },
+    {
+      "category": "Language & everyday life",
+      "side": "both",
+      "question": "Which flower do French families take to the cemetery for La Toussaint on 1 November, making it a serious faux pas to give to a living person?",
+      "answer": "Chrysanthemums",
+      "accept": ["chrysanthemum", "chrysanthème"],
+      "note": "Harmless in a British bouquet, chrysanthemums in France are the 'flower of the dead' and belong on graves, not on the hostess's table.",
+      "source": "https://www.connexionfrance.com/news/why-chrysanthemums-are-the-french-flower-of-the-dead/101947"
+    },
+    {
+      "category": "Geography",
+      "side": "france",
+      "format": "thisorthat",
+      "question": "Every 8 December, candles in windows and huge light shows fill the streets for the Fête des Lumières. Which city is it — Lyon or Lille?",
+      "answer": "Lyon",
+      "accept": [],
+      "options": ["Lyon", "Lille"],
+      "image": "https://commons.wikimedia.org/wiki/Special:FilePath/F%C3%AAte%20des%20Lumi%C3%A8res%20-%20Lyon%20(2008).JPG?width=1100",
+      "imageAlt": "A city building lit up in coloured projections at night during a light festival",
+      "imageCredit": "Fête des Lumières · Wikimedia Commons, CC BY-SA (credit at source)",
+      "note": "The tradition dates from 8 December 1852, when the people lit their windows for the new statue of the Virgin on Fourvière hill.",
+      "source": "https://www.fetedeslumieres.lyon.fr/en/page/story-behind-festival"
+    },
+    {
+      "category": "Culture & the arts",
+      "side": "both",
+      "format": "thisorthat",
+      "question": "The Festival Interceltique, which every August fills a French port with pipe bands from Scotland, Wales, Ireland and Cornwall, is held in which region?",
+      "answer": "Brittany",
+      "accept": ["Bretagne"],
+      "options": ["Brittany", "Normandy"],
+      "note": "Founded at Lorient in 1971 to champion Breton music, it deliberately opened its arms to the Celtic nations of the British Isles.",
+      "source": "https://bcd.bzh/becedia/en/50-years-of-the-lorient-interceltic-festival"
+    },
+    {
+      "category": "Food & drink",
+      "side": "france",
+      "format": "oddoneout",
+      "question": "Three of these French towns are famous for their winter truffle markets. Which is the odd one out?",
+      "answer": "Cancale",
+      "accept": [],
+      "options": ["Richerenches", "Carpentras", "Lalbenque", "Cancale"],
+      "note": "Richerenches and Carpentras in the Vaucluse and Lalbenque in the Lot are among France's great truffle markets. Cancale, in Brittany, is an oyster port.",
+      "source": "https://truffeshenras.com/en/blogs/news/truffle-markets"
+    },
+    {
+      "category": "Sport & games",
+      "side": "both",
+      "question": "Jeu de paume, the medieval French 'game of the palm' once played by kings, survives in Britain on courts such as Henry VIII's at Hampton Court. What is it called in English?",
+      "answer": "Real tennis",
+      "accept": ["royal tennis", "court tennis"],
+      "options": ["Real tennis", "Rackets", "Fives", "Bowls"],
+      "note": "Real tennis gave lawn tennis its odd 15–30–40 scoring, and is called court tennis in America and royal tennis in Australia.",
+      "source": "https://www.britannica.com/sports/real-tennis"
+    },
+    {
+      "category": "History",
+      "side": "both",
+      "question": "The armistice that ended the fighting of the First World War on 11 November 1918 was signed in a railway carriage in which French forest?",
+      "answer": "The Forest of Compiègne",
+      "accept": ["Compiègne", "Compiegne"],
+      "options": ["Compiègne", "Fontainebleau", "Rambouillet", "Chantilly"],
+      "note": "Marshal Foch used his own train's dining car as the meeting room, and the armistice came into force at 11 a.m. Paris time.",
+      "source": "https://en.wikipedia.org/wiki/Armistice_of_11_November_1918"
+    },
+    {
+      "category": "Language & everyday life",
+      "side": "france",
+      "format": "oddoneout",
+      "question": "Three of these belong on the table at a French réveillon feast. Which is the odd one out?",
+      "answer": "Les étrennes",
+      "accept": ["étrennes", "etrennes"],
+      "options": ["Le foie gras", "Les huîtres", "La bûche de Noël", "Les étrennes"],
+      "note": "Foie gras, oysters and the log-shaped bûche are classic réveillon fare. Les étrennes are the New Year envelopes of money given to the postman and the firefighters.",
+      "source": "https://www.france24.com/en/europe/20251225-french-christmas-traditions-festivities-continue-well-into-new-year"
+    },
+    {
+      "category": "Geography",
+      "side": "france",
+      "question": "On the last weekend of October, which small Basque village holds a festival with a mass, a parade and a blessing of its famous chilli peppers?",
+      "answer": "Espelette",
+      "accept": [],
+      "options": ["Espelette", "Bayonne", "Biarritz", "Saint-Jean-de-Luz"],
+      "note": "The Fête du Piment celebrates Espelette's AOP pepper with a gastronomic fair, pelota matches and the blessing of the peppers.",
+      "source": "https://www.tourisme64.com/en/events/espelette/FMAAQU064FS01AU2-fete-du-piment-d-espelette/"
+    },
+    {
+      "category": "Culture & the arts",
+      "side": "both",
+      "question": "A spoof prize created at the Cannes Film Festival in 2001 by a British film journalist honours the best performance of the year by what kind of star?",
+      "answer": "A dog",
+      "accept": ["dog", "the Palm Dog"],
+      "options": ["A dog", "A horse", "A child", "A robot"],
+      "note": "It's called the Palm Dog, the trophy is a leather collar rather than a statuette, and Toby Rose dreamed it up because of his own fox terrier, Mutt.",
+      "source": "https://en.wikipedia.org/wiki/Palm_Dog_Award"
+    },
+    {
+      "category": "Food & drink",
+      "side": "france",
+      "question": "Three fishing ports around the Bay of Saint-Brieuc in Brittany take turns each April to host a festival celebrating which shellfish?",
+      "answer": "Scallops",
+      "accept": ["scallop", "coquille Saint-Jacques", "coquilles Saint-Jacques"],
+      "note": "The Fête de la Coquille Saint-Jacques marks the end of the scallop dredging season and rotates between the ports year by year.",
+      "source": "https://www.tourismebretagne.com/selon-mes-envies/culture-et-patrimoine-de-bretagne/les-grands-evenements/fete-de-la-coquille-saint-jacques/"
+    },
+    {
+      "category": "Sport & games",
+      "side": "france",
+      "question": "In the Paris course des garçons de café, competitors cover the route carrying a loaded tray in one hand without spilling a drop. What are they forbidden to do?",
+      "answer": "Run",
+      "accept": ["running", "they must walk"],
+      "options": ["Run", "Speak to the crowd", "Look at the tray", "Change hands"],
+      "note": "Started in 1914 to celebrate the waiter's craft, it sends uniformed staff walking a loop of central Paris balancing a glass of water, a coffee cup and a croissant.",
+      "source": "https://www.smithsonianmag.com/smart-news/waiters-and-waitresses-raced-through-the-streets-of-paris-180984025/"
+    },
+    {
+      "category": "History",
+      "side": "france",
+      "question": "The custom behind the galette des rois, where a hidden bean made someone king for a day, is traced back to which Roman midwinter festival?",
+      "answer": "Saturnalia",
+      "accept": ["the Saturnalia"],
+      "options": ["Saturnalia", "Lupercalia", "Bacchanalia", "Vestalia"],
+      "note": "Romans celebrating Saturnalia used a bean hidden in a cake to pick a king for the day — a role-reversing game the Church later attached to the Epiphany.",
+      "source": "https://laroutedesgourmets.fr/en/blog/history-of-the-galette-des-rois-in-france-and-in-the-world/"
+    }
+  ]
+}
