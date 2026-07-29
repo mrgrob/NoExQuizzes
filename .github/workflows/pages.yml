@@ -11,7 +11,9 @@ name: Deploy to GitHub Pages
 
 on:
   push:
-    branches: [main]
+    # Runs on whichever of these is the repository's default branch — the
+    # github-pages environment only accepts deploys from the default branch.
+    branches: [main, claude/noexquizzes-build-riy90x]
   workflow_dispatch:
 
 permissions:
