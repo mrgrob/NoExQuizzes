@@ -97,6 +97,16 @@ through one of the six categories):
 - **Cultural differences between Britain and France** — everyday customs and
   institutions, kept to factual, single-answer points (Language & everyday
   life).
+- **UK pop & rock** — British pop and rock music. This is a recognised **extra
+  category** (`"UK pop & rock"`), not one of the core six. On a music-leaning
+  night, use it as one of the round's category slots (e.g. in place of Sport &
+  games), still five questions with all the usual rules. The player gives it
+  its own colour and `scripts/check.py` accepts it.
+
+**Difficulty per theme.** Tailor to what the family knows. They are devoted
+Jurassic Park fans and have lived in Provence for 40 years — so pitch **Jurassic
+Park and Provence questions at expert level** (deep, specific facts, not tourist
+trivia), and lean on `options` to keep the fiendish ones fair.
 
 Add to this list as new themes prove themselves. A themed night can lean the
 whole round toward a few of these while still filling all six categories.

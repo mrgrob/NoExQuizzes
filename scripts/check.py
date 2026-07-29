@@ -28,6 +28,7 @@ CATEGORIES = {
     "Culture & the arts",
     "Sport & games",
     "Language & everyday life",
+    "UK pop & rock",
 }
 SIDES = {"france", "britain", "both", "neutral"}
 
