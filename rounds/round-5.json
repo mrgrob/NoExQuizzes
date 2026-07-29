@@ -1,0 +1,96 @@
+{
+  "id": "round-5",
+  "number": 5,
+  "title": "Round 5 — Sights & Sounds (media special)",
+  "written": "2026-07-29",
+  "questions": [
+    {
+      "category": "UK pop & rock",
+      "side": "britain",
+      "question": "Blind test — play the clip. Name this song and the band.",
+      "answer": "Bohemian Rhapsody (Queen)",
+      "accept": ["Bohemian Rhapsody", "Queen"],
+      "youtube": "fJ9rUzIMcZQ",
+      "note": "Queen's 1975 six-minute epic, with no chorus and a full mock-operatic section, was the UK Christmas number one two years running.",
+      "source": "https://en.wikipedia.org/wiki/Bohemian_Rhapsody"
+    },
+    {
+      "category": "Geography",
+      "side": "france",
+      "question": "Which région of France is this?",
+      "answer": "Centre-Val de Loire",
+      "accept": ["Centre", "Val de Loire"],
+      "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Aerial%20image%20of%20Ch%C3%A2teau%20de%20Chambord%20(view%20from%20the%20southeast).jpg",
+      "imageAlt": "A vast French Renaissance château with many towers and chimneys",
+      "imageCredit": "Château de Chambord · Wikimedia Commons, CC BY-SA (full credit at source)",
+      "note": "The Château de Chambord, the largest of the Loire châteaux, built for François I — its double-helix staircase is often credited to Leonardo da Vinci.",
+      "source": "https://commons.wikimedia.org/wiki/File:Aerial_image_of_Ch%C3%A2teau_de_Chambord_(view_from_the_southeast).jpg"
+    },
+    {
+      "category": "UK pop & rock",
+      "side": "britain",
+      "question": "Blind test — play the clip. Name this song and the band.",
+      "answer": "Wonderwall (Oasis)",
+      "accept": ["Wonderwall", "Oasis"],
+      "youtube": "vU05Eksc_iM",
+      "note": "The 1995 Britpop anthem from '(What's the Story) Morning Glory?', written by Noel Gallagher and sung by his brother Liam.",
+      "source": "https://en.wikipedia.org/wiki/Wonderwall_(song)"
+    },
+    {
+      "category": "Geography",
+      "side": "france",
+      "question": "Which région of France is this?",
+      "answer": "Occitanie",
+      "accept": ["Languedoc", "Languedoc-Roussillon"],
+      "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Cit%C3%A9%20de%20Carcassonne.jpg",
+      "imageAlt": "A large double-walled medieval fortified city with pointed towers on a hill",
+      "imageCredit": "Cité de Carcassonne · Wikimedia Commons, CC BY-SA (full credit at source)",
+      "note": "The restored medieval Cité de Carcassonne, a UNESCO World Heritage Site, was famously saved from demolition by the architect Viollet-le-Duc.",
+      "source": "https://commons.wikimedia.org/wiki/File:Cit%C3%A9_de_Carcassonne.jpg"
+    },
+    {
+      "category": "UK pop & rock",
+      "side": "britain",
+      "question": "Blind test — play the clip. Name this song and the band.",
+      "answer": "Hey Jude (The Beatles)",
+      "accept": ["Hey Jude", "The Beatles"],
+      "youtube": "A_MjCqQoLLA",
+      "note": "Paul McCartney wrote it in 1968 to comfort John Lennon's son Julian; its long 'na-na-na' coda made it, at over seven minutes, the longest UK number one of its day.",
+      "source": "https://en.wikipedia.org/wiki/Hey_Jude"
+    },
+    {
+      "category": "Geography",
+      "side": "france",
+      "question": "Which région of France is this?",
+      "answer": "Grand Est",
+      "accept": ["Alsace"],
+      "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Colmar-Petite%20Venise%20(3).jpg",
+      "imageAlt": "Colourful half-timbered houses lining a small canal",
+      "imageCredit": "Petite Venise, Colmar · Wikimedia Commons, CC BY-SA (full credit at source)",
+      "note": "The 'Petite Venise' canal quarter of Colmar, in Alsace — a region that has passed between France and Germany more than once.",
+      "source": "https://commons.wikimedia.org/wiki/File:Colmar-Petite_Venise_(3).jpg"
+    },
+    {
+      "category": "UK pop & rock",
+      "side": "britain",
+      "question": "Blind test — play the clip. Name this song and the artist.",
+      "answer": "Let's Dance (David Bowie)",
+      "accept": ["Let's Dance", "David Bowie"],
+      "youtube": "VbD_kBJc_gI",
+      "note": "Bowie's 1983 chart-topper, produced by Nile Rodgers of Chic, with a young Stevie Ray Vaughan on lead guitar.",
+      "source": "https://en.wikipedia.org/wiki/Let%27s_Dance_(David_Bowie_song)"
+    },
+    {
+      "category": "Geography",
+      "side": "france",
+      "question": "Which région of France is this?",
+      "answer": "Nouvelle-Aquitaine",
+      "accept": ["Aquitaine", "Gironde"],
+      "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Sommet%20de%20la%20Dune%20du%20Pilat.jpg",
+      "imageAlt": "An enormous sand dune meeting a pine forest and the sea",
+      "imageCredit": "Dune du Pilat · Wikimedia Commons, CC BY-SA (full credit at source)",
+      "note": "The Dune du Pilat near Arcachon is the tallest sand dune in Europe, rising over 100 m and slowly advancing inland over the forest.",
+      "source": "https://commons.wikimedia.org/wiki/File:Sommet_de_la_Dune_du_Pilat.jpg"
+    }
+  ]
+}

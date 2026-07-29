@@ -195,6 +195,31 @@ Example with options:
 }
 ```
 
+### Optional media: images and a music blind test
+
+Questions may carry media, all **key-free** (loaded in the viewer's browser; the
+site hosts nothing except any local audio you commit). Add sparingly — roughly
+**one image question and one blind-test question per round**.
+
+- `image` — an image URL. The player shows it large; write the question so the
+  answer is what the picture asks (e.g. a photo of a landmark → *"Which région
+  of France is this?"*, answer a région). **Use freely-licensed images only**
+  (Wikimedia Commons: public domain / CC-BY-SA). Prefer a stable Commons URL of
+  the form `https://commons.wikimedia.org/wiki/Special:FilePath/<File name>.jpg`.
+  Add `imageCredit` (e.g. `"Photo: <author>, CC BY-SA 4.0, Wikimedia Commons"`)
+  and set `source` to the Commons file page. Optionally `imageAlt`.
+- `youtube` — a YouTube video id (just the id, e.g. `"fJ9rUzIMcZQ"`). The player
+  shows a "▶ Play the clip" button that loads YouTube's own licensed player, so
+  a **famous-song blind test is legal without hosting anything or any key**.
+  Write the question as *"Name this song / artist"*; put the reveal in `answer`.
+- `audio` — a URL to an audio file for a self-contained clip. **Only host
+  public-domain or Creative-Commons audio** (e.g. Musopen) under `rounds/audio/`;
+  never commit copyrighted pop/rock — use `youtube` for that.
+
+Every media question still needs a real `source` and obeys the one-unique-source
+rule. Note: this build environment cannot fetch external media, so when adding
+image/youtube URLs, flag that the human should confirm they load.
+
 ## If in doubt
 
 If searching a category turns up nothing solid, come back and tell the user

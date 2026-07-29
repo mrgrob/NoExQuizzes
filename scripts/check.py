@@ -92,6 +92,11 @@ def check_round(path, errors):
                 if not (onorm & acc):
                     errors.append(f"{where}: no option matches the answer/accept values")
 
+        for mkey in ("image", "audio", "youtube", "imageCredit", "imageAlt"):
+            mv = q.get(mkey)
+            if mv is not None and (not isinstance(mv, str) or not mv.strip()):
+                errors.append(f"{where}: '{mkey}' must be a non-empty string")
+
         src = q.get("source")
         if src:
             if not src.strip().lower().startswith(("http://", "https://")):

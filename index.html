@@ -142,6 +142,17 @@
   .opt.correct .lt{background:var(--positive);color:#fff;border-color:var(--positive)}
   .opt.correct::after{content:"✓";color:var(--positive);font-weight:700;font-size:18px}
 
+  /* Media: image / audio / video embed */
+  .q-media{margin-top:16px}
+  .q-media img{display:block;width:100%;max-height:54vh;object-fit:cover;border-radius:16px;border:1px solid var(--line)}
+  .q-media .credit{font-family:"JetBrains Mono",monospace;font-size:10px;letter-spacing:.5px;color:var(--ink-dim);margin-top:6px}
+  .q-media audio{width:100%;margin-top:6px}
+  .media-btn{width:100%;min-height:56px;border-radius:14px;border:1px solid var(--accent);color:var(--accent);background:color-mix(in srgb,var(--accent) 8%,transparent);font-weight:600;font-size:16px;display:flex;align-items:center;justify-content:center;gap:8px;margin-top:6px}
+  .media-btn:active{transform:scale(.99)}
+  .yt-wrap{margin-top:6px;border-radius:16px;overflow:hidden;border:1px solid var(--line);background:#000}
+  .yt-wrap iframe{display:block;width:100%;aspect-ratio:16/9;border:0}
+  .media-hint{font-family:"JetBrains Mono",monospace;font-size:10px;color:var(--ink-dim);letter-spacing:.5px;margin-top:6px;text-align:center}
+
   .reveal{margin-top:8px}
   .alabel{font-family:"JetBrains Mono",monospace;font-size:10px;letter-spacing:2px;text-transform:uppercase;color:var(--ink-dim);margin-bottom:6px}
   .answer{font-family:"Instrument Serif",serif;font-size:clamp(30px,7vw,46px);line-height:1.12;color:var(--ink)}
@@ -261,6 +272,7 @@
 
       <div class="qbody" id="qbody">
         <div class="question serif" id="q-text">…</div>
+        <div class="q-media hidden" id="q-media"></div>
         <div class="options hidden" id="q-options"></div>
         <div class="reveal hidden" id="reveal">
           <div class="alabel">Answer</div>
@@ -407,6 +419,41 @@
     box.classList.remove("hidden");
   }
 
+  // Render optional media: an image (for "which région?" questions), a local
+  // audio clip, or a YouTube embed (for a "name that song" blind test). All are
+  // key-free: images/embeds load in the viewer's browser; nothing is hosted
+  // here except any local audio you commit under rounds/audio/.
+  function renderMedia(qq){
+    var box=document.getElementById("q-media");
+    box.innerHTML=""; var has=false;
+    if (qq.image){
+      var im=document.createElement("img");
+      im.src=qq.image; im.alt=qq.imageAlt||"Quiz image"; im.loading="lazy";
+      box.appendChild(im);
+      if (qq.imageCredit){ var c=document.createElement("div"); c.className="credit"; c.textContent=qq.imageCredit; box.appendChild(c); }
+      has=true;
+    }
+    if (qq.audio){
+      var au=document.createElement("audio"); au.controls=true; au.preload="none"; au.src=qq.audio;
+      box.appendChild(au); has=true;
+    }
+    if (qq.youtube){
+      var wrap=document.createElement("div");
+      var btn=document.createElement("button"); btn.className="media-btn"; btn.type="button";
+      btn.textContent="▶ Play the clip";
+      btn.addEventListener("click", function(){
+        var f=document.createElement("div"); f.className="yt-wrap";
+        f.innerHTML='<iframe src="https://www.youtube-nocookie.com/embed/'+encodeURIComponent(qq.youtube)+'?autoplay=1&rel=0&modestbranding=1" allow="autoplay; encrypted-media" allowfullscreen title="clip"></iframe>';
+        wrap.replaceChild(f, btn);
+      });
+      wrap.appendChild(btn);
+      var hint=document.createElement("div"); hint.className="media-hint"; hint.textContent="blind test — play the clip, don't peek at the title";
+      wrap.appendChild(hint);
+      box.appendChild(wrap); has=true;
+    }
+    box.classList.toggle("hidden", !has);
+  }
+
   /* ---------------- Round list ---------------- */
   function loadList(){
     fetch("rounds/index.json", {cache:"no-cache"})
@@ -494,6 +541,7 @@
     qtext.classList.toggle("small", state.phase==="marking");
     qtext.classList.toggle("hasopts", !!(qq.options&&qq.options.length) && state.phase!=="marking");
     if (!reduceMotion()){ qtext.classList.remove("qanim"); void qtext.offsetWidth; qtext.classList.add("qanim"); }
+    renderMedia(qq);
     renderOptions(qq);
 
     // answer block
