@@ -1,0 +1,218 @@
+{
+  "id": "round-11",
+  "number": 11,
+  "title": "Round 11 — More England, Please",
+  "written": "2026-07-29",
+  "questions": [
+    {
+      "category": "Culture & the arts",
+      "side": "both",
+      "format": "thisorthat",
+      "question": "In Master and Commander: The Far Side of the World, Russell Crowe plays Captain Jack Aubrey — which navy does he serve in?",
+      "answer": "Britain's Royal Navy",
+      "accept": ["Royal Navy", "the British navy", "Britain"],
+      "options": ["Britain's Royal Navy", "The French navy"],
+      "note": "Set during the Napoleonic Wars and adapted from Patrick O'Brian's novels, it has Crowe's Royal Navy captain hunting the French privateer Acheron.",
+      "source": "https://en.wikipedia.org/wiki/Master_and_Commander:_The_Far_Side_of_the_World"
+    },
+    {
+      "category": "Geography",
+      "side": "britain",
+      "question": "Which lake is the largest in England?",
+      "answer": "Windermere",
+      "accept": ["Lake Windermere"],
+      "note": "Windermere, in Cumbria's Lake District, is about 17 km long and covers roughly six square miles.",
+      "source": "https://www.britannica.com/place/Windermere"
+    },
+    {
+      "category": "Art history",
+      "side": "britain",
+      "question": "This 1821 painting by John Constable — one of the best-loved of all British pictures — hangs in which London museum?",
+      "answer": "The National Gallery",
+      "accept": ["National Gallery"],
+      "options": ["Tate Britain", "The National Gallery", "The Victoria and Albert Museum", "The Royal Academy of Arts"],
+      "image": "https://commons.wikimedia.org/wiki/Special:FilePath/John%20Constable%20The%20Hay%20Wain.jpg?width=1100",
+      "imageAlt": "A rural painting of a horse-drawn hay cart fording a shallow river beside a cottage",
+      "imageCredit": "The Hay Wain (1821), John Constable · Wikimedia Commons (public domain)",
+      "note": "It's The Hay Wain, catalogued as NG1207, on Trafalgar Square — and it was shown in Paris in 1824, where it made a deep impression on French painters.",
+      "source": "https://www.nationalgallery.org.uk/paintings/john-constable-the-hay-wain"
+    },
+    {
+      "category": "General knowledge",
+      "side": "britain",
+      "question": "According to Law 1 of the Laws of Cricket, written by the MCC at Lord's, how many players are there in a cricket team?",
+      "answer": "11",
+      "accept": ["eleven"],
+      "options": ["9", "11", "13", "15"],
+      "note": "Law 1 states a match is played between two sides of eleven players each, one of whom is the captain.",
+      "source": "https://www.lords.org/mcc/the-laws-of-cricket-2d35b4b95a4a67ae8f9c76f258a84aa8/the-players"
+    },
+    {
+      "category": "History",
+      "side": "britain",
+      "question": "The Great Fire of London in 1666 broke out in a bakery on which street?",
+      "answer": "Pudding Lane",
+      "accept": [],
+      "options": ["Pudding Lane", "Bread Street", "Fish Street Hill", "Cheapside"],
+      "note": "The fire started in Thomas Farriner's bakery on Pudding Lane on 2 September 1666 and burned for four days.",
+      "source": "https://www.themonument.org.uk/history"
+    },
+    {
+      "category": "Food & drink",
+      "side": "both",
+      "question": "The British spread Marmite takes its name from a French word for what kind of object?",
+      "answer": "A cooking pot",
+      "accept": ["cooking pot", "a pot", "stewpot", "earthenware pot"],
+      "options": ["A cooking pot", "A butter churn", "A drinking flask", "A bread basket"],
+      "note": "A marmite is a French earthenware or metal cooking pot, and the spread was originally sold in small pots of that shape.",
+      "source": "https://en.wikipedia.org/wiki/Marmite_(cooking_dish)"
+    },
+    {
+      "category": "Geography",
+      "side": "britain",
+      "format": "closest",
+      "question": "How many miles long is Hadrian's Wall, shown here, which crosses northern England coast to coast?",
+      "answer": "73 miles",
+      "accept": ["73", "117 km"],
+      "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Hadrian%27s%20Wall%20west%20of%20Housesteads%203.jpg?width=1100",
+      "imageAlt": "A low stone wall running over rolling green hills under a wide sky",
+      "imageCredit": "Hadrian's Wall, Northumberland · Wikimedia Commons, CC BY-SA (credit at source)",
+      "note": "The Roman wall runs 73 modern miles — 80 Roman miles, about 117 km — from Wallsend to Bowness-on-Solway.",
+      "source": "https://www.english-heritage.org.uk/faqs-hadrians-wall/"
+    },
+    {
+      "category": "Culture & the arts",
+      "side": "france",
+      "question": "Russell Crowe played Inspector Javert in the 2012 film Les Misérables — which French author wrote the 1862 novel behind it?",
+      "answer": "Victor Hugo",
+      "accept": ["Hugo"],
+      "options": ["Victor Hugo", "Alexandre Dumas", "Émile Zola", "Jules Verne"],
+      "note": "Tom Hooper's film adapts the stage musical, which is itself based on Hugo's 1862 novel.",
+      "source": "https://en.wikipedia.org/wiki/Les_Mis%C3%A9rables_(2012_film)"
+    },
+    {
+      "category": "Sport & games",
+      "side": "britain",
+      "question": "The marathon distance of 26 miles 385 yards was fixed at the Olympic Games held in which city?",
+      "answer": "London",
+      "accept": ["London 1908"],
+      "options": ["London", "Paris", "Athens", "Stockholm"],
+      "note": "The 1908 London Games ran from Windsor Castle to the stadium, and that length became the official marathon distance in 1921.",
+      "source": "https://www.britannica.com/sports/Why-Is-a-Marathon-26-2-Miles"
+    },
+    {
+      "category": "Art history",
+      "side": "britain",
+      "format": "oddoneout",
+      "question": "Three of these British artists have won the Turner Prize. Which is the odd one out?",
+      "answer": "Banksy",
+      "accept": [],
+      "options": ["Damien Hirst", "Steve McQueen", "Grayson Perry", "Banksy"],
+      "note": "Hirst won in 1995, McQueen in 1999 and Perry in 2003. The anonymous street artist Banksy has never won the Tate's prize.",
+      "source": "https://en.wikipedia.org/wiki/List_of_Turner_Prize_winners_and_nominees"
+    },
+    {
+      "category": "Language & everyday life",
+      "side": "both",
+      "format": "thisorthat",
+      "question": "In France, an estate agent tells you a flat is 'au premier étage'. Which floor is it on?",
+      "answer": "The floor above the ground floor",
+      "accept": ["above the ground floor", "the British first floor"],
+      "options": ["The ground floor", "The floor above the ground floor"],
+      "note": "France counts floors the British way: the ground floor is 'le rez-de-chaussée', so 'premier étage' is the British first floor.",
+      "source": "https://dictionary.cambridge.org/dictionary/english-french/first-floor"
+    },
+    {
+      "category": "Geography",
+      "side": "france",
+      "format": "oddoneout",
+      "question": "Three of these countries share a land border with mainland France. Which is the odd one out?",
+      "answer": "Portugal",
+      "accept": [],
+      "options": ["Belgium", "Spain", "Italy", "Portugal"],
+      "note": "Belgium, Spain and Italy are three of mainland France's eight neighbours. Portugal's only land neighbour is Spain.",
+      "source": "https://www.worldatlas.com/articles/what-countries-border-france.html"
+    },
+    {
+      "category": "History",
+      "side": "britain",
+      "format": "closest",
+      "question": "In which year was Britain's National Health Service, the NHS, launched?",
+      "answer": "1948",
+      "accept": [],
+      "note": "Aneurin Bevan launched the NHS on 5 July 1948, making Britain the first western country to offer free medical care to its whole population.",
+      "source": "https://history.blog.gov.uk/2023/07/13/the-founding-of-the-nhs-75-years-on/"
+    },
+    {
+      "category": "Art history",
+      "side": "france",
+      "format": "order",
+      "question": "Put these four art movements in chronological order, earliest first.",
+      "items": ["Neoclassicism", "Romanticism", "Impressionism", "Cubism"],
+      "answer": "Neoclassicism, Romanticism, Impressionism, Cubism",
+      "accept": [],
+      "note": "Standard datings run Neoclassicism from about 1750, Romanticism from about 1780, Impressionism from about 1870 and Cubism from 1907.",
+      "source": "https://www.invaluable.com/blog/art-history-timeline/"
+    },
+    {
+      "category": "Food & drink",
+      "side": "britain",
+      "format": "thisorthat",
+      "question": "The letters HP on a bottle of HP Sauce stand for the name of which London landmark?",
+      "answer": "The Houses of Parliament",
+      "accept": ["Houses of Parliament", "Parliament"],
+      "options": ["The Houses of Parliament", "The Tower of London"],
+      "note": "HP stands for Houses of Parliament, which is why the building has appeared on the label since 1903.",
+      "source": "https://www.mentalfloss.com/article/650500/hp-sauce-history"
+    },
+    {
+      "category": "General knowledge",
+      "side": "france",
+      "question": "Until 2019 the kilogram was defined by a platinum-iridium cylinder nicknamed 'Le Grand K', locked in a vault on the outskirts of which capital city?",
+      "answer": "Paris",
+      "accept": ["Sèvres", "Sevres"],
+      "options": ["London", "Paris", "Geneva", "Vienna"],
+      "note": "It sits under bell jars in the basement vault at Sèvres, just outside Paris, opened only with three separately held keys.",
+      "source": "https://en.wikipedia.org/wiki/International_Prototype_of_the_Kilogram"
+    },
+    {
+      "category": "Culture & the arts",
+      "side": "britain",
+      "question": "Which British director directed Russell Crowe in both Gladiator (2000) and Robin Hood (2010)?",
+      "answer": "Ridley Scott",
+      "accept": ["Scott", "Sir Ridley Scott"],
+      "options": ["Ridley Scott", "Ron Howard", "Tom Hooper", "Peter Weir"],
+      "note": "Ridley Scott, born in South Shields in the north-east of England, directed Crowe in Gladiator and again in Robin Hood.",
+      "source": "https://www.britannica.com/biography/Ridley-Scott"
+    },
+    {
+      "category": "Geography",
+      "side": "france",
+      "question": "France's longest land border is with which country?",
+      "answer": "Brazil",
+      "accept": [],
+      "note": "French Guiana gives France a 730 km border with Brazil — longer than its 623 km border with Spain.",
+      "source": "https://en.wikipedia.org/wiki/Brazil%E2%80%93France_border"
+    },
+    {
+      "category": "Sport & games",
+      "side": "britain",
+      "question": "Badminton is named after a stately home in which English county?",
+      "answer": "Gloucestershire",
+      "accept": [],
+      "options": ["Gloucestershire", "Devon", "Norfolk", "Yorkshire"],
+      "note": "The sport took its name from Badminton House, the Duke of Beaufort's home, where an early version was played in the 1860s.",
+      "source": "https://bwfbadminton.com/news-single/2019/03/20/badminton-house-where-it-all-started"
+    },
+    {
+      "category": "Art history",
+      "side": "both",
+      "question": "Whistler's Mother, painted in London in 1871, has belonged to the French state since 1891 — which Paris museum displays it today?",
+      "answer": "The Musée d'Orsay",
+      "accept": ["Musée d'Orsay", "Orsay"],
+      "options": ["The Louvre", "The Musée d'Orsay", "The Centre Pompidou", "The Petit Palais"],
+      "note": "Officially titled Arrangement in Grey and Black No. 1, it moved to the Musée d'Orsay when the former railway station opened as a museum in 1986.",
+      "source": "https://www.musee-orsay.fr/en/artworks/arrangement-en-gris-et-noir-ndeg1-974"
+    }
+  ]
+}
