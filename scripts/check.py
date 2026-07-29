@@ -30,6 +30,8 @@ CATEGORIES = {
     "Language & everyday life",
     "UK pop & rock",
     "Inventions",
+    "Art history",
+    "General knowledge",
 }
 SIDES = {"france", "britain", "both", "neutral"}
 FORMATS = {"closest", "order", "oddoneout", "thisorthat"}

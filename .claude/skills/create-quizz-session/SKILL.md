@@ -6,7 +6,8 @@ description: >-
   round or evening session — e.g. "fais la session de ce soir", "new quiz
   round", "quiz for tonight", "prépare le quiz", "another round", or the
   /create-quizz-session command. The procedure researches and verifies every
-  question, enforces one unique source per question and per-category quotas,
+  question, enforces one unique source per question and the round's shape
+  (20 questions, every category represented, British-leaning balance),
   writes rounds/round-N.json, regenerates rounds/index.json, commits, pushes,
   and reports the per-category counts and the live URL.
 ---
@@ -31,9 +32,9 @@ The user may specify any of these; use the defaults when they don't.
 
 | Parameter | Default | Notes |
 |---|---|---|
-| `theme` | none | A loose thread to lean into (e.g. "the sea", "1900", "kings and queens"). Never let a theme override the category quotas or the balance rules. |
+| `theme` | none | A loose thread to lean into (e.g. "the sea", "1900", "kings and queens"). Never let a theme override the balance rules. |
 | `difficulty` | `pub` | `gentle` = a well-read teenager gets most; `pub` = a reasonably informed adult gets many; `fiendish` = rewards real knowledge, still fair and timeless. |
-| `perCategory` | `5` | Questions per category. `5` → 30 total. `perCategory: 6` → 36, etc. |
+| `total` | `20` | Questions in the round. The family asked for **20**, not 30 — keep it unless they say otherwise. |
 
 ## The rules that make or break the round
 
@@ -54,20 +55,46 @@ itself and the family notices immediately. **If one search hands you three good
 facts about the same subject, use exactly one and go and search for something
 else.**
 
-### 3. Category quotas
-Six categories, **minimum `perCategory` (default 5) questions each**:
+### 3. Round shape — 20 questions, at least one per category
 
-- History
-- Food & drink
-- Geography
-- Culture & the arts
-- Sport & games
-- Language & everyday life
+**A round is 20 questions** (the family's preference — not 30). There is no
+fixed per-category quota any more; instead:
 
-After drafting, **count per category**. Any category short of quota gets a
-**top-up pass** — search again for that category specifically. Then
-**interleave** the final order so the round never runs in blocks of five from
-the same category.
+- **Every category in play must have at least one question**, and the round
+  should span the six core categories plus whichever extras suit the night.
+- **Core six**: History · Food & drink · Geography · Culture & the arts ·
+  Sport & games · Language & everyday life
+- **Extras** (use as category slots when they fit): **Art history** ·
+  **General knowledge** · **UK pop & rock** · **Inventions**
+
+A good default shape for 20 (adjust to taste):
+
+| Category | Questions |
+|---|---|
+| Geography | 3–4 (**the family asked for more geography**) |
+| Culture & the arts | 3 |
+| Art history | 2–3 |
+| General knowledge | 2–3 |
+| History | 2 |
+| Food & drink | 2 |
+| Sport & games | 2 |
+| Language & everyday life | 1–2 |
+
+After drafting, **count per category** and top up anything missing. Then
+**interleave** so the round never runs in blocks from the same category.
+
+### 3b. Balance — lean British
+
+The family is British and living in France, and has asked for **more questions
+about England and Britain**. Aim for roughly:
+
+- **britain ≈ 40–45%** (make a good share specifically **English**)
+- **france ≈ 30–35%**
+- **both ≈ 20–25%**, plus the odd `neutral`
+
+This replaces the old "rough three-way balance" — Britain now gets the larger
+share on a normal night. (A deliberately France-themed round, e.g. via
+`create-france-quizz`, is the exception.)
 
 ### 4. Question quality
 - **Short, unambiguous answers**: one name, date, place, number, or phrase.
@@ -87,9 +114,15 @@ through one of the six categories):
 
 - **England vs France football** — the two national teams, their meetings,
   players, stadiums and history (Sport & games).
-- **Film**, including big franchises the family enjoys such as the **Jurassic
-  Park / Jurassic World** films, plus Franco-British cinema (Culture & the
-  arts). Non-Franco-British film facts take `side: "neutral"`.
+- **Film** and Franco-British cinema (Culture & the arts). Non-Franco-British
+  film facts take `side: "neutral"`.
+  - **Russell Crowe films are a family favourite — and they want them EASY.**
+    They have lovely Franco-British hooks: *Master and Commander* (a Royal Navy
+    captain chasing a French privateer, from Patrick O'Brian's novels),
+    *Les Misérables* (Crowe as Javert, from Hugo), *Gladiator* and *Robin Hood*
+    (both directed by Britain's Ridley Scott).
+  - **Go easy on Jurassic Park.** The family has said there's been too much of
+    it — Rounds 3 and 4 covered it thoroughly. Don't return to it unless asked.
 - **French ↔ English loanwords, both directions** — French words in English and
   English/franglais words in French (Language & everyday life).
 - **Provence** — its geography, food and drink, and history (Geography, Food &
@@ -115,6 +148,16 @@ through one of the six categories):
   recognised **extra category** (`"Inventions"`) with its own colour; use it as
   a category slot when the night calls for it. Lean into "both" for joint
   Franco-British engineering.
+- **Art history** (`"Art history"`) — paintings, sculpture, movements, artists
+  and museums. **The family asked for this**, so include it on most nights:
+  the Pre-Raphaelites, Constable, Hogarth, Henry Moore, the Turner Prize and the
+  Royal Academy on the British side; Delacroix, Seurat, Matisse, Duchamp and the
+  Musée d'Orsay on the French. Movements in chronological order make a natural
+  `order` question.
+- **General knowledge** (`"General knowledge"`) — a broad catch-all the family
+  asked for: science, nature, space, world facts, curiosities. Keep it timeless
+  (no current record-holders). `neutral` is fine here for facts belonging to
+  neither country.
 
 **Include a photo or two.** Most rounds play better with a couple of `image`
 questions mixed in (a landmark → "which région?", a painting → "who painted
@@ -143,16 +186,19 @@ and close variations of them.
 
 1. **Read the past.** Read `rounds/index.json` and every `rounds/round-*.json`.
    Note the next round number `N` and build a mental list of what's been asked.
-2. **Research per category.** For each of the six categories, search and verify
-   facts until you have at least `perCategory` solid questions. Open each source
-   (WebFetch) and record the exact final URL. Keep a running set of used
-   `hostname + path` and skip any fact whose source collides. This is a good
-   place to fan out: one research pass per category, overshooting slightly so
-   you can drop weak ones. When delegating research, instruct helpers to return
-   only URLs they actually opened.
+2. **Research per category.** Decide the round's shape first (§3), then search
+   and verify facts for each category slot. Open each source (WebFetch) and
+   record the exact final URL. Keep a running set of used `hostname + path` and
+   skip any fact whose source collides. This is a good place to fan out: one
+   research pass per category, **overshooting by a question or two** so you can
+   drop the weak ones. When delegating research, instruct helpers to return only
+   URLs they actually opened.
 3. **Draft.** Write each question with `category`, `side`, `question`,
    `answer`, `accept` (alternative acceptable answers), `note`, and `source`.
-4. **Count & top up.** Tally per category. Top up any that are short.
+4. **Count & top up.** Tally to **20** and check: every category present at
+   least once, Britain carrying the largest share, geography well represented,
+   at least one sport and one film question, a couple of photos, and a handful of
+   mixed formats. Top up anything missing.
 5. **Interleave.** Order so no two adjacent questions share a category where
    avoidable, and the sides vary.
 6. **Assemble** `rounds/round-N.json` (schema below) and set `written` to
