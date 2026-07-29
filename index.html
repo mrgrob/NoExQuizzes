@@ -149,8 +149,13 @@
   .q-media audio{width:100%;margin-top:6px}
   .media-btn{width:100%;min-height:56px;border-radius:14px;border:1px solid var(--accent);color:var(--accent);background:color-mix(in srgb,var(--accent) 8%,transparent);font-weight:600;font-size:16px;display:flex;align-items:center;justify-content:center;gap:8px;margin-top:6px}
   .media-btn:active{transform:scale(.99)}
-  .yt-wrap{margin-top:6px;border-radius:16px;overflow:hidden;border:1px solid var(--line);background:#000}
-  .yt-wrap iframe{display:block;width:100%;aspect-ratio:16/9;border:0}
+  .yt-slot{margin-top:6px}
+  /* Audio-only blind test: the iframe plays but is fully covered so neither the
+     video nor its title is visible. */
+  .yt-blind{position:relative;height:88px;border-radius:14px;overflow:hidden;border:1px solid var(--line)}
+  .yt-blind iframe{position:absolute;top:0;left:0;width:100%;height:520px;border:0}
+  .yt-cover{position:absolute;inset:0;z-index:2;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:2px;cursor:pointer;font-weight:600;color:var(--ink);background:color-mix(in srgb,var(--accent) 14%,var(--surface))}
+  .yt-cover .stop{font-family:"JetBrains Mono",monospace;font-size:10px;font-weight:400;letter-spacing:1px;text-transform:uppercase;color:var(--ink-dim)}
   .media-hint{font-family:"JetBrains Mono",monospace;font-size:10px;color:var(--ink-dim);letter-spacing:.5px;margin-top:6px;text-align:center}
 
   .reveal{margin-top:8px}
@@ -426,11 +431,17 @@
   function renderMedia(qq){
     var box=document.getElementById("q-media");
     box.innerHTML=""; var has=false;
+    // Only reveal identifying details (image credit) once the answer is shown,
+    // so the caption never gives the answer away during the question.
+    var answerVisible = (state.phase==="marking") && (settings.mode==="end" || state.revealed);
+
     if (qq.image){
       var im=document.createElement("img");
       im.src=qq.image; im.alt=qq.imageAlt||"Quiz image"; im.loading="lazy";
       box.appendChild(im);
-      if (qq.imageCredit){ var c=document.createElement("div"); c.className="credit"; c.textContent=qq.imageCredit; box.appendChild(c); }
+      if (qq.imageCredit && answerVisible){
+        var c=document.createElement("div"); c.className="credit"; c.textContent=qq.imageCredit; box.appendChild(c);
+      }
       has=true;
     }
     if (qq.audio){
@@ -438,17 +449,30 @@
       box.appendChild(au); has=true;
     }
     if (qq.youtube){
-      var wrap=document.createElement("div");
-      var btn=document.createElement("button"); btn.className="media-btn"; btn.type="button";
-      btn.textContent="▶ Play the clip";
-      btn.addEventListener("click", function(){
-        var f=document.createElement("div"); f.className="yt-wrap";
-        f.innerHTML='<iframe src="https://www.youtube-nocookie.com/embed/'+encodeURIComponent(qq.youtube)+'?autoplay=1&rel=0&modestbranding=1" allow="autoplay; encrypted-media" allowfullscreen title="clip"></iframe>';
-        wrap.replaceChild(f, btn);
-      });
-      wrap.appendChild(btn);
-      var hint=document.createElement("div"); hint.className="media-hint"; hint.textContent="blind test — play the clip, don't peek at the title";
-      wrap.appendChild(hint);
+      var wrap=document.createElement("div"); wrap.className="yt-slot";
+      var showBtn=function(){
+        wrap.innerHTML="";
+        var b=document.createElement("button"); b.className="media-btn"; b.type="button";
+        b.textContent="▶ Play the clip (audio only)";
+        b.addEventListener("click", playBlind);
+        wrap.appendChild(b);
+        var hint=document.createElement("div"); hint.className="media-hint"; hint.textContent="a blind test — you'll hear it, not see it";
+        wrap.appendChild(hint);
+      };
+      var playBlind=function(){
+        wrap.innerHTML="";
+        var blind=document.createElement("div"); blind.className="yt-blind";
+        var ifr=document.createElement("iframe");
+        ifr.src="https://www.youtube-nocookie.com/embed/"+encodeURIComponent(qq.youtube)+"?autoplay=1&rel=0&modestbranding=1&playsinline=1&controls=0&disablekb=1";
+        ifr.setAttribute("allow","autoplay; encrypted-media");
+        ifr.title="audio clip";
+        var cover=document.createElement("div"); cover.className="yt-cover";
+        cover.innerHTML='<span>🔊 Playing…</span><span class="stop">tap to stop</span>';
+        cover.addEventListener("click", showBtn);
+        blind.appendChild(ifr); blind.appendChild(cover);
+        wrap.appendChild(blind);
+      };
+      showBtn();
       box.appendChild(wrap); has=true;
     }
     box.classList.toggle("hidden", !has);
