@@ -113,6 +113,12 @@ questions mixed in (a landmark → "which région?", a painting → "who painted
 it / which museum?"). The image is the star; make sure the answer isn't given
 away by the picture or its (reveal-only) caption.
 
+**Always include sport and movies.** Every round must carry **at least one or
+two Sport & games questions** and **at least one or two film/movie questions**
+(the movies live in Culture & the arts). Even on a themed night that swaps a
+category out, keep a sport question and a film question somewhere in the round —
+the family always wants them.
+
 **Difficulty per theme.** Tailor to what the family knows. They are devoted
 Jurassic Park fans and have lived in Provence for 40 years — so pitch **Jurassic
 Park and Provence questions at expert level** (deep, specific facts, not tourist
