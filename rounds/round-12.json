@@ -1,0 +1,212 @@
+{
+  "id": "round-12",
+  "number": 12,
+  "title": "Round 12 — An English Evening",
+  "written": "2026-07-29",
+  "questions": [
+    {
+      "category": "Culture & the arts",
+      "side": "neutral",
+      "question": "What is the name of the Roman general played by Russell Crowe in Gladiator (2000), the role that won him the Academy Award for Best Actor?",
+      "answer": "Maximus",
+      "accept": ["Maximus Decimus Meridius"],
+      "options": ["Maximus", "Commodus", "Lucius", "Marcus"],
+      "note": "Crowe's Maximus earned him the Best Actor Oscar — the third of three consecutive nominations.",
+      "source": "https://www.britannica.com/biography/Russell-Crowe"
+    },
+    {
+      "category": "Geography",
+      "side": "britain",
+      "question": "Which range of hills, running from Derbyshire up to Northumberland, is often called 'the backbone of England'?",
+      "answer": "The Pennines",
+      "accept": ["Pennines"],
+      "options": ["The Pennines", "The Cotswolds", "The Chilterns", "The Cheviots"],
+      "note": "The range earns the nickname from its length and its position straight down the middle of northern England.",
+      "source": "https://en.wikipedia.org/wiki/Pennines"
+    },
+    {
+      "category": "Art history",
+      "side": "britain",
+      "format": "closest",
+      "question": "In which year was the Royal Academy of Arts founded in London, with Joshua Reynolds as its first president?",
+      "answer": "1768",
+      "accept": [],
+      "note": "Reynolds, the leading portrait painter of his day, was the obvious choice to lead the new Academy.",
+      "source": "https://www.royalacademy.org.uk/art-artists/name/joshua-reynolds-pra"
+    },
+    {
+      "category": "History",
+      "side": "britain",
+      "question": "In 1620 the Mayflower made its final departure from England from which port on the Devon coast?",
+      "answer": "Plymouth",
+      "accept": ["Plymouth, Devon"],
+      "options": ["Plymouth", "Portsmouth", "Bristol", "Liverpool"],
+      "note": "After the leaky Speedwell was abandoned, the Mayflower sailed alone on 16 September 1620 and reached Cape Cod 66 days later.",
+      "source": "https://www.visitplymouth.co.uk/explore/plymouths-history/mayflower-400/the-story"
+    },
+    {
+      "category": "Food & drink",
+      "side": "britain",
+      "format": "thisorthat",
+      "question": "Traditionally, was the Yorkshire pudding served with gravy before the meat course, or after it?",
+      "answer": "Before the meat",
+      "accept": ["before", "before the meat course"],
+      "options": ["Before the meat", "After the meat"],
+      "note": "Cheap batter pudding was served first with gravy to fill people up, so the expensive roast would stretch further.",
+      "source": "https://www.historic-uk.com/CultureUK/Yorkshire-Pudding/"
+    },
+    {
+      "category": "General knowledge",
+      "side": "britain",
+      "question": "Which chemical element takes its name from a small Scottish village where its mineral was first discovered?",
+      "answer": "Strontium",
+      "accept": ["strontian"],
+      "options": ["Scandium", "Strontium", "Yttrium", "Polonium"],
+      "note": "The village of Strontian on Loch Sunart gave its name to the mineral strontianite, and then to the element isolated by Humphry Davy in 1808.",
+      "source": "https://www.nms.ac.uk/discover-catalogue/the-discovery-of-mineral-strontianite"
+    },
+    {
+      "category": "Geography",
+      "side": "britain",
+      "question": "Which island, separated from Hampshire by the Solent, is the largest island of England?",
+      "answer": "The Isle of Wight",
+      "accept": ["Isle of Wight", "Wight"],
+      "options": ["The Isle of Wight", "The Isle of Sheppey", "Lundy", "Hayling Island"],
+      "note": "At about 380 km² it is comfortably England's largest island, well ahead of Sheppey and Hayling.",
+      "source": "https://en.wikipedia.org/wiki/List_of_islands_of_England"
+    },
+    {
+      "category": "Art history",
+      "side": "britain",
+      "question": "William Hogarth's original set of eight paintings 'A Rake's Progress', one of which is shown here, hangs in which London museum?",
+      "answer": "Sir John Soane's Museum",
+      "accept": ["Soane Museum", "John Soane's Museum"],
+      "options": ["Sir John Soane's Museum", "The Wallace Collection", "Dulwich Picture Gallery", "The Courtauld Gallery"],
+      "image": "https://commons.wikimedia.org/wiki/Special:FilePath/William%20Hogarth%20027.jpg?width=1100",
+      "imageAlt": "A crowded, riotous 18th-century tavern scene painted in rich detail",
+      "imageCredit": "A Rake's Progress III: The Tavern Scene, William Hogarth · Wikimedia Commons (public domain)",
+      "note": "The architect John Soane bought the eight canvases at auction in 1802, and they still hang in his Lincoln's Inn Fields house.",
+      "source": "https://en.wikipedia.org/wiki/A_Rake%27s_Progress"
+    },
+    {
+      "category": "Sport & games",
+      "side": "britain",
+      "question": "Which cricket club, founded in 1787 and still the custodian of the Laws of Cricket, has its home at Lord's in St John's Wood?",
+      "answer": "Marylebone Cricket Club (MCC)",
+      "accept": ["MCC", "Marylebone Cricket Club"],
+      "note": "The MCC took charge of the Laws the year after its founding, and Lord's is nicknamed the Home of Cricket.",
+      "source": "https://en.wikipedia.org/wiki/Marylebone_Cricket_Club"
+    },
+    {
+      "category": "Culture & the arts",
+      "side": "neutral",
+      "question": "In A Beautiful Mind (2001), Russell Crowe plays the real-life John Nash. What was Nash's profession?",
+      "answer": "Mathematician",
+      "accept": ["a mathematician", "maths professor"],
+      "options": ["Mathematician", "Chemist", "Astronomer", "Architect"],
+      "note": "Nash was a Nobel Prize-winning mathematician famed for his work on game theory, and the film won four Oscars including Best Picture.",
+      "source": "https://www.britannica.com/topic/A-Beautiful-Mind"
+    },
+    {
+      "category": "Language & everyday life",
+      "side": "both",
+      "question": "English borrowed 'etiquette' from French in the 18th century, but the original Old French word meant something much more everyday. What did it mean?",
+      "answer": "A label or ticket",
+      "accept": ["a label", "a ticket", "label", "ticket"],
+      "note": "The same Old French root also gave English the word 'ticket'; the polite-behaviour sense is thought to come from little cards of court instructions.",
+      "source": "https://www.etymonline.com/word/etiquette"
+    },
+    {
+      "category": "Geography",
+      "side": "britain",
+      "format": "closest",
+      "question": "The Jurassic Coast, England's only natural World Heritage Site, runs along Dorset and East Devon. How many miles long is it?",
+      "answer": "95 miles",
+      "accept": ["95", "about 95 miles", "155 km"],
+      "note": "UNESCO describes it as a 95-mile site, inscribed on the World Heritage List in 2001 for its 185 million years of rock.",
+      "source": "https://unesco.org.uk/our-network/world-heritage-sites/dorset-and-east-devon-coast-the-jurassic-coast"
+    },
+    {
+      "category": "Art history",
+      "side": "france",
+      "format": "oddoneout",
+      "question": "Three of these painters belonged to the same movement. Which is the odd one out?",
+      "answer": "Edgar Degas",
+      "accept": ["Degas"],
+      "options": ["Henri Matisse", "André Derain", "Maurice de Vlaminck", "Edgar Degas"],
+      "note": "The other three were Fauves — the 'wild beasts' named by critic Louis Vauxcelles at the 1905 Salon d'Automne. Degas was an Impressionist.",
+      "source": "https://www.tate.org.uk/art/art-terms/fauvism"
+    },
+    {
+      "category": "History",
+      "side": "both",
+      "format": "closest",
+      "question": "In which year did Florence Nightingale and her nurses arrive at the British military hospital at Scutari during the Crimean War?",
+      "answer": "1854",
+      "accept": [],
+      "note": "They left London on 21 October 1854 — a war in which Britain and France fought side by side against Russia.",
+      "source": "https://www.nam.ac.uk/explore/florence-nightingale-lady-lamp"
+    },
+    {
+      "category": "Food & drink",
+      "side": "britain",
+      "question": "Which famous London department store claims to have invented the Scotch egg in 1738?",
+      "answer": "Fortnum & Mason",
+      "accept": ["Fortnum and Mason", "Fortnums"],
+      "options": ["Fortnum & Mason", "Harrods", "Selfridges", "Liberty"],
+      "note": "Fortnum's says it created them for wealthy travellers setting out by carriage from its Piccadilly shop — though rival origin stories exist.",
+      "source": "https://www.britannica.com/topic/Scotch-egg"
+    },
+    {
+      "category": "General knowledge",
+      "side": "neutral",
+      "format": "oddoneout",
+      "question": "Which of these metals is the odd one out?",
+      "answer": "Mercury",
+      "accept": [],
+      "options": ["Gold", "Iron", "Mercury", "Copper"],
+      "note": "Gold, iron and copper are all solid at room temperature. Mercury is the only metal that is liquid at normal temperatures.",
+      "source": "https://www.usgs.gov/media/images/mercury-only-metal-liquid-normal-temperatures"
+    },
+    {
+      "category": "Culture & the arts",
+      "side": "neutral",
+      "format": "closest",
+      "question": "In which year was Gladiator, with Russell Crowe as Maximus, released?",
+      "answer": "2000",
+      "accept": [],
+      "note": "Gladiator was released in 2000 and won five Academy Awards, including Best Picture.",
+      "source": "https://www.britannica.com/topic/Gladiator-film-by-Scott"
+    },
+    {
+      "category": "Geography",
+      "side": "france",
+      "question": "Which cape on France's Côte d'Opale is the closest point of France to Great Britain?",
+      "answer": "Cap Gris-Nez",
+      "accept": ["Cap Gris Nez", "Gris-Nez"],
+      "options": ["Cap Gris-Nez", "Cap Blanc-Nez", "Cap de la Hague", "Pointe du Raz"],
+      "note": "Its cliffs are only about 34 km from England — close enough to see the Dover cliffs on a clear day.",
+      "source": "https://en.wikipedia.org/wiki/Cap_Gris-Nez"
+    },
+    {
+      "category": "Sport & games",
+      "side": "britain",
+      "format": "thisorthat",
+      "question": "On the course used for the Oxford v Cambridge Boat Race, which end is the starting line: Putney or Mortlake?",
+      "answer": "Putney",
+      "accept": ["Putney Bridge"],
+      "options": ["Putney", "Mortlake"],
+      "note": "Crews start just downstream of Putney Bridge and finish at Mortlake, over 4 miles 374 yards of the Thames.",
+      "source": "https://www.theboatrace.org/the-course"
+    },
+    {
+      "category": "Art history",
+      "side": "both",
+      "question": "In which city did the young Vincent van Gogh live and work for the art dealers Goupil & Cie from 1873, long before he moved to France?",
+      "answer": "London",
+      "accept": [],
+      "note": "He lodged at 87 Hackford Road in Stockwell while working at Goupil's London branch, and his drawing of that house is his first known work.",
+      "source": "https://en.wikipedia.org/wiki/87_Hackford_Road_(Van_Gogh)"
+    }
+  ]
+}
