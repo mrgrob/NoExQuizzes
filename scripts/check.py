@@ -36,6 +36,11 @@ CATEGORIES = {
 SIDES = {"france", "britain", "both", "neutral"}
 FORMATS = {"closest", "order", "oddoneout", "thisorthat"}
 
+# From this round number on, every round must contain at least one question
+# from EVERY category — the family asked for guaranteed variety. Earlier rounds
+# predate the rule and are exempt (they're already played history).
+FULL_COVERAGE_FROM = 13
+
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 ROUNDS_DIR = os.path.join(ROOT, "rounds")
 
@@ -133,6 +138,19 @@ def check_round(path, errors):
                     )
                 else:
                     seen[key] = i
+
+    # Every category represented? (rounds from FULL_COVERAGE_FROM onwards)
+    number = data.get("number")
+    if isinstance(number, int) and number >= FULL_COVERAGE_FROM:
+        present = {q.get("category") for q in questions if isinstance(q, dict)}
+        missing = sorted(CATEGORIES - present)
+        if missing:
+            errors.append(
+                f"{name}: round {number} is missing {len(missing)} categor"
+                + ("y" if len(missing) == 1 else "ies")
+                + " — every category must appear at least once: "
+                + ", ".join(missing)
+            )
     return data
 
 
@@ -196,6 +214,19 @@ def main():
     total = sum(len(r.get("questions", [])) for r in rounds if r)
     print("OK — %d round(s), %d question(s), all sources unique within each round."
           % (len(paths), total))
+
+    for r in sorted((r for r in rounds if r), key=lambda x: x.get("number", 0)):
+        n = r.get("number")
+        present = {q.get("category") for q in r.get("questions", [])}
+        missing = sorted(CATEGORIES - present)
+        if not missing:
+            note = "all %d categories" % len(CATEGORIES)
+        elif isinstance(n, int) and n < FULL_COVERAGE_FROM:
+            note = "%d/%d categories (legacy round, exempt)" % (
+                len(CATEGORIES) - len(missing), len(CATEGORIES))
+        else:
+            note = "MISSING: " + ", ".join(missing)
+        print("   round %-3s %3d Q  ·  %s" % (n, len(r.get("questions", [])), note))
     return 0
 
 

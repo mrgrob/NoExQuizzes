@@ -57,31 +57,44 @@ else.**
 
 ### 3. Round shape — 20 questions, at least one per category
 
-**A round is 20 questions** (the family's preference — not 30). There is no
-fixed per-category quota any more; instead:
+**A round is 20 questions** (the family's preference — not 30), and:
 
-- **Every category in play must have at least one question**, and the round
-  should span the six core categories plus whichever extras suit the night.
-- **Core six**: History · Food & drink · Geography · Culture & the arts ·
-  Sport & games · Language & everyday life
-- **Extras** (use as category slots when they fit): **Art history** ·
-  **General knowledge** · **UK pop & rock** · **Inventions**
+> ### ⚠️ Every one of the ten categories must appear at least once.
+> The family asked for guaranteed variety, so this is a **hard rule**, not a
+> preference. `scripts/check.py` **fails the round** if any category is missing
+> (enforced from round 13 onward), and names the ones you left out.
 
-A good default shape for 20 (adjust to taste):
+The ten categories:
+
+| | |
+|---|---|
+| History | Art history |
+| Food & drink | General knowledge |
+| Geography | UK pop & rock |
+| Culture & the arts | Inventions |
+| Sport & games | |
+| Language & everyday life | |
+
+Ten categories into 20 questions means **one guaranteed slot each, then ten
+free slots** to weight toward what the family enjoys. A good default:
 
 | Category | Questions |
 |---|---|
-| Geography | 3–4 (**the family asked for more geography**) |
-| Culture & the arts | 3 |
-| Art history | 2–3 |
-| General knowledge | 2–3 |
+| Geography | 4 (**they asked for more geography**) |
+| Culture & the arts | 3 (include a film question — Russell Crowe is a favourite) |
+| Art history | 2 |
+| General knowledge | 2 |
 | History | 2 |
 | Food & drink | 2 |
 | Sport & games | 2 |
-| Language & everyday life | 1–2 |
+| Language & everyday life | 1 |
+| UK pop & rock | 1 |
+| Inventions | 1 |
 
-After drafting, **count per category** and top up anything missing. Then
-**interleave** so the round never runs in blocks from the same category.
+That's exactly 20. Shift the weighting for a themed night if you like — but
+**never drop a category to zero.** After drafting, **count per category**, top
+up anything missing, then **interleave** so the round never runs in blocks from
+the same category.
 
 ### 3b. Balance — lean British
 
@@ -195,10 +208,10 @@ and close variations of them.
    URLs they actually opened.
 3. **Draft.** Write each question with `category`, `side`, `question`,
    `answer`, `accept` (alternative acceptable answers), `note`, and `source`.
-4. **Count & top up.** Tally to **20** and check: every category present at
-   least once, Britain carrying the largest share, geography well represented,
-   at least one sport and one film question, a couple of photos, and a handful of
-   mixed formats. Top up anything missing.
+4. **Count & top up.** Tally to **20** and check: **all ten categories present**
+   (check.py will fail the round otherwise), Britain carrying the largest share,
+   geography well represented, at least one sport and one film question, a
+   couple of photos, and a handful of mixed formats. Top up anything missing.
 5. **Interleave.** Order so no two adjacent questions share a category where
    avoidable, and the sides vary.
 6. **Assemble** `rounds/round-N.json` (schema below) and set `written` to
